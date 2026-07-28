@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>每日股市监控看板</title>
+  <style>
+    :root{--bg:#f4f6f3;--ink:#17211c;--muted:#63716a;--line:#d8dfd7;--panel:#fff;--green:#147463;--red:#b74438;--amber:#b57619;--blue:#285c7f;--soft:#eef3ef;--shadow:0 12px 28px rgba(23,33,28,.08)}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;letter-spacing:0}.dashboard{max-width:1480px;margin:auto;padding:22px clamp(12px,2.5vw,34px) 36px}
+    .hero{min-height:210px;display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:end;padding:clamp(22px,4vw,42px);margin-bottom:14px;color:white;background:linear-gradient(135deg,rgba(20,116,99,.97),rgba(40,92,127,.94)),repeating-linear-gradient(90deg,rgba(255,255,255,.12) 0 1px,transparent 1px 54px);border-radius:8px}
+    .eyebrow,.label{display:block;color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase}.hero .eyebrow{color:rgba(255,255,255,.72)}h1,h2,p{margin:0}h1{margin-top:8px;font-size:clamp(32px,5vw,58px);line-height:1.02}h2{margin-top:4px;font-size:20px}.hero-copy{max-width:850px;margin-top:14px;color:rgba(255,255,255,.84);font-size:16px;line-height:1.7}
+    .source-strip{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px;max-width:380px}.source,.badge,.pill{min-height:28px;display:inline-flex;align-items:center;border-radius:999px;padding:4px 10px;font-size:12px;font-style:normal;font-weight:800}.source{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.2)}
+    .status-grid{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:10px;margin-bottom:12px}.status,.panel{background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow)}.status{min-height:126px;padding:17px}.status.primary{background:var(--ink);color:#fff}.status.primary .label,.status.primary p{color:rgba(255,255,255,.66)}.status strong{display:block;margin-top:10px;font-size:clamp(22px,2vw,30px);line-height:1.15}.status p{margin-top:8px;color:var(--muted);line-height:1.5}
+    .main-grid{display:grid;grid-template-columns:minmax(0,1.55fr) minmax(320px,.9fr);gap:12px;margin-bottom:12px}.panel{min-width:0;margin-bottom:12px}.panel-head{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line)}.muted{color:var(--muted);font-size:13px}.badge{color:var(--blue);background:#e1edf4}.badge.danger{color:var(--red);background:#f7e4e1}
+    .thermo-row{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;padding:18px}.gauge{padding:15px;border:1px solid var(--line);border-radius:8px;background:#fbfcfa}.gauge-top{display:flex;justify-content:space-between;gap:12px;margin-bottom:12px;color:var(--muted)}.gauge-top strong{color:var(--ink)}.gauge-track,.track,.mini{position:relative;overflow:hidden;background:#e9eee8;border-radius:999px}.gauge-track{height:16px}.gauge-track i,.track i,.mini i{display:block;height:100%;background:linear-gradient(90deg,var(--green),var(--blue));border-radius:inherit}
+    .signal-list{display:flex;flex-wrap:wrap;gap:8px;padding:0 18px 18px}.pill{color:var(--muted);background:#eef2ed}.pill.active{color:var(--amber);background:#fff1d6}.watch-points{margin:0;padding:18px 24px 20px 38px;line-height:1.8;color:#34423a}
+    .index-table{display:grid;padding:6px 12px 14px}.index-row{display:grid;grid-template-columns:1.1fr 1fr .8fr 1.2fr 1.2fr 1fr;gap:12px;align-items:center;min-height:48px;padding:8px 6px;border-bottom:1px solid #edf1ec}.index-row:last-child{border-bottom:0}.up{color:var(--green)}.down{color:var(--red)}.neutral{color:var(--muted)}.mini{display:grid;align-items:center;height:28px;min-width:120px}.mini i{grid-area:1/1;opacity:.22}.mini i.down{background:var(--red)}.mini b{grid-area:1/1;padding-left:8px;font-size:12px;z-index:1}
+    .sector-stack,.alert-list{display:grid;gap:10px;padding:16px 18px 18px}.sector-line{display:grid;grid-template-columns:90px minmax(80px,1fr) 72px 74px;gap:10px;align-items:center}.track{height:10px}.sector-line em,.stock em{width:max-content;color:var(--blue);background:#e1edf4}.alert{display:grid;grid-template-columns:90px 1fr auto;gap:10px;align-items:center;padding:12px;border-radius:8px;background:#f7e4e1}.alert em{color:var(--red);background:#fff}
+    .stock-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:16px 18px 18px}.stock{min-height:126px;display:grid;align-content:space-between;gap:8px;padding:14px;border:1px solid var(--line);border-radius:8px;background:#fbfcfa}.stock div{display:flex;align-items:center;justify-content:space-between;gap:10px}.stock span,.stock small{color:var(--muted)}.stock p{font-size:24px;font-weight:900}
+    .section-nav{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow:auto;padding:10px 0;margin:2px 0 12px;background:rgba(244,246,243,.94);backdrop-filter:blur(8px)}.section-nav a{white-space:nowrap;color:var(--blue);background:#e1edf4;border:1px solid #cbdde8;border-radius:999px;padding:8px 11px;text-decoration:none;font-size:12px;font-weight:800}
+    .coverage-grid,.module-grid,.check-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:16px 18px 18px}.module-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.check-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.module-card,.coverage-card,.check-card{padding:14px;border:1px solid var(--line);border-radius:8px;background:#fbfcfa}.module-card strong,.coverage-card strong,.check-card strong{display:block;margin-bottom:7px}.module-card p,.coverage-card p,.check-card p{color:var(--muted);line-height:1.55;font-size:13px}.coverage-card em{display:inline-flex;margin-top:8px}.raw-tables{display:grid;gap:14px;padding:16px 18px 18px}.raw-group{border-top:1px solid var(--line);padding-top:14px}.raw-group:first-child{border-top:0;padding-top:0}.raw-group h3{margin:0 0 10px;font-size:16px}.raw-table-card{margin-bottom:12px;border:1px solid var(--line);border-radius:8px;background:#fbfcfa;overflow:hidden}.raw-table-title{display:flex;justify-content:space-between;gap:10px;align-items:center;padding:11px 12px;border-bottom:1px solid var(--line);font-weight:900}.table-scroll{overflow:auto}.pdf-table{width:100%;min-width:720px;border-collapse:collapse;font-size:12px;line-height:1.45}.pdf-table th,.pdf-table td{padding:9px 10px;border-bottom:1px solid #edf1ec;text-align:left;vertical-align:top}.pdf-table th{position:sticky;top:0;background:#eef3ef;color:var(--muted);font-weight:900}.pdf-table tr:last-child td{border-bottom:0}.table-notes{display:grid;gap:7px;padding:11px 12px;border-top:1px solid #eadcb7;background:#fff7df;color:#5d4516;font-size:12px;line-height:1.55}.table-note{display:grid;grid-template-columns:auto 1fr;gap:7px}.table-note b{color:var(--amber)}.full-table{display:grid;padding:6px 12px 14px}.full-row{display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr 1fr;gap:12px;align-items:center;min-height:42px;padding:8px 6px;border-bottom:1px solid #edf1ec}.full-row.header{color:var(--muted);font-size:12px;font-weight:800}.full-row:last-child{border-bottom:0}.discipline{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;padding:16px 18px 18px}.discipline div{padding:14px;border-radius:8px;background:#f7faf8;border:1px solid var(--line)}.discipline b{display:block;margin-bottom:8px}.discipline span{color:var(--muted);font-size:13px;line-height:1.55}.footer{display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:12px;padding:4px 2px 0}
+    @media(max-width:980px){.hero,.status-grid,.main-grid,.thermo-row{grid-template-columns:1fr}.source-strip{justify-content:flex-start}.stock-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.index-row{grid-template-columns:1fr 1fr}}@media(max-width:620px){.dashboard{padding-inline:10px}.hero{padding:22px}.stock-grid,.sector-line,.alert{grid-template-columns:1fr}.footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <main class="dashboard" id="app"></main>
+  <script src="./data/current.js"></script>
+  <script src="./data/daily_tables.js"></script>
+  <script>
+    const f=(v,d=2)=>v==null||Number.isNaN(v)?"—":Number(v).toLocaleString("zh-CN",{maximumFractionDigits:d,minimumFractionDigits:d});
+    const p=v=>v==null||Number.isNaN(v)?"—":`${v>0?"+":""}${f(v)}%`;
+    const tone=v=>v==null?"neutral":v>0?"up":v<0?"down":"neutral";
+    const bar=v=>Math.min(Math.abs(v||0)*3,100);
+    const action=s=>s.role==="follower"&&(s.pct_chg||0)>3?"反弹减仓":s.role==="follower"?"不加仓":s.role==="core"&&s.tolerance_price&&s.price&&s.price<s.tolerance_price?"触发复盘":s.role==="core"&&(s.pct_20d||0)>20?"小仓持有":s.role==="core"?"核心持有":s.role==="defensive"?"压舱石":"持有观察";
+    const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+    const renderDataTable=t=>{
+      const [head,...body]=t.rows;
+      const notes=(t.notes||[]).map(n=>`<div class="table-note"><b>标注</b><span>${esc(n)}</span></div>`).join("");
+      return `<article class="raw-table-card"><div class="raw-table-title"><span>${esc(t.title)}</span><small class="muted">日更模型</small></div><div class="table-scroll"><table class="pdf-table"><thead><tr>${head.map(c=>`<th>${esc(c)}</th>`).join("")}</tr></thead><tbody>${body.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>${notes?`<div class="table-notes">${notes}</div>`:""}</article>`;
+    };
+    const renderDailyTables=()=>{
+      const groups=(window.DAILY_TABLES||[]).reduce((acc,t)=>{(acc[t.section] ||= []).push(t);return acc;},{});
+      return Object.entries(groups).map(([section,tables])=>`<div class="raw-group"><h3>${esc(section)}</h3>${tables.map(renderDataTable).join("")}</div>`).join("");
+    };
+    const globalRows=[
+      ["恒生指数","25,207.18","+0.98%","+11.18%","港股同步反弹"],
+      ["恒生科技","4,702.05","+1.57%","+10.49%","弹性修复但 YTD 弱"],
+      ["道琼斯(7/24)","51,947.25","+0.46%","+0.05%","外围平淡"],
+      ["标普500(7/24)","7,411.98","+0.05%","+0.74%","非主要驱动"],
+      ["纳斯达克(7/24)","24,975.82","-0.64%","-1.51%","科技偏弱"],
+      ["日经/KOSPI","—","—","—","区域限制缺失"]
+    ];
+    const coverage=[
+      ["今日定性","完整","主跌通道里的超跌普涨反弹，非趋势反转。"],
+      ["四场景仓位","完整","左侧 10%-15%，确认后再看 20%-30%。"],
+      ["全球交叉验证","已补模块","港股、美股、日韩缺失状态单列。"],
+      ["A股大盘画像","完整","广度、成交额、估值、BOLL、MACD。"],
+      ["板块轮动分析","已补模块","六大聚类都有独立卡片。"],
+      ["核心个股跟踪","日更表格","核心池摘要和明细表均由 current.json 更新。"],
+      ["情绪周期定位","完整","由广度、量能、大小盘和技术位推导。"],
+      ["从龙负反馈","完整","从龙反弹和高换手警报单列。"],
+      ["市场风格判断","完整","小盘/成长修复、防御滞涨、主线/杂毛。"],
+      ["资金与龙虎榜","日更表格","机构净买/净卖表由 longhubang 数据更新；后续可接龙虎榜源。"],
+      ["三类观测指标","已补模块","产业、交易、资金宏观拆成检查项。"],
+      ["波动率与升贴水","已补模块","BOLL、MACD、波动率回归和 PUT 提醒。"],
+      ["非对称性比价","已补模块","三指数盈亏比与不动手区。"],
+      ["盘前10点检查","已补模块","10 条执行清单全部显示。"],
+      ["交易系统框架","已补模块","逻辑、资金管理、风控、复盘四层。"]
+    ];
+    const clusters=[
+      ["AI 科技主线","核心持有，从龙反弹减仓","联讯涨停，旭创/寒武纪抗跌；盛科/瑞芯等强势股补跌。"],
+      ["高股息红利防御","压舱石持有，不追","移动、神华、海油、美的在反弹日滞涨，但防御属性未失效。"],
+      ["能源资源材料","只留龙头，边缘撤","紫金趋势未破；油服杰瑞遭机构净卖，资源内部分化。"],
+      ["制造消费","价值底仓持有","赛轮、船舶、重汽、牧原跟涨，低换手价值侧仍稳。"],
+      ["医药消费农业","观察持续性","酒店、化妆品、旅游等低位消费试仓，先看 2-3 日。"],
+      ["军工与港股互联网","不追题材，港股长持","军工事件驱动不追；腾讯/阿里/泡泡按长线仓观察。"]
+    ];
+    const threeLayer=[
+      ["产业基本面","AI 算力未证伪；资源分化；港股互联网中性偏正。","中性偏正"],
+      ["市场交易","广度强修复，但量能未到 24000 亿，中轨未过。","修复未确认"],
+      ["资金与宏观","估值高位，龙虎榜边打边撤，外围平淡。","偏谨慎"]
+    ];
+    const volatility=[
+      ["上证指数","中轨 3944 / 下轨 3748","距下轨约 +2.87%，下行缓冲薄。"],
+      ["创业板指","中轨 3803 / 下轨 3305","反弹弹性强，但 MACD 仍深负。"],
+      ["科创50","中轨 1947 / 下轨 1666","振幅仍高，波动率未回归。"],
+      ["拥挤信号","估值 >90% + 杂毛补涨","追高性价比低，优先等待。"]
+    ];
+    const asymmetry=[
+      ["上证","0.77:1","上行至中轨空间小于下行至下轨空间，偏空。"],
+      ["创业板","0.74:1","反弹空间不足以覆盖二次探底风险。"],
+      ["科创50","0.98:1","接近对称但未显著占优。"],
+      ["结论","不动手区","只允许小仓反弹参与，不建趋势头寸。"]
+    ];
+    const preopen=["大盘情绪周期","宽基支撑压力","产业叙事是否证伪","外围风偏与商品","核心题材强弱","主龙从龙背离","从龙负反馈","市场风格延续性","仓位与 PUT 纪律","数据缺失/滞后备注"];
+    const systemRules=[
+      ["交易逻辑","先回答赚什么钱、为什么能赚、怎样算对、怎样算错。"],
+      ["资金管理","先定仓位和波动偏好，再定止损；近一次性，远分批。"],
+      ["风控防线","风控不替代逻辑，必须容纳正常波动，异常才执行。"],
+      ["复盘修正","多场景验证何时有效、何时无效，冲突时顾主逻辑。"]
+    ];
+    const dataCaliber=[
+      ["指数/个股/板块/技术/龙虎榜","2026-07-27 收盘实拉"],
+      ["涨跌分布/成交额/估值分位","部分为最近可得聚合值，需标注滞后"],
+      ["美股","2026-07-24 收盘，7/27 夜盘未纳入"],
+      ["日经/KOSPI","区域限制缺失，以 — 处理"]
+    ];
+    const holdingSplit=[
+      ["广度逆转","23 只清单股从周五 4 涨 19 跌逆转为 19 涨 4 跌，说明修复明确。"],
+      ["高低切","领涨集中在核心与超跌弹性，前期强势票反而补跌。"],
+      ["防御让位","移动/神华/海油/美的滞涨，资金从防御转向进攻。"],
+      ["缩圈结论","圈层扩散但从龙高换手反弹，出清未尽，非反转。"]
+    ];
+    const industryFrames=[
+      ["红利防御与公用事业","20日仍强，反弹日短线回吐，压舱石持有不追。"],
+      ["AI 算力主线","产业叙事未证伪；核心底仓不动，从龙反弹减仓。"],
+      ["能源资源","紫金龙头守，油服机构兑现，贵金属拥挤需降温。"],
+      ["制造消费","价值/出海受益，低换手标的底仓持有。"],
+      ["港股互联网/新消费","估值安全垫较好，长线持有，非主线核心。"]
+    ];
+    const systemFlow=[
+      ["盘前·逻辑更新","检查新消息、矛盾扫描、综合观测指数、时间级别。"],
+      ["开仓前·四问一定","赚什么钱、为什么能赚、怎样算对、怎样算错。"],
+      ["持仓中·证伪监控","逻辑是否仍成立，是否触及容错点位和异常底线。"],
+      ["离场·三类信号","逻辑消失、触容错点位、触异常底线。"],
+      ["复盘·多场景回测","验证何时有效、何时无效，修正逻辑与规则。"],
+      ["一页速查","逻辑在则持仓，逻辑无则离场；仓位先于止损。"]
+    ];
+    const loadMarketData = window.MARKET_DAILY_DATA
+      ? Promise.resolve(window.MARKET_DAILY_DATA)
+      : fetch("./data/current.json").then(r=>r.json());
+
+    loadMarketData.then(m=>{
+      const idx=n=>m.indexes.find(x=>x.name===n);
+      const dailyTableSection=renderDailyTables();
+      const upTotal=m.market.up_count+m.market.down_count;
+      const breadth=upTotal?m.market.up_count/upTotal*100:0;
+      const turnover=m.market.total_turnover_billion/m.market.turnover_20d_avg_billion;
+      const tech=m.indexes.filter(x=>x.close&&x.boll_mid&&x.boll_lower&&x.macd_bar!==null);
+      const below=tech.filter(x=>x.close<x.boll_mid).length;
+      const bear=tech.filter(x=>x.macd_bar<0).length;
+      const sh=idx("上证指数"),cyb=idx("创业板指"),zz=idx("中证1000"),hs=idx("沪深300"),sz50=idx("上证50"),div=idx("红利指数");
+      const growth=!!(cyb&&zz&&hs&&(cyb.pct_chg-hs.pct_chg>=1)&&(zz.pct_chg-hs.pct_chg>=1));
+      const defLag=!!(sh&&sz50&&div&&sz50.pct_chg<sh.pct_chg&&div.pct_chg<sh.pct_chg);
+      const right=m.market.total_turnover_billion>=24000&&turnover>=1.05&&below<=1&&breadth>=55;
+      const state=right?"右侧确认":below>=2&&bear>=2&&(breadth>=55||growth)?"主跌通道 · 超跌反弹":"震荡观察";
+      const cap=right?"20%-30%":turnover>=.8?"15%-20%":"10%-15%";
+      const alerts=m.watchlist.filter(x=>x.role==="follower"&&(x.pct_chg||0)>3);
+      const sectors=[...m.sectors].sort((a,b)=>(b.pct_chg??-99)-(a.pct_chg??-99)).slice(0,5);
+      document.getElementById("app").innerHTML=`
+        <section class="hero"><div><p class="eyebrow">Market Daily Model</p><h1>每日股市监控看板</h1><p class="hero-copy">${m.meta.trade_date} 收盘快照。当前模型把市场判定为 <strong>${state}</strong>，仓位上限 <strong>${cap}</strong>。本版已按原 PDF 章节补齐全报告模块。</p></div><div class="source-strip"><span class="source">CSV 底稿</span><span class="source">FundDB 接口已配置</span><span class="source">东方财富 K 线不稳定</span></div></section>
+        <nav class="section-nav"><a href="#overview">总览</a><a href="#coverage">覆盖矩阵</a><a href="#datatables">日更表格</a><a href="#global">全球</a><a href="#market">A股大盘</a><a href="#rotation">板块轮动</a><a href="#stocks">个股池</a><a href="#emotion">情绪周期</a><a href="#dragon">从龙负反馈</a><a href="#style">市场风格</a><a href="#funds">龙虎榜</a><a href="#three">三类观测</a><a href="#vol">波动率</a><a href="#asym">非对称</a><a href="#preopen">盘前10点</a><a href="#system">交易系统</a></nav>
+        <section class="status-grid" id="overview" data-tab="overview"><div class="status primary"><span class="label">市场状态</span><strong>${state}</strong><p>广度强修复，但趋势位和量能仍是确认门槛。</p></div><div class="status"><span class="label">仓位上限</span><strong>${cap}</strong><p>未右侧确认前保持试探仓</p></div><div class="status"><span class="label">成交额</span><strong>${f(m.market.total_turnover_billion,0)} 亿</strong><p>${f(turnover,2)} 倍 20日均量</p></div><div class="status"><span class="label">估值压力</span><strong>${f(m.market.valuation_percentile_10y,1)}%</strong><p>10 年 PE 分位</p></div></section>
+        <section class="panel" data-tab="overview"><div class="panel-head"><div><span class="label">Data Caliber</span><h2>数据时点与口径</h2></div><span class="muted">先读口径，再读结论</span></div><div class="module-grid">${dataCaliber.map(x=>`<div class="module-card"><strong>${x[0]}</strong><p>${x[1]}</p></div>`).join("")}</div></section>
+        <section class="panel" id="coverage" data-tab="coverage"><div class="panel-head"><div><span class="label">PDF Coverage</span><h2>报告章节覆盖矩阵</h2></div><span class="muted">${coverage.length} 个模块</span></div><div class="coverage-grid">${coverage.map(x=>`<div class="coverage-card"><strong>${x[0]}</strong><p>${x[2]}</p><em class="pill ${x[1]==="完整"?"active":""}">${x[1]}</em></div>`).join("")}</div></section>
+        <section class="panel" id="datatables" data-tab="datatables"><div class="panel-head"><div><span class="label">Model Tables</span><h2>日更数据表格</h2></div><span class="muted">${(window.DAILY_TABLES||[]).length} 张表 · 来自 current.json</span></div><div class="raw-tables">${dailyTableSection}</div></section>
+        <section class="main-grid" data-tab="overview"><div class="panel"><div class="panel-head"><div><span class="label">Breadth / Volume</span><h2>市场温度</h2></div><span class="badge">${right?"右侧":"左侧"}</span></div><div class="thermo-row"><div class="gauge"><div class="gauge-top"><span>上涨占比</span><strong>${f(breadth,1)}%</strong></div><div class="gauge-track"><i style="width:${Math.min(breadth,100)}%"></i></div></div><div class="gauge"><div class="gauge-top"><span>量能确认</span><strong>${f(turnover,2)}x</strong></div><div class="gauge-track"><i style="width:${Math.min(turnover*100,100)}%"></i></div></div></div><div class="signal-list">${[["小盘/成长修复",growth],["防御滞涨",defLag],["BOLL 中轨未突破",below>=2],["MACD 空头",bear>=2]].map(x=>`<span class="pill ${x[1]?"active":""}">${x[0]}</span>`).join("")}</div></div><div class="panel"><div class="panel-head"><div><span class="label">Next Session</span><h2>明日观察</h2></div></div><ol class="watch-points"><li>成交额能否逼近或超过 24000 亿。</li><li>核心指数是否站上 BOLL 中轨。</li><li>AI 核心是否放量站稳。</li><li>从龙反弹后是否二次探底。</li></ol></div></section>
+        <section class="panel" data-tab="market"><div class="panel-head"><div><span class="label">Indexes</span><h2>指数技术位</h2></div><span class="muted">${below}/${tech.length} 低于中轨</span></div><div class="index-table">${m.indexes.map(x=>`<div class="index-row"><strong>${x.name}</strong><span>${f(x.close)}</span><span class="${tone(x.pct_chg)}">${p(x.pct_chg)}</span><span class="mini"><i class="${tone(x.pct_20d)}" style="width:${bar(x.pct_20d)}%"></i><b>${p(x.pct_20d)}</b></span><span>${x.boll_mid?`中轨 ${f(x.boll_mid)}`:"—"}</span><span class="${tone(x.macd_bar)}">${x.macd_bar==null?"—":`MACD ${f(x.macd_bar)}`}</span></div>`).join("")}</div></section>
+        <section class="main-grid" data-tab="rotation"><div class="panel"><div class="panel-head"><div><span class="label">Rotation</span><h2>板块轮动</h2></div></div><div class="sector-stack">${sectors.map(s=>`<div class="sector-line"><span>${s.name}</span><div class="track"><i style="width:${Math.min(Math.abs(s.pct_chg||0)*10,100)}%"></i></div><strong class="${tone(s.pct_chg)}">${p(s.pct_chg)}</strong><em class="pill">${s.action_hint}</em></div>`).join("")}</div></div><div class="panel"><div class="panel-head"><div><span class="label">Follower Risk</span><h2>从龙负反馈</h2></div><span class="badge danger">${alerts.length} 个警报</span></div><div class="alert-list">${alerts.map(a=>`<div class="alert"><strong>${a.symbol}</strong><span>${p(a.pct_chg)} / 换手 ${p(a.turnover_rate)}</span><em class="pill">反弹减仓</em></div>`).join("")}</div></div></section>
+        <section class="panel" id="global" data-tab="global"><div class="panel-head"><div><span class="label">Global Cross Check</span><h2>全球多市场交叉验证</h2></div><span class="muted">外部驱动弱，A股以内生修复为主</span></div><div class="full-table"><div class="full-row header"><span>市场</span><span>收盘</span><span>当日</span><span>20日</span><span>判断</span></div>${globalRows.map(x=>`<div class="full-row"><strong>${x[0]}</strong><span>${x[1]}</span><span class="${x[2].startsWith('-')?'down':'up'}">${x[2]}</span><span class="${x[3].startsWith('-')?'down':'up'}">${x[3]}</span><span>${x[4]}</span></div>`).join("")}</div><div class="module-grid"><div class="module-card"><strong>全球结论</strong><p>A股反弹主要来自内部风险偏好修复，非外围强驱动；港股同步弹性修复，美股科技偏弱，日韩数据缺失。</p></div></div></section>
+        <section class="panel" id="market" data-tab="market"><div class="panel-head"><div><span class="label">A-share Portrait</span><h2>A股大盘画像</h2></div><span class="muted">广度、量能、估值、技术位</span></div><div class="module-grid"><div class="module-card"><strong>涨跌分布</strong><p>上涨 ${m.market.up_count} 家，下跌 ${m.market.down_count} 家，上涨占比 ${f(breadth,1)}%。极端悲观后出现普涨修复。</p></div><div class="module-card"><strong>成交额</strong><p>${f(m.market.total_turnover_billion,0)} 亿，约为 20 日均量 ${f(turnover,2)} 倍；未到 24000 亿右侧确认线。</p></div><div class="module-card"><strong>技术位</strong><p>${below}/${tech.length} 个核心技术指数低于 BOLL 中轨，${bear}/${tech.length} 个 MACD 仍在空头区。</p></div><div class="module-card"><strong>估值</strong><p>中证全指 PE 10 年分位 ${f(m.market.valuation_percentile_10y,1)}%，反弹中追高性价比偏低。</p></div></div></section>
+        <section class="panel" id="rotation" data-tab="rotation"><div class="panel-head"><div><span class="label">Six Clusters</span><h2>六大板块聚类</h2></div><span class="muted">按原报告聚类补齐</span></div><div class="module-grid">${clusters.map(x=>`<div class="module-card"><strong>${x[0]}</strong><p><b>${x[1]}</b></p><p>${x[2]}</p></div>`).join("")}</div></section>
+        <section class="panel" data-tab="rotation"><div class="panel-head"><div><span class="label">Industry Framework</span><h2>行业整体框架分析</h2></div><span class="muted">对应 PDF 四、②</span></div><div class="module-grid">${industryFrames.map(x=>`<div class="module-card"><strong>${x[0]}</strong><p>${x[1]}</p></div>`).join("")}</div></section>
+        <section class="panel" id="stocks" data-tab="stocks"><div class="panel-head"><div><span class="label">Watchlist</span><h2>核心个股池</h2></div><span class="muted">${m.watchlist.length} 个标的</span></div><div class="stock-grid">${m.watchlist.map(s=>`<div class="stock"><div><strong>${s.symbol}</strong><span>${s.group}</span></div><p class="${tone(s.pct_chg)}">${p(s.pct_chg)}</p><small>20日 ${p(s.pct_20d)} · 换手 ${p(s.turnover_rate)}</small><em class="pill">${action(s)}</em></div>`).join("")}</div></section>
+        <section class="panel" data-tab="stocks"><div class="panel-head"><div><span class="label">Holding Split</span><h2>核心持仓分化解读</h2></div><span class="muted">缩圈实证</span></div><div class="module-grid">${holdingSplit.map(x=>`<div class="module-card"><strong>${x[0]}</strong><p>${x[1]}</p></div>`).join("")}</div></section>
+        <section class="panel" id="emotion" data-tab="emotion"><div class="panel-head"><div><span class="label">Chapter 5</span><h2>情绪周期定位</h2></div><span class="badge">${state}</span></div><div class="module-grid"><div class="module-card"><strong>极端悲观修复</strong><p>7/24 广度极低后，当前上涨占比 ${f(breadth,1)}%，属于第一次分歧后的修复。</p></div><div class="module-card"><strong>大小盘</strong><p>中证1000 ${p(zz&&zz.pct_chg)}，上证50 ${p(sz50&&sz50.pct_chg)}，小盘/成长明显占优。</p></div><div class="module-card"><strong>持续性门槛</strong><p>需要放量、连续广度、指数站上中轨共同确认，否则仍按左侧反弹处理。</p></div></div></section>
+        <section class="panel" id="dragon" data-tab="dragon"><div class="panel-head"><div><span class="label">Chapter 6</span><h2>从龙负反馈监测</h2></div><span class="badge danger">${alerts.length} 个警报</span></div><div class="alert-list">${alerts.map(a=>`<div class="alert"><strong>${a.symbol}</strong><span>${p(a.pct_chg)} / 换手 ${p(a.turnover_rate)}</span><em class="pill">反弹减仓</em></div>`).join("")}<div class="alert"><strong>雅克/风华/杰瑞</strong><span>涨停出货与油服净卖代表机构借反弹兑现</span><em class="pill">观察二探</em></div></div></section>
+        <section class="panel" id="style" data-tab="style"><div class="panel-head"><div><span class="label">Chapter 7</span><h2>市场风格判断</h2></div></div><div class="check-grid"><div class="check-card"><strong>成长/小盘</strong><p>${growth?'超跌反扑成立':'尚未确认'}，但未等于趋势切换。</p></div><div class="check-card"><strong>红利/防御</strong><p>${defLag?'反弹日滞涨':'未明显滞涨'}，压舱属性保留。</p></div><div class="check-card"><strong>主线/杂毛</strong><p>AI 核心与低位题材齐涨，圈扩散但杂毛仍在高波动区。</p></div><div class="check-card"><strong>量化特征</strong><p>普涨修复暂缓阴跌压力，持续性看次日量能。</p></div></div></section>
+        <section class="panel" id="funds" data-tab="funds"><div class="panel-head"><div><span class="label">Capital / Dragon Tiger</span><h2>资金与龙虎榜</h2></div><span class="muted">机构买卖方向</span></div><div class="full-table"><div class="full-row header"><span>个股/方向</span><span>机构净买</span><span>主题</span><span>信号</span><span>动作含义</span></div>${m.longhubang.map(x=>`<div class="full-row"><strong>${x.name}</strong><span class="${tone(x.net_inst_buy_billion)}">${x.net_inst_buy_billion==null?'—':(x.net_inst_buy_billion>0?'+':'')+f(x.net_inst_buy_billion)+' 亿'}</span><span>${x.theme}</span><span>${x.note}</span><span>${(x.net_inst_buy_billion||0)<0?'边打边撤':'题材回补'}</span></div>`).join("")}</div></section>
+        <section class="main-grid" id="three" data-tab="three"><div class="panel"><div class="panel-head"><div><span class="label">Three-layer Check</span><h2>三类观测指标</h2></div></div><div class="module-grid">${threeLayer.map(x=>`<div class="module-card"><strong>${x[0]}</strong><p>${x[1]}</p><em class="pill">${x[2]}</em></div>`).join("")}</div></div><div class="panel"><div class="panel-head"><div><span class="label">Conclusion</span><h2>综合判断</h2></div></div><div class="module-grid"><div class="module-card"><strong>离场标准</strong><p>未出现两类明确负面共同触发，故不做系统性离场。</p></div><div class="module-card"><strong>加仓标准</strong><p>技术空头、估值高、机构边打边撤，尚不足以加仓。</p></div><div class="module-card"><strong>纪律</strong><p>维持轻仓、等待确认、从龙反弹减仓。</p></div></div></div></section>
+        <section class="main-grid" id="vol" data-tab="vol asym"><div class="panel"><div class="panel-head"><div><span class="label">Volatility</span><h2>波动率与升贴水实操</h2></div><span class="muted">BOLL / MACD / 拥挤</span></div><div class="module-grid">${volatility.map(x=>`<div class="module-card"><strong>${x[0]}</strong><p>${x[1]}</p><p>${x[2]}</p></div>`).join("")}</div></div><div class="panel" id="asym"><div class="panel-head"><div><span class="label">Asymmetry</span><h2>非对称性与多空比价</h2></div><span class="badge danger">不动手区</span></div><div class="module-grid">${asymmetry.map(x=>`<div class="module-card"><strong>${x[0]}</strong><p>${x[1]}</p><p>${x[2]}</p></div>`).join("")}<div class="module-card"><strong>做多盈亏比</strong><p>上证、创业板、科创50 均未显著大于 1，趋势做多不占优。</p></div><div class="module-card"><strong>做空盈亏比</strong><p>A股融券和个股做空受限，做空工具不天然占优。</p></div><div class="module-card"><strong>双买策略适用性</strong><p>降波环境时间价值损耗不利，更适合等待波动率回归。</p></div></div></div></section>
+        <section class="panel" id="preopen" data-tab="preopen"><div class="panel-head"><div><span class="label">10 Checks</span><h2>每日盘前 10 点检查</h2></div><span class="muted">7/28 执行清单</span></div><div class="check-grid">${preopen.map((x,i)=>`<div class="check-card"><strong>${i+1}. ${x}</strong><p>${i===0?state:i===1?'上证/创业板/科创50 中轨仍是强压力':i===2?'AI 算力未证伪，资源内部分化':i===3?'美股平淡，商品需跟踪':i===4?'光模块/CPO 核心优先':i===5?'主龙抗跌，从龙反抽':i===6?'观察二次探底是否出现':i===7?'小盘/成长反扑，防御让位':i===8?`仓位 ${cap}，破位考虑 PUT 保护`:'标注数据源滞后，不用缺失数据做重仓判断'}</p></div>`).join("")}</div></section>
+        <section class="panel" id="system" data-tab="system"><div class="panel-head"><div><span class="label">Trading System</span><h2>交易系统框架</h2></div><span class="muted">执行纪律</span></div><div class="discipline">${systemRules.map(x=>`<div><b>${x[0]}</b><span>${x[1]}</span></div>`).join("")}</div><div class="module-grid">${systemFlow.map(x=>`<div class="module-card"><strong>${x[0]}</strong><p>${x[1]}</p></div>`).join("")}</div></section>
+        <footer class="footer"><span>${m.meta.data_notes}</span><span>生成日期 ${m.meta.report_date}</span></footer>`;
+    }).catch(err=>{document.getElementById("app").innerHTML="<p>数据加载失败："+err.message+"</p>"});
+  </script>
+</body>
+</html>
