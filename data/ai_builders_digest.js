@@ -8,7 +8,8 @@ window.AI_BUILDERS_DIGEST = {
     "podcastCount": 1,
     "generatedBy": "Follow Builders skill",
     "generatedByUrl": "https://github.com/zarazhangrui/follow-builders",
-    "thesis": "AI 产品化正在从模型能力展示进入可信执行系统阶段。"
+    "thesis": "AI 产品化正在从模型能力展示进入可信执行系统阶段。",
+    "podcastSourceCount": 23
   },
   "themes": [
     {
@@ -167,6 +168,14 @@ window.AI_BUILDERS_DIGEST = {
     }
   ],
   "podcastSources": [
+    {
+      "name": "The MAD Podcast with Matt Turck",
+      "category": "AI / Compute / Infrastructure",
+      "priority": "S",
+      "role": "AI 算力与基础设施访谈",
+      "reason": "能请到 OpenAI 算力和基础设施负责人这类核心产业链嘉宾，信息不可替代性高。",
+      "stockLens": "直接服务 AI 算力链分析：关注数据中心 capex、电力、液冷、变压器、网络设备、芯片效率和 guaranteed capacity 对美股科技、A股算力基础设施及电力设备板块的传导。"
+    },
     {
       "name": "晚点聊 LateTalk",
       "category": "中国科技产业",
