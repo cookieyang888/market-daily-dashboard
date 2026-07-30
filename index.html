@@ -24,9 +24,9 @@
 </head>
 <body>
   <main class="dashboard" id="app"></main>
-  <script src="./data/current.js"></script>
-  <script src="./data/daily_tables.js"></script>
-  <script src="./data/ai_builders_digest.js"></script>
+  <script src="./data/current.js?v=20260730-1548"></script>
+  <script src="./data/daily_tables.js?v=20260730-1548"></script>
+  <script src="./data/ai_builders_digest.js?v=20260730-1548"></script>
   <script>
     const f=(v,d=2)=>v==null||Number.isNaN(v)?"—":Number(v).toLocaleString("zh-CN",{maximumFractionDigits:d,minimumFractionDigits:d});
     const p=v=>v==null||Number.isNaN(v)?"—":`${v>0?"+":""}${f(v)}%`;
