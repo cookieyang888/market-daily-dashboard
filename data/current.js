@@ -1,23 +1,23 @@
 window.MARKET_DAILY_DATA = {
   "meta": {
-    "trade_date": "2026-07-27",
-    "report_date": "2026-07-27",
-    "data_notes": "涨跌家数与成交额已补充公开收盘数据；估值分位沿用报告最近可得值；板块轮动已按 PDF 聚类一至六重排；核心个股跟踪已补齐 23 只清单股；龙虎榜已补齐机构净买/净卖 TOP5。"
+    "trade_date": "2026-07-29",
+    "report_date": "2026-07-29",
+    "data_notes": "2026-07-29 收盘快照：指数、沪深两市广度/成交额已更新；指数使用 2026-07-29 16:12 已确认收盘快照兜底；技术指标、核心个股池、行业板块细分、龙虎榜、估值分位暂沿用上一版或待源更新。"
   },
   "market": {
-    "total_turnover_billion": 20850.0,
-    "turnover_20d_avg_billion": 28606.0,
-    "up_count": 5195,
-    "down_count": 286,
-    "limit_up_count": 0,
-    "limit_down_count": 0,
+    "total_turnover_billion": 22965.8,
+    "turnover_20d_avg_billion": 28650,
+    "up_count": 4033,
+    "down_count": 1179,
+    "limit_up_count": null,
+    "limit_down_count": null,
     "valuation_percentile_10y": 91.19
   },
   "indexes": [
     {
       "name": "上证指数",
-      "close": 3858.25,
-      "pct_chg": 1.15,
+      "close": 3828.47,
+      "pct_chg": 0.4,
       "pct_5d": 1.63,
       "pct_20d": -5.29,
       "pct_60d": -5.4,
@@ -27,8 +27,8 @@ window.MARKET_DAILY_DATA = {
     },
     {
       "name": "创业板指",
-      "close": 3590.79,
-      "pct_chg": 3.16,
+      "close": 3378.7,
+      "pct_chg": 1.55,
       "pct_5d": 4.29,
       "pct_20d": -14.84,
       "pct_60d": -0.16,
@@ -38,8 +38,8 @@ window.MARKET_DAILY_DATA = {
     },
     {
       "name": "科创50",
-      "close": 1807.95,
-      "pct_chg": 1.16,
+      "close": 1678.74,
+      "pct_chg": -0.87,
       "pct_5d": 5.19,
       "pct_20d": -14.96,
       "pct_60d": 21.45,
@@ -49,8 +49,8 @@ window.MARKET_DAILY_DATA = {
     },
     {
       "name": "沪深300",
-      "close": 4702.43,
-      "pct_chg": 1.15,
+      "close": 4600.26,
+      "pct_chg": 0.67,
       "pct_5d": 2.26,
       "pct_20d": -4.56,
       "pct_60d": -1.17,
@@ -60,8 +60,8 @@ window.MARKET_DAILY_DATA = {
     },
     {
       "name": "中证1000",
-      "close": 7228.78,
-      "pct_chg": 3.33,
+      "close": 7095.19,
+      "pct_chg": 0.98,
       "pct_5d": 3.78,
       "pct_20d": -15.92,
       "pct_60d": -12.13,
@@ -71,8 +71,8 @@ window.MARKET_DAILY_DATA = {
     },
     {
       "name": "上证50",
-      "close": 2950.43,
-      "pct_chg": -0.2,
+      "close": 2915.19,
+      "pct_chg": -0.27,
       "pct_5d": 1.29,
       "pct_20d": -1.36,
       "pct_60d": 0.0,
