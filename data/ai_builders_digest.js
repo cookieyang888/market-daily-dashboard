@@ -201,19 +201,17 @@ window.AI_BUILDERS_DIGEST = {
   "podcasts": [
     {
       "source": "The MAD Podcast with Matt Turck",
-      "guest": "Sachin Katti",
-      "title": "OpenAI’s Compute Chief: We Can’t Build Fast Enough",
-      "topic": "Compute",
-      "url": "https://www.youtube.com/watch?v=wEZBlmvxx4o",
-      "coreConclusion": "OpenAI 最担心的不是算力过剩，而是物理世界无法足够快地建设算力。",
+      "guest": "Andrew Feldman",
+      "title": "The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman",
+      "topic": "Inference / AI Compute",
+      "url": "https://podcasts.apple.com/us/podcast/the-mad-podcast-with-matt-turck/id1722339764",
+      "coreConclusion": "最新一期聚焦 Cerebras 晶圆级芯片、推理瓶颈、HBM/SRAM、数据中心、电力、TSMC、AWS、OpenAI 和 agent 速度。",
       "bullets": [
-        "AI 数据中心被描述为把电力转化为 token 的巨大工厂，新上线算力会立刻被消耗。",
-        "推理已经占据很大比例，训练本身也越来越依赖推理，例如合成数据、post-training 和 test-time compute。",
-        "物理瓶颈包括电力、燃气轮机、变压器、许可、液冷、网络设备，以及电工和管道工。",
-        "OpenAI 的 Jalapeno 芯片以 tokens per watt 为核心指标，软硬件协同设计会变得更重要。",
-        "企业端 guaranteed capacity 本质上是保证 token 供应，未来可能像采购能源或云资源一样常规化。"
+        "AI 进入生产后，推理速度和成本成为核心瓶颈。",
+        "Cerebras 的晶圆级芯片代表不同于 GPU 的推理扩展路线。",
+        "讨论覆盖 HBM、SRAM、数据中心、电力、TSMC、AWS、OpenAI 和 agent 执行速度。"
       ],
-      "stockLens": "从 OpenAI 算力负责人的视角看，今日 AI 链最有解释力的是算力供给瓶颈，而不是单纯模型发布。PCB、光模块、液冷、电力设备、变压器和数据中心 capex 都是股市映射；但科创50仍弱，说明只能看核心链条，不能追从龙扩散。"
+      "stockLens": "从 Cerebras CEO 这期看，今日 AI 链的重点应从“有没有模型发布”转向“推理速度和算力供给能否支撑应用落地”。映射到股市，是 PCB、光模块、先进封装、存储、电力设备、液冷和数据中心 capex；但如果科创50和半导体不共振，仍只看核心链条。"
     }
   ],
   "podcastSources": [
@@ -223,12 +221,12 @@ window.AI_BUILDERS_DIGEST = {
       "priority": "S",
       "role": "AI 算力与基础设施访谈",
       "reason": "能请到 OpenAI 算力和基础设施负责人这类核心产业链嘉宾，信息不可替代性高。",
-      "stockLens": "从 OpenAI 算力负责人的视角看，今日 AI 链最有解释力的是算力供给瓶颈，而不是单纯模型发布。PCB、光模块、液冷、电力设备、变压器和数据中心 capex 都是股市映射；但科创50仍弱，说明只能看核心链条，不能追从龙扩散。",
-      "latestDate": "2026-07-28",
-      "latestTitle": "OpenAI’s Compute Chief: We Can’t Build Fast Enough",
-      "latestSummary": "OpenAI 最担心的不是算力过剩，而是物理世界无法足够快地建设算力。",
-      "fullText": "AI 数据中心被描述为把电力转化为 token 的巨大工厂，新上线算力会立刻被消耗。\n推理已经占据很大比例，训练本身也越来越依赖推理，例如合成数据、post-training 和 test-time compute。\n物理瓶颈包括电力、燃气轮机、变压器、许可、液冷、网络设备，以及电工和管道工。\nOpenAI 的 Jalapeno 芯片以 tokens per watt 为核心指标，软硬件协同设计会变得更重要。\n企业端 guaranteed capacity 本质上是保证 token 供应，未来可能像采购能源或云资源一样常规化。",
-      "url": "https://www.youtube.com/watch?v=wEZBlmvxx4o",
+      "stockLens": "从 Cerebras CEO 这期看，今日 AI 链的重点应从“有没有模型发布”转向“推理速度和算力供给能否支撑应用落地”。映射到股市，是 PCB、光模块、先进封装、存储、电力设备、液冷和数据中心 capex；但如果科创50和半导体不共振，仍只看核心链条。",
+      "latestDate": "2026-07-23",
+      "latestTitle": "The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman",
+      "latestSummary": "最新一期聚焦 Cerebras 晶圆级芯片、推理瓶颈、HBM/SRAM、数据中心、电力、TSMC、AWS、OpenAI 和 agent 速度。",
+      "fullText": "AI 进入生产后，瓶颈从训练模型转向推理速度、工具调用、验证和执行。Cerebras 的晶圆级芯片代表 AI 基础设施中“快推理”的路线，适合跟踪芯片、封装、存储、数据中心和电力链条。",
+      "url": "https://podcasts.apple.com/us/podcast/the-mad-podcast-with-matt-turck/id1722339764",
       "isNew": true
     },
     {
@@ -238,11 +236,11 @@ window.AI_BUILDERS_DIGEST = {
       "role": "核心产业链人物访谈",
       "reason": "国内少数能接触科技产业核心参与者的访谈节目，适合捕捉公司、行业和资本端的一手判断。",
       "stockLens": "从国内科技产业链访谈角度看，今日 AI 科技线反弹要拆成“真订单链”和“情绪修复链”。PCB、光模块和材料强，但半导体相对弱，说明资金在做局部产业弹性，不是科技全面反转。",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "国内少数能接触科技产业核心参与者的访谈节目，适合捕捉公司、行业和资本端的一手判断。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-07-15",
+      "latestTitle": "172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI",
+      "latestSummary": "最新一期再访 Momenta 曹旭东，围绕自动驾驶、AI 公司长期路线和 IPO 后产业阶段展开。",
+      "fullText": "这期适合观察中国 AI 自动驾驶公司从技术叙事走向资本市场定价后的变化。对A股而言，重点不是单日概念，而是智能驾驶、车端AI、数据闭环和量产能力。",
+      "url": "https://podcast.latepost.com/episodes/page/1",
       "isNew": false
     },
     {
@@ -252,12 +250,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "海外科技与 AI 产业观察",
       "reason": "连接美国科技公司、创业生态和 AI 产业链，对理解海外趋势很有价值。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "连接美国科技公司、创业生态和 AI 产业链，对理解海外趋势很有价值。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-23",
+      "latestTitle": "E245｜藏在大模型背后的新闻人：GPT们的回复是这样写出来的",
+      "latestSummary": "最新一期讨论模型回复背后的内容工程、品味、文科判断力和产品竞争力。",
+      "fullText": "当模型能力拉平，内容、品味、表达和产品化会成为差异化。股市上更适合观察 AI 应用、内容平台、教育/传媒工具和人机协作流程。",
+      "url": "https://sv101.fireside.fm/",
+      "isNew": true
     },
     {
       "name": "42章经",
@@ -266,12 +264,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "创业投资圈视角",
       "reason": "适合跟踪 VC、创业者和新商业模式的判断，是创业投资信息流的重要来源。",
       "stockLens": "从创业投资角度看，今日市场广度修复但量能不足，更适合做资本配置筛选：保留有长期竞争优势和业绩兑现的 AI/科技核心资产，减少单日涨幅很大但商业质量不清楚的题材暴露。",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "适合跟踪 VC、创业者和新商业模式的判断，是创业投资信息流的重要来源。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-25",
+      "latestTitle": "AI 发展了 4 年，把应用发展没了？｜AI 年中复盘",
+      "latestSummary": "最新一期单口复盘 AI 四年水温、模型与应用关系，以及国内 AI 应用冷度和少数跑出来公司的共性。",
+      "fullText": "这期直接对应“模型强、应用冷”的估值矛盾。对今日股市而言，硬件链反弹后要看应用端是否有真实商业化，否则行情容易停留在主题扩散。",
+      "url": "https://podcasts.apple.com/us/podcast/42%E7%AB%A0%E7%BB%8F/id1700299886",
+      "isNew": true
     },
     {
       "name": "卫诗婕《漫谈》",
@@ -280,11 +278,11 @@ window.AI_BUILDERS_DIGEST = {
       "role": "核心人物访谈",
       "reason": "偏一线商业观察和人物访谈，提供普通新闻拿不到的语境和判断。",
       "stockLens": "从商业人物和一线经营视角看，今日股市应关注 AI 是否真正进入企业经营流程。只有能带来降本、提效、客户增长或组织变革的公司，才可能从主题估值走向业绩估值。",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "偏一线商业观察和人物访谈，提供普通新闻拿不到的语境和判断。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-07-06",
+      "latestTitle": "79. 机器人大脑第一股上市，与仙工赵越的4小时访谈",
+      "latestSummary": "最新可核对一期围绕仙工智能、机器人大脑、机器人金字塔和具身智能路径。",
+      "fullText": "这期更适合观察机器人产业链的真实商业路径：调度系统、场景落地、工业客户和规模化部署，而不是只看人形机器人概念。",
+      "url": "https://podcasts.apple.com/cn/podcast/79-%E6%9C%BA%E5%99%A8%E4%BA%BA%E5%A4%A7%E8%84%91%E7%AC%AC%E4%B8%80%E8%82%A1%E4%B8%8A%E5%B8%82-%E4%B8%8E%E4%BB%99%E5%B7%A5%E8%B5%B5%E8%B6%8A%E7%9A%844%E5%B0%8F%E6%97%B6%E8%AE%BF%E8%B0%88-%E5%85%A8%E7%90%83%E7%AC%AC%E4%B8%80-%E6%9C%BA%E5%99%A8%E4%BA%BA%E9%87%91%E5%AD%97%E5%A1%94%E4%B8%8E%E5%85%B7%E8%BA%AB%E6%99%BA%E8%83%BD%E7%9A%84%E5%8F%A6%E4%B8%80%E6%9D%A1%E8%B7%AF/id1754955836?i=1000775574518",
       "isNew": false
     },
     {
@@ -294,26 +292,26 @@ window.AI_BUILDERS_DIGEST = {
       "role": "商业深访",
       "reason": "企业家和商业人物访谈，适合提取经营判断、组织经验和行业周期感。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "企业家和商业人物访谈，适合提取经营判断、组织经验和行业周期感。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-05-28",
+      "latestTitle": "143. 对何小鹏的第二次访谈：更大赌注、人形机器人Iron诞生、那场意外、技术剧变下CEO、GX和缝合怪",
+      "latestSummary": "最新可核对一期是对何小鹏的第二次访谈，讨论人形机器人 Iron、技术剧变下的 CEO 决策和组织打法。",
+      "fullText": "这期可用于观察智能车、人形机器人和企业家长期下注的交叉点。对股市而言，真正重要的是量产节奏、供应链成熟度和资本开支纪律。",
+      "url": "https://www.podchaser.com/podcasts/jun-4797112",
       "isNew": false
     },
     {
-      "name": "其主楼宴宾客",
+      "name": "起朱楼宴宾客",
       "category": "商业洞察",
       "priority": "A",
       "role": "关键商业洞察",
       "reason": "适合补充商业案例、人物和行业叙事，作为新闻之外的解释层。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "适合补充商业案例、人物和行业叙事，作为新闻之外的解释层。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-27",
+      "latestTitle": "172. 全球宏观和资本市场2026半年度复盘与展望：AI叙事的下一步",
+      "latestSummary": "最新一期和思瑞投资 CIO Ricky 复盘全球宏观与资本市场，重点讨论 AI 叙事下一步。",
+      "fullText": "这期适合放在宏观与资产配置层：判断 AI 叙事是否已从估值扩张进入盈利验证，以及全球流动性是否继续支持风险资产。",
+      "url": "https://podcasts.apple.com/ca/podcast/%E8%B5%B7%E6%9C%B1%E6%A5%BC%E5%AE%B4%E5%AE%BE%E5%AE%A2/id1607724726",
+      "isNew": true
     },
     {
       "name": "投资实战派",
@@ -322,12 +320,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "投资框架",
       "reason": "偏投资实战和市场理解，可作为金融/投资用户的信息源。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "偏投资实战和市场理解，可作为金融/投资用户的信息源。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-24",
+      "latestTitle": "E191 AI四大半导体新方向：技术、机会与泡沫 | David x 方亮",
+      "latestSummary": "最新一期讨论超透镜、玻璃基板、混合键合、碳化硅等 AI 半导体新方向，以及技术、机会与泡沫。",
+      "fullText": "这期直接对应今日 AI 科技线：如果 PCB、材料、封装和半导体设备分化，投资上要区分产业化进度、技术壁垒和估值泡沫。",
+      "url": "https://podcasts.apple.com/us/podcast/%E6%8A%95%E8%B5%84%E5%AE%9E%E6%88%98%E6%B4%BE/id1718660227",
+      "isNew": true
     },
     {
       "name": "三点下班",
@@ -336,11 +334,11 @@ window.AI_BUILDERS_DIGEST = {
       "role": "商业洞察型",
       "reason": "适合补充商业、职业和组织层面的轻量洞察。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "适合补充商业、职业和组织层面的轻量洞察。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-06-26",
+      "latestTitle": "估值or叙事，谁是魔鬼，谁是天使？",
+      "latestSummary": "最新可核对一期讨论估值与叙事、科技和传统行业分化、光模块投资以及 AI 浪潮下的投资逻辑。",
+      "fullText": "这期适合做盘面情绪校验：科技股上涨时，究竟是估值修复、景气兑现，还是叙事扩张，需要分开判断。",
+      "url": "https://podcasts.apple.com/gb/podcast/%E4%B8%89%E7%82%B9%E4%B8%8B%E7%8F%AD/id1637299922",
       "isNew": false
     },
     {
@@ -350,11 +348,11 @@ window.AI_BUILDERS_DIGEST = {
       "role": "伟大公司拆解",
       "reason": "长篇深度拆解公司史和商业模式，适合投资人、创业者和产品战略人群。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "长篇深度拆解公司史和商业模式，适合投资人、创业者和产品战略人群。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-06-21",
+      "latestTitle": "The Walt Disney Company",
+      "latestSummary": "最新一期深拆迪士尼如何把怀旧、IP、内容和商业飞轮结合成全球娱乐帝国。",
+      "fullText": "这期不直接对应 AI 主线，但对理解内容 IP、消费品牌和长期复利型商业模式有价值。",
+      "url": "https://www.acquired.fm/?c8357f8d_page=1",
       "isNew": false
     },
     {
@@ -364,11 +362,11 @@ window.AI_BUILDERS_DIGEST = {
       "role": "投资人与企业家访谈",
       "reason": "访谈质量高，适合提炼长期投资框架、商业模式和产业趋势。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "访谈质量高，适合提炼长期投资框架、商业模式和产业趋势。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-07-21",
+      "latestTitle": "Matthew Smith — How America Runs Out of Natural Gas by 2030 - [EP.483]",
+      "latestSummary": "最新一期讨论美国天然气供给、能源约束和长期资源配置。",
+      "fullText": "这期可用于观察 AI 数据中心、电力和天然气约束。对股市而言，算力链不只看芯片，也要看能源、基础设施和公用事业。",
+      "url": "https://tunein.com/podcasts/Business--Economics-Podcasts/Invest-Like-the-Best-with-Patrick-OShaughnessy-p911793/",
       "isNew": false
     },
     {
@@ -378,11 +376,11 @@ window.AI_BUILDERS_DIGEST = {
       "role": "CIO / 基金经理访谈",
       "reason": "关注机构如何配置资本，适合资产管理、PE、VC、Quant 和二级市场用户。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "关注机构如何配置资本，适合资产管理、PE、VC、Quant 和二级市场用户。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-07-20",
+      "latestTitle": "Senior Decision Makers: Luis Laboy, Hewlett Foundation",
+      "latestSummary": "最新一期访谈 Hewlett Foundation 公募股权负责人 Luis Laboy，讨论决策、公共股票和资本配置。",
+      "fullText": "这期适合看机构投资者如何在高估值与主题拥挤时配置公开市场资产。",
+      "url": "https://www.capitalallocators.com/shows/capital-allocators/",
       "isNew": false
     },
     {
@@ -392,12 +390,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "VC 圈内部访谈",
       "reason": "覆盖顶级 VC、创始人和成长公司，适合追踪融资环境与创业趋势。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "覆盖顶级 VC、创始人和成长公司，适合追踪融资环境与创业趋势。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-23",
+      "latestTitle": "20VC: OpenAI and Anthropic Threatened by Kimi? | Should the US Ban Chinese Open-Source Models",
+      "latestSummary": "最新一期讨论 Kimi、中国开源模型、OpenRouter 路由层价值，以及 AI 巨头估值压力。",
+      "fullText": "这期直接对应 AI 软件与模型生态：国产模型、开源模型、API 路由和价格战会影响应用层估值和算力需求结构。",
+      "url": "https://www.teahose.com/podcast/20VC",
+      "isNew": true
     },
     {
       "name": "Odd Lots",
@@ -406,12 +404,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "金融市场深度解释",
       "reason": "Bloomberg 出品，适合解释商品、利率、市场结构和宏观金融异动。",
       "stockLens": "从宏观和市场结构角度看，今日贵金属、防御和成长之间的切换说明风险偏好在修复但并不稳定。宏观变量若不能继续支持成长估值，AI 反弹容易停留在超跌修复。",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "Bloomberg 出品，适合解释商品、利率、市场结构和宏观金融异动。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-30",
+      "latestTitle": "How Lenovo’s CFO Is Allocating Capital During One of History’s Biggest Booms",
+      "latestSummary": "最新一期访谈联想 CFO，讨论 AI 时代企业如何配置 capex、AI Cloud、Nvidia 合作和硬件到云的转型。",
+      "fullText": "这期直接连接 AI capex 与硬件公司资本配置，对A股可映射到服务器、PC AI化、光模块、数据中心和电力链。",
+      "url": "https://podcasts.apple.com/us/podcast/odd-lots/id1056200096",
+      "isNew": true
     },
     {
       "name": "Latent Space",
@@ -420,12 +418,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "AI 工程师视角",
       "reason": "适合捕捉 AI 工程、模型、工具链和开发者生态的高密度信息。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "适合捕捉 AI 工程、模型、工具链和开发者生态的高密度信息。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-25",
+      "latestTitle": "[AINews] Claude Opus 5: Fable-level performance at Opus price (half Fable)",
+      "latestSummary": "最新一期跟踪 Claude Opus 5 与模型能力/价格变化。",
+      "fullText": "这期适合观察模型价格与能力曲线：模型更便宜会利好应用扩散，但也会压缩纯模型公司的定价权。",
+      "url": "https://www.latent.space/",
+      "isNew": true
     },
     {
       "name": "Dwarkesh Podcast",
@@ -434,11 +432,11 @@ window.AI_BUILDERS_DIGEST = {
       "role": "深度技术与科学访谈",
       "reason": "问题深入，常覆盖 AGI、scaling、AI 研究和科学前沿。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "问题深入，常覆盖 AGI、scaling、AI 研究和科学前沿。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-07-10",
+      "latestTitle": "Adam Brown – A deep but accessible introduction to general relativity",
+      "latestSummary": "最新一期是关于广义相对论和黑洞的深度科普。",
+      "fullText": "本期与今日股市关联较弱，更多作为科学与长期技术认知输入；短期不作为交易信号。",
+      "url": "https://www.dwarkesh.com/archive",
       "isNew": false
     },
     {
@@ -448,12 +446,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "产业与创业趋势",
       "reason": "a16z 视角适合跟踪 AI、SaaS、企业软件、Crypto 与创业趋势。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "a16z 视角适合跟踪 AI、SaaS、企业软件、Crypto 与创业趋势。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-30",
+      "latestTitle": "How Bitcoin Rewired a Classic Computer Science Problem",
+      "latestSummary": "最新一期来自 a16z Crypto feed，讨论区块链背后的分布式系统和共识问题。",
+      "fullText": "这期偏 crypto/基础设施，适合观察分布式系统、链上基础设施和风险资产情绪，但与今日 A股 AI 硬件主线不是同一交易线。",
+      "url": "https://podcasts.apple.com/us/podcast/the-a16z-show/id842818711",
+      "isNew": true
     },
     {
       "name": "HBR IdeaCast",
@@ -462,12 +460,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "管理与组织认知",
       "reason": "哈佛商业评论内容，适合补充管理、组织、领导力和商业研究视角。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "哈佛商业评论内容，适合补充管理、组织、领导力和商业研究视角。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-27",
+      "latestTitle": "Bonus Leadership Summit 2026: Inspiring Grit and Growth Amid Unprecedented Change",
+      "latestSummary": "最新一期讨论 AI 时代的领导力、长期目标、学习方式和组织变革。",
+      "fullText": "这期适合判断 AI 是否真正进入组织管理和员工生产率，而不是只停留在技术 demo。",
+      "url": "https://podcasts.apple.com/us/podcast/hbr-ideacast/id152022135",
+      "isNew": true
     },
     {
       "name": "Masters in Business",
@@ -476,12 +474,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "投资大师访谈",
       "reason": "Bloomberg 商业访谈，适合提炼投资大师和企业家的长期判断。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "Bloomberg 商业访谈，适合提炼投资大师和企业家的长期判断。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-29",
+      "latestTitle": "Insuring Rare and Collectible Cars and Boats with McKeel Hagerty",
+      "latestSummary": "最新一期访谈 Hagerty CEO，讨论收藏车船保险和消费/金融服务商业模式。",
+      "fullText": "这期与今日 AI 股市主线关系较弱，但可作为高端消费、保险和另类资产定价的参考。",
+      "url": "https://podcasts.apple.com/us/podcast/masters-in-business/id730188152",
+      "isNew": true
     },
     {
       "name": "EconTalk",
@@ -490,11 +488,11 @@ window.AI_BUILDERS_DIGEST = {
       "role": "经济学深度讨论",
       "reason": "适合补充经济学、制度、市场和社会科学视角。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "适合补充经济学、制度、市场和社会科学视角。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-07-20",
+      "latestTitle": "Dwayne Betts on the Iliad",
+      "latestSummary": "最新一期是关于《伊利亚特》的文化与思想讨论。",
+      "fullText": "本期不直接映射今日市场，可作为长期人文和制度认知输入，不作为短线交易参考。",
+      "url": "https://russroberts.info/",
       "isNew": false
     },
     {
@@ -504,12 +502,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "全球经济热点",
       "reason": "Economist 经济金融节目，适合作为全球宏观与商业新闻解释层。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "Economist 经济金融节目，适合作为全球宏观与商业新闻解释层。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-26",
+      "latestTitle": "Can Andy Burnham fix Britain’s broken finances?",
+      "latestSummary": "最新一期讨论英国财政、增长、债务和支出问题。",
+      "fullText": "这期适合观察财政约束和主权债务问题，对全球利率和风险偏好有间接影响。",
+      "url": "https://podcasts.apple.com/us/podcast/money-talks-from-the-economist/id420929545",
+      "isNew": true
     },
     {
       "name": "TED Business",
@@ -518,12 +516,12 @@ window.AI_BUILDERS_DIGEST = {
       "role": "大众商业认知",
       "reason": "内容稳定但偏演讲，可作为商业认知补充源。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "内容稳定但偏演讲，可作为商业认知补充源。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
-      "isNew": false
+      "latestDate": "2026-07-24",
+      "latestTitle": "A simple solution to fix workplace miscommunication | Melissa M. Mikus",
+      "latestSummary": "最新一期讨论职场沟通误解和组织协作。",
+      "fullText": "本期与今日股市关联偏弱，可作为企业管理与组织效率输入，不作为交易信号。",
+      "url": "https://podcasts.apple.com/us/podcast/ted-business/id470622782",
+      "isNew": true
     },
     {
       "name": "Slate Money",
@@ -532,11 +530,11 @@ window.AI_BUILDERS_DIGEST = {
       "role": "美国金融讨论",
       "reason": "可补充美国商业和金融新闻讨论，但优先级低于 Odd Lots 和 Capital Allocators。",
       "stockLens": "",
-      "latestDate": "待接入 RSS",
-      "latestTitle": "最新一期待自动同步",
-      "latestSummary": "可补充美国商业和金融新闻讨论，但优先级低于 Odd Lots 和 Capital Allocators。",
-      "fullText": "接入节目 RSS 或转写后，这里会显示最新一期全文/转写摘要。",
-      "url": "",
+      "latestDate": "2026-07-11",
+      "latestTitle": "You’ve Got IPO",
+      "latestSummary": "最新可核对一期讨论 legacy brands 收购公司 IPO、预测市场和比特币价格波动。",
+      "fullText": "这期适合观察 IPO 风险偏好、预测市场和 crypto 情绪，但对今日 A股 AI 主线影响有限。",
+      "url": "https://podcasts.apple.com/us/podcast/slate-money/id876523888",
       "isNew": false
     }
   ],
