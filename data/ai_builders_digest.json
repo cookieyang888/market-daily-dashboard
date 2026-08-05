@@ -13,7 +13,7 @@
     "stockResearchCount": 24,
     "wechatSourceCount": 22,
     "wechatArticleCount": 48,
-    "wechatLastSyncedAt": "2026-08-05T13:12:03",
+    "wechatLastSyncedAt": "2026-08-05T14:11:10",
     "intelligenceSourceCount": 17,
     "intelligenceLastDesignedAt": "2026-08-03",
     "intelligenceItemCount": 0,
@@ -26,7 +26,7 @@
     ],
     "podcastSyncedCount": 23,
     "podcastWithStockLens": 23,
-    "podcastLastSyncedAt": "2026-08-05T13:12:03"
+    "podcastLastSyncedAt": "2026-08-05T14:11:10"
   },
   "themes": [
     {
@@ -1723,7 +1723,7 @@
     "dailyOutput": [
       {
         "name": "一句话总览",
-        "rule": "公众号最新 48 篇、播客 23 个节目已同步；今日信息主线集中在 AI 算力/云 capex、模型应用扩散、宏观流动性和短线交易结构。"
+        "rule": "公众号最新 48 篇、播客 23 个节目已同步，并整理成 8 个投资类别；今日先看 AI链、宏观仓位、交易结构和基本面验证。"
       },
       {
         "name": "科技/AI 共识",
@@ -1740,12 +1740,12 @@
     ],
     "presentation": [
       {
-        "name": "公众号最新信号",
-        "rule": "美联储加息是“伪命题”？ / Long USDHKD：收益风险比在下降 / 日元：货币政策与干预节奏"
+        "name": "分类方式",
+        "rule": "按投资问题而不是来源分类：AI链、宏观、有色商品、交易结构、基本面、海外科技/港股、ETF配置、人物观点。"
       },
       {
-        "name": "播客最新信号",
-        "rule": "The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman / 172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI / E245｜藏在大模型背后的新闻人：GPT们的回复是这样写出来的"
+        "name": "公众号 + 播客合并",
+        "rule": "公众号最新信号：美联储加息是“伪命题”？ / Long USDHKD：收益风险比在下降 / 日元：货币政策与干预节奏；播客最新信号：The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman / 172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI / E245｜藏在大模型背后的新闻人：GPT们的回复是这样写出来的。"
       },
       {
         "name": "投资帮助最大",
@@ -1754,6 +1754,96 @@
       {
         "name": "反例和风控",
         "rule": "若科技线只有叙事没有资金/业绩确认，或宏观利率重新压估值，则把观点降级为观察项而非交易信号。"
+      }
+    ],
+    "categoryBriefs": [
+      {
+        "id": "ai_chain",
+        "name": "AI链 / 算力 / 半导体",
+        "articleCount": 17,
+        "podcastCount": 18,
+        "sources": "调研纪要 / 水木纪要 / 中金点睛 / 梓豪谈芯 / 地平线全球策略",
+        "latest": "高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿 / 交流：算力约束下，AI 中下游哪些赛道先跑通营收 / 大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！",
+        "view": "公众号和播客共同指向 AI 链仍是最强信息密度区域，但当前不能只按叙事追涨，要拆成算力硬件、模型价格、应用商业化和财报兑现四条线。",
+        "investment": "优先跟踪半导体、PCB、光模块、服务器、电力液冷、港股科技和 AI 应用平台；强信号必须同时看到订单/价格/毛利率/资金流。",
+        "verify": "验证指标：FundDB 行业涨跌幅、分档资金流、指数估值、AI股票池 26Q1/Q2 业绩、云厂商 capex 和产业链价格。"
+      },
+      {
+        "id": "macro_liquidity",
+        "name": "宏观 / 流动性 / 仓位",
+        "articleCount": 10,
+        "podcastCount": 13,
+        "sources": "BFC汇谈 / 调研纪要 / 水木纪要 / 培风客 / EarlETF",
+        "latest": "美联储加息是“伪命题”？ / Long USDHKD：收益风险比在下降 / 日元：货币政策与干预节奏",
+        "view": "宏观源和金融播客主要决定仓位上限：如果美元、利率和全球流动性不配合，科技成长行情容易从趋势变成局部修复。",
+        "investment": "先判断风险预算，再决定是否追高 AI/科技；宏观不顺时更适合保留核心资产、降低题材扩散仓位。",
+        "verify": "验证指标：人民币/美元、港股风险偏好、A股成交额、北向/资金流代理、贵金属和防御板块相对表现。"
+      },
+      {
+        "id": "metals_commodities",
+        "name": "有色 / 商品 / 资源",
+        "articleCount": 30,
+        "podcastCount": 12,
+        "sources": "BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 调研纪要 / 中金点睛",
+        "latest": "Long USDHKD：收益风险比在下降 / 绿皮红心 / 月评与周评（08/01）",
+        "view": "商品和资源线的意义不只是周期交易，也会影响 AI 数据中心、电力约束、通胀预期和风险偏好。",
+        "investment": "有色/能源若与 AI capex 共振，重点看电力、铜、液冷、数据中心和资源品；若只来自避险，则降低成长估值弹性。",
+        "verify": "验证指标：商品价格方向、资源板块强弱、电力设备成交、AI数据中心 capex 新闻和相关股票资金流。"
+      },
+      {
+        "id": "market_structure",
+        "name": "交易结构 / 情绪 / 盘口",
+        "articleCount": 30,
+        "podcastCount": 5,
+        "sources": "BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 调研纪要 / 水木纪要",
+        "latest": "Long USDHKD：收益风险比在下降 / 绿皮红心 / 月评与周评（08/01）",
+        "view": "交易类公众号提供的是盘面温度计：可以帮助识别强弱、拥挤和短线拐点，但不能替代基本面判断。",
+        "investment": "只在市场广度、成交额、分档资金流和核心板块同步时提高交易权重；单一盘口观点只做观察。",
+        "verify": "验证指标：上涨家数、涨跌停、成交额、换手率、分档资金流、领涨板块延续性。"
+      },
+      {
+        "id": "fundamental_research",
+        "name": "基本面 / 调研 / 财报验证",
+        "articleCount": 35,
+        "podcastCount": 9,
+        "sources": "BFC汇谈 / 调研纪要 / 水木纪要 / 中金点睛 / 培风客",
+        "latest": "Long USDHKD：收益风险比在下降 / 高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿 / 交流：算力约束下，AI 中下游哪些赛道先跑通营收",
+        "view": "调研和卖方源负责把叙事落到经营数据：AI链最终要看订单、价格、产能、利润率和现金流，而不是只看主题热度。",
+        "investment": "优先把观点映射到 26Q1/Q2 业绩验证；能兑现的进入核心池，只有叙事的进入观察池。",
+        "verify": "验证指标：财报增速、毛利率、订单指引、存货/应收、机构一致预期变化、FundDB估值分位。"
+      },
+      {
+        "id": "overseas_hk",
+        "name": "海外科技 / 港股映射",
+        "articleCount": 13,
+        "podcastCount": 1,
+        "sources": "调研纪要 / 水木纪要 / 中金点睛 / 梓豪谈芯 / 地平线全球策略",
+        "latest": "交流：算力约束下，AI 中下游哪些赛道先跑通营收 / 大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！ / SA 存储小作文：英伟达 Rubin Ultra 大幅减配HBM！",
+        "view": "海外科技和港股源用于把全球 AI 叙事映射回可交易资产：美股模型、港股平台、A股供应链之间需要分清传导路径。",
+        "investment": "港股平台和海外 AI 应用更看收入/利润兑现；A股映射链更看供应链订单和估值扩散。",
+        "verify": "验证指标：hk_stock_daily、港股科技成交、A/H映射股票表现、美股AI龙头财报和云capex。"
+      },
+      {
+        "id": "allocation_etf",
+        "name": "ETF / 配置 / 风格表达",
+        "articleCount": 10,
+        "podcastCount": 7,
+        "sources": "BFC汇谈 / 调研纪要 / 培风客 / EarlETF / 星辰大海的边界",
+        "latest": "美联储加息是“伪命题”？ / 日元：货币政策与干预节奏 / 花旗：药明康德二季度毛利率 56.6%，业绩大幅跑赢预期背后是什么逻辑",
+        "view": "配置类观点负责把行业判断转成组合表达，适合处理看对方向但不确定个股的问题。",
+        "investment": "当个股分歧大时，用 ETF/指数承接行业观点；当风格拥挤时，降低单一主题暴露。",
+        "verify": "验证指标：宽基/行业ETF成交、指数估值分位、风格强弱、微盘/大盘相对收益。"
+      },
+      {
+        "id": "people_business",
+        "name": "人物观点 / 商业质量",
+        "articleCount": 31,
+        "podcastCount": 19,
+        "sources": "BFC汇谈 / 调研纪要 / 水木纪要 / 中金点睛 / 培风客",
+        "latest": "Long USDHKD：收益风险比在下降 / 交流：算力约束下，AI 中下游哪些赛道先跑通营收 / 大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！",
+        "view": "人物访谈和商业播客适合放在一起看：它们不一定给短线信号，但能判断公司是否具备长期商业质量和组织执行力。",
+        "investment": "用于区分叙事型公司和经营型公司；真正能穿越周期的资产，应同时具备产品、组织、客户和现金流验证。",
+        "verify": "验证指标：管理层承诺兑现、收入质量、客户留存、现金流、资本开支纪律和估值叙事偏离度。"
       }
     ]
   },
