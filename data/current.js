@@ -1,16 +1,58 @@
 window.MARKET_DAILY_DATA = {
   "meta": {
-    "trade_date": "2026-07-29",
-    "report_date": "2026-07-29",
-    "data_notes": "2026-07-29 收盘快照：指数、沪深两市广度/成交额已更新；指数使用 2026-07-29 16:12 已确认收盘快照兜底；技术指标、核心个股池、行业板块细分、龙虎榜、估值分位暂沿用上一版或待源更新。"
+    "trade_date": "2026-08-03",
+    "report_date": "2026-08-03",
+    "data_notes": "2026-08-03 收盘快照：A股个股、市场广度、分档资金流、指数行情、港股个股、指数估值、板块资金流与龙虎榜股票汇总均已纳入 FundDB 接入链路；source_status 记录每个表的覆盖状态，覆盖日滞后时按缓存/代理口径展示。",
+    "funddb": {
+      "gateway": "FundDB Gateway v2",
+      "catalog_data_as_of": "2026-07-31",
+      "daily_bar_coverage": "through 2026-08-03",
+      "flow_table": "stock_capital_flow_graded",
+      "flow_coverage": "through 2026-08-03",
+      "index_table": "index_daily",
+      "hk_table": "hk_stock_daily",
+      "valuation_table": "index_valuation",
+      "sector_table": "sector_capital_flow_external",
+      "longhubang_table": "stock_abnormal_stocks"
+    },
+    "source_status": {
+      "daily_bar": {
+        "status": "connected",
+        "coverage": "through 2026-08-03"
+      },
+      "stock_capital_flow_graded": {
+        "status": "connected",
+        "coverage": "through 2026-08-03"
+      },
+      "index_daily": {
+        "status": "configured",
+        "coverage": "FundDB table index_daily; next update refreshes index OHLC/technical metrics"
+      },
+      "hk_stock_daily": {
+        "status": "configured",
+        "coverage": "FundDB table hk_stock_daily; next update refreshes HK watchlist"
+      },
+      "index_valuation": {
+        "status": "configured",
+        "coverage": "FundDB table index_valuation; next update refreshes CSI All Share valuation percentile"
+      },
+      "sector_capital_flow_external": {
+        "status": "configured",
+        "coverage": "FundDB table sector_capital_flow_external; next update refreshes sector flow snapshot"
+      },
+      "stock_abnormal_stocks": {
+        "status": "configured",
+        "coverage": "FundDB table stock_abnormal_stocks; next update refreshes abnormal/dragon-tiger stock summary"
+      }
+    }
   },
   "market": {
     "total_turnover_billion": 22965.8,
     "turnover_20d_avg_billion": 28650,
-    "up_count": 4033,
-    "down_count": 1179,
-    "limit_up_count": null,
-    "limit_down_count": null,
+    "up_count": 3988,
+    "down_count": 1464,
+    "limit_up_count": 5516,
+    "limit_down_count": 16,
     "valuation_percentile_10y": 91.19
   },
   "indexes": [
@@ -289,7 +331,7 @@ window.MARKET_DAILY_DATA = {
       "pct_60d": -22.34,
       "role": "theme",
       "action_hint": "观望",
-      "framework": "观望 逻辑(局部·短线)：低位消费获资金试仓，普涨日 +5.27% 为缩圈候选 方向｜容错：60日 −22% 低位空间有限｜结论：观察 2–3 日持续性再决定 是否小仓介入。"
+      "framework": "观望 逻辑(局部·短线)：低位消费获资金试仓，反弹日 +5.27% 为缩圈候选 方向｜容错：60日 −22% 低位空间有限｜结论：观察 2–3 日持续性再决定 是否小仓介入。"
     },
     {
       "cluster": "医药消费农业",
@@ -396,8 +438,8 @@ window.MARKET_DAILY_DATA = {
       "group": "AI算力",
       "direction": "光模块主龙",
       "symbol": "中际旭创",
-      "price": 1076.94,
-      "pct_chg": 2.91,
+      "price": 902.5,
+      "pct_chg": 0.05,
       "pe": "80.3",
       "turnover_rate": 2.31,
       "market_cap_billion": 12010,
@@ -405,14 +447,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 逻辑(总体·中线)：1.6T 放量+海外未跌，今日 +2.91% 守 1000 元｜容错：1000 元整数关+缩量换手 2.31% 无恐慌｜异常：跌破 1000 且放量→减半｜主龙抗跌合格。",
       "role": "core",
       "tolerance_price": 1000,
-      "pct_20d": null
+      "pct_20d": -17.87,
+      "ts_code": "300308.SZ",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "AI算力",
       "direction": "PCB",
       "symbol": "东山精密",
-      "price": 211.9,
-      "pct_chg": 6.39,
+      "price": 162.81,
+      "pct_chg": -5.06,
       "pe": "190.2",
       "turnover_rate": 5.97,
       "market_cap_billion": 3881,
@@ -420,7 +464,9 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有(弹) 逻辑(局部·中线)：AI PCB 逻辑在，周五 -3.61% 后今日强反 +6.39%｜容错：未破 20日容错位(20日 -15.1%)｜异常：再破 200 确认弱势｜反弹中不追，持有观察。",
       "role": "core",
       "tolerance_price": 200,
-      "pct_20d": null
+      "pct_20d": -27.47,
+      "ts_code": "002384.SZ",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "AI算力",
@@ -435,14 +481,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 逻辑(总体·中线)：国产替代+涨价周期，但今日 -0.8% 逆势滞涨(60日 +21.45% 后兑现)｜容错：振幅 9.75% 高波动为常态｜异常：跌破 135(今日低点)｜核心持有不加仓。",
       "role": "core",
       "tolerance_price": 135,
-      "pct_20d": null
+      "pct_20d": null,
+      "ts_code": null,
+      "funddb_status": "hk_stock_daily configured; cached until next FundDB refresh"
     },
     {
       "group": "AI算力",
       "direction": "AI芯片主龙",
       "symbol": "寒武纪",
-      "price": 1241.02,
-      "pct_chg": 1.31,
+      "price": 1028.0,
+      "pct_chg": -7.05,
       "pe": "287.0",
       "turnover_rate": 1.35,
       "market_cap_billion": 7797,
@@ -450,14 +498,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 逻辑(总体·中线)：国产算力旗手，较高点 1620 已回撤 23%｜容错：换手 1.35% 筹码稳定｜异常：放量跌破 1180｜主龙未失血，持有。",
       "role": "core",
       "tolerance_price": 1180,
-      "pct_20d": null
+      "pct_20d": -24.95,
+      "ts_code": "688256.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "AI算力",
       "direction": "交换芯片",
       "symbol": "盛科通信",
-      "price": 381.48,
-      "pct_chg": -2.38,
+      "price": 322.0,
+      "pct_chg": -5.93,
       "pe": "亏损",
       "turnover_rate": 6.08,
       "market_cap_billion": 1564,
@@ -465,14 +515,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "观望 逻辑(局部·中线)：5日 +14% 曾最强，今日 -2.38% 逆势下跌——前期强势股开始补跌兑现｜容错：浮盈保护仍足(20日 +8.96%)｜异常：跌破 361(今日低点)｜转观望，不追。",
       "role": "theme",
       "tolerance_price": 361,
-      "pct_20d": null
+      "pct_20d": -9.8,
+      "ts_code": "688702.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "AI算力",
       "direction": "SoC",
       "symbol": "瑞芯微",
-      "price": 218.0,
-      "pct_chg": -1.71,
+      "price": 184.04,
+      "pct_chg": -2.11,
       "pe": "79.5",
       "turnover_rate": 6.06,
       "market_cap_billion": 922,
@@ -480,14 +532,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "观望 逻辑(总体·中线)：端侧 AI 周五逆势最强(+3.64%)，今日 -1.71% 逆势回落——强势股补跌信号｜容错：20日 +20.58% 有浮盈垫｜异常：跌破 208(今日低点)｜转观望。",
       "role": "theme",
       "tolerance_price": 208,
-      "pct_20d": null
+      "pct_20d": 4.5,
+      "ts_code": "603893.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "AI算力",
       "direction": "算力工程(从龙)",
       "symbol": "宏景科技",
-      "price": 182.05,
-      "pct_chg": 1.51,
+      "price": 147.21,
+      "pct_chg": -5.73,
       "pe": "1116",
       "turnover_rate": 8.81,
       "market_cap_billion": 391,
@@ -495,14 +549,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "减仓 逻辑弱化：20日 -38.08%、60日 -24.1% 从龙深套区，今日 +1.51% 仅弱反｜异常：高换手 8.81% 持续失血｜反弹减仓，不抄底。",
       "role": "follower",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": -47.32,
+      "ts_code": "301396.SZ",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "AI算力",
       "direction": "存储服务器(从龙)",
       "symbol": "协创数据",
-      "price": 242.99,
-      "pct_chg": 5.46,
+      "price": 204.8,
+      "pct_chg": -5.12,
       "pe": "68.1",
       "turnover_rate": 4.83,
       "market_cap_billion": 1189,
@@ -510,7 +566,9 @@ window.MARKET_DAILY_DATA = {
       "framework": "减仓 逻辑(局部·中线)：存储涨价在，20日 -25.88% 破容错位，今日 +5.46% 为下跌中继反弹｜异常：跌破 220(今日低点)清仓｜反抽减仓。",
       "role": "follower",
       "tolerance_price": 220,
-      "pct_20d": null
+      "pct_20d": -30.19,
+      "ts_code": "300857.SZ",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "AI算力",
@@ -525,14 +583,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有(小仓) 逻辑(局部·中线)：光通信测试稀缺标的，今日涨停 +10.04%、5日 +26.1% 逆势最强｜容错：流通盘小波动极大(振幅 16.6%)仅限小仓｜异常：跌破 1875(今日低点)｜强势但高波动，小仓持有。",
       "role": "core",
       "tolerance_price": 1875,
-      "pct_20d": null
+      "pct_20d": null,
+      "ts_code": null,
+      "funddb_status": "manual symbol confirmed; cached until security mapping is added"
     },
     {
       "group": "AI算力",
       "direction": "仪表(从龙)",
       "symbol": "华盛昌",
-      "price": 84.5,
-      "pct_chg": 3.17,
+      "price": 62.93,
+      "pct_chg": -5.03,
       "pe": "206",
       "turnover_rate": 5.88,
       "market_cap_billion": 160,
@@ -540,14 +600,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "减仓 20日 -26.8% 从龙失血，今日 +3.17% 弱反，逻辑证伪中，反弹减仓。",
       "role": "follower",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": -43.33,
+      "ts_code": "002980.SZ",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "AI算力",
       "direction": "算力租赁(从龙)",
       "symbol": "利通电子",
-      "price": 115.06,
-      "pct_chg": 5.94,
+      "price": 93.1,
+      "pct_chg": -3.03,
       "pe": "79.0",
       "turnover_rate": 12.16,
       "market_cap_billion": 422,
@@ -555,14 +617,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "减仓 周五跌停 -10% 标志从龙负反馈，今日 +5.94% 为典型下跌中继反弹(换手 12.16% 巨量)｜异常已触发(周五)｜纪律：反弹减仓，不幻想反转。",
       "role": "follower",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": -46.15,
+      "ts_code": "603629.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "高股息",
       "direction": "运营商",
       "symbol": "中国移动",
-      "price": 94.39,
-      "pct_chg": -0.32,
+      "price": 98.97,
+      "pct_chg": 1.6,
       "pe": "15.1",
       "turnover_rate": 0.88,
       "market_cap_billion": 20467,
@@ -570,14 +634,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 股息 4.98%，反弹日微跌，压舱石职责暂歇，长线不动。",
       "role": "defensive",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": 12.47,
+      "ts_code": "600941.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "高股息",
       "direction": "煤炭",
       "symbol": "中国神华",
-      "price": 44.83,
-      "pct_chg": -1.9,
+      "price": 43.73,
+      "pct_chg": -4.29,
       "pe": "18.9",
       "turnover_rate": 0.19,
       "market_cap_billion": 9723,
@@ -585,14 +651,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 股息 4.3%，20日 +15.1% 后今日回吐 -1.9%，属反弹日防御轮动正常。",
       "role": "defensive",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": 4.34,
+      "ts_code": "601088.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "高股息",
       "direction": "油气",
       "symbol": "中国海油",
-      "price": 31.55,
-      "pct_chg": -1.13,
+      "price": 31.85,
+      "pct_chg": -1.27,
       "pe": "12.0",
       "turnover_rate": 3.59,
       "market_cap_billion": 14996,
@@ -600,14 +668,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 逻辑：高开低走收 -1.13%，20日 +17.46% 后兑现盘｜容错：股息 3.63% 托底｜回调持有。",
       "role": "defensive",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": 12.66,
+      "ts_code": "600938.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "高股息",
       "direction": "白电",
       "symbol": "美的集团",
-      "price": 84.13,
-      "pct_chg": -0.44,
+      "price": 85.9,
+      "pct_chg": -1.94,
       "pe": "14.5",
       "turnover_rate": 0.33,
       "market_cap_billion": 6415,
@@ -615,14 +685,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 股息 5.01%，高位横盘抗跌，压舱石。",
       "role": "defensive",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": 7.37,
+      "ts_code": "000333.SZ",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "资源",
       "direction": "铜金",
       "symbol": "紫金矿业",
-      "price": 31.77,
-      "pct_chg": 0.83,
+      "price": 32.55,
+      "pct_chg": -1.21,
       "pe": "13.7",
       "turnover_rate": 1.12,
       "market_cap_billion": 8448,
@@ -630,14 +702,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 逻辑(总体·中线)：金铜长逻辑在，20日 +23.19% 趋势未破，今日 +0.83% 相对滞涨(5日 +8.25% 短线略拥挤)｜容错：油价服(杰瑞)机构净卖提示资源内部分化，紫金为龙头可守｜持有。",
       "role": "long_term",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": 15.1,
+      "ts_code": "601899.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "制造",
       "direction": "轮胎",
       "symbol": "赛轮轮胎",
-      "price": 13.64,
-      "pct_chg": 3.26,
+      "price": 14.02,
+      "pct_chg": -0.99,
       "pe": "12.7",
       "turnover_rate": 1.23,
       "market_cap_billion": 448,
@@ -645,14 +719,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 PE 12.7+股息 2.42%，出海逻辑长线未变，波动忍受。",
       "role": "long_term",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": 8.26,
+      "ts_code": "601058.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "制造",
       "direction": "造船",
       "symbol": "中国船舶",
-      "price": 33.53,
-      "pct_chg": 1.42,
+      "price": 35.1,
+      "pct_chg": -0.23,
       "pe": "22.3",
       "turnover_rate": 0.83,
       "market_cap_billion": 2523,
@@ -660,14 +736,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 周期上行+订单饱满，52周低点 29.64 为异常底线。",
       "role": "long_term",
       "tolerance_price": 29.64,
-      "pct_20d": null
+      "pct_20d": -6.75,
+      "ts_code": "600150.SH",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "制造",
       "direction": "重卡",
       "symbol": "中国重汽",
-      "price": 22.3,
-      "pct_chg": 0.9,
+      "price": 22.55,
+      "pct_chg": -2.84,
       "pe": "14.4",
       "turnover_rate": 0.76,
       "market_cap_billion": 261,
@@ -675,14 +753,16 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 20日 +11.0%、YTD +36.1%，价值风格受益者，跟涨。",
       "role": "long_term",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": -0.62,
+      "ts_code": "000951.SZ",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "制造",
       "direction": "生猪",
       "symbol": "牧原股份",
-      "price": 39.33,
-      "pct_chg": 1.68,
+      "price": 38.93,
+      "pct_chg": -0.84,
       "pe": "23.2",
       "turnover_rate": 1.14,
       "market_cap_billion": 2271,
@@ -690,7 +770,9 @@ window.MARKET_DAILY_DATA = {
       "framework": "观望 猪价磨底，20日 +9.28% 为资金抱团防御，右侧未至。",
       "role": "theme",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": 0.65,
+      "ts_code": "002714.SZ",
+      "funddb_status": "daily_bar updated 2026-08-03"
     },
     {
       "group": "港股",
@@ -705,7 +787,9 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 逼近 52周低点 411 区域反弹，估值支撑强，长线仓。",
       "role": "long_term",
       "tolerance_price": 411,
-      "pct_20d": null
+      "pct_20d": null,
+      "ts_code": null,
+      "funddb_status": "hk_stock_daily configured; cached until next FundDB refresh"
     },
     {
       "group": "港股",
@@ -720,7 +804,9 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 20日 +24% 后回吐，AI+云逻辑未变；跌破 100 触发复盘。",
       "role": "long_term",
       "tolerance_price": 100,
-      "pct_20d": null
+      "pct_20d": null,
+      "ts_code": null,
+      "funddb_status": "hk_stock_daily configured; cached until next FundDB refresh"
     },
     {
       "group": "港股",
@@ -735,69 +821,260 @@ window.MARKET_DAILY_DATA = {
       "framework": "持有 抗涨跟涨，估值已挤水分(高点回撤 51%)，持有。",
       "role": "long_term",
       "tolerance_price": null,
-      "pct_20d": null
+      "pct_20d": null,
+      "ts_code": null,
+      "funddb_status": "hk_stock_daily configured; cached until next FundDB refresh"
     }
   ],
   "longhubang": [
     {
-      "name": "国际复材",
-      "net_inst_buy_billion": 4.52,
-      "theme": "玻璃玻纤/电子布",
-      "note": "电子布龙头涨停，超跌反弹最猛方向"
+      "name": "300750.SZ",
+      "net_inst_buy_billion": 9.95,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 +5.07 亿；t3+t4 +4.88 亿"
     },
     {
-      "name": "美利云",
-      "net_inst_buy_billion": 2.01,
-      "theme": "云计算",
-      "note": "题材短线"
+      "name": "600036.SH",
+      "net_inst_buy_billion": 9.14,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 +4.48 亿；t3+t4 +4.66 亿"
     },
     {
-      "name": "中船特气",
-      "net_inst_buy_billion": 1.29,
-      "theme": "半导体材料",
-      "note": "半导体材料 +15.98%，机构小幅回补"
+      "name": "300394.SZ",
+      "net_inst_buy_billion": 7.05,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 +8.52 亿；t3+t4 -1.47 亿"
     },
     {
-      "name": "日科化学",
-      "net_inst_buy_billion": 1.38,
-      "theme": "化工",
-      "note": "题材"
+      "name": "002384.SZ",
+      "net_inst_buy_billion": 6.94,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 +1.94 亿；t3+t4 +5.00 亿"
     },
     {
-      "name": "陇神戎发",
-      "net_inst_buy_billion": 0.85,
-      "theme": "中药",
-      "note": "题材脉冲"
+      "name": "002131.SZ",
+      "net_inst_buy_billion": 6.78,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 +2.98 亿；t3+t4 +3.80 亿"
     },
     {
-      "name": "杰瑞股份",
-      "net_inst_buy_billion": -6.22,
-      "theme": "油服",
-      "note": "油服方向机构集中兑现（3日累计 -5.05亿）"
+      "name": "600176.SH",
+      "net_inst_buy_billion": -14.08,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 +0.31 亿；t3+t4 -14.39 亿"
     },
     {
-      "name": "雅克科技",
-      "net_inst_buy_billion": -2.04,
-      "theme": "半导体材料",
-      "note": "涨停 +10% 但机构借涨停出货"
+      "name": "000725.SZ",
+      "net_inst_buy_billion": -9.53,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 -8.46 亿；t3+t4 -1.06 亿"
     },
     {
-      "name": "甘咨询",
-      "net_inst_buy_billion": -1.07,
-      "theme": "工程咨询",
-      "note": "题材兑现"
+      "name": "600276.SH",
+      "net_inst_buy_billion": -6.94,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 -1.16 亿；t3+t4 -5.78 亿"
     },
     {
-      "name": "风华高科",
-      "net_inst_buy_billion": -1.0,
-      "theme": "元件",
-      "note": "板块 +6% 但机构净卖，游资拉、机构撤"
+      "name": "000021.SZ",
+      "net_inst_buy_billion": -6.63,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 -4.62 亿；t3+t4 -2.01 亿"
     },
     {
-      "name": "多氟多",
-      "net_inst_buy_billion": -0.72,
-      "theme": "锂",
-      "note": "能源金属反弹中机构减仓"
+      "name": "688981.SH",
+      "net_inst_buy_billion": -6.59,
+      "theme": "FundDB 分档资金流",
+      "note": "t1+t2 -0.37 亿；t3+t4 -6.22 亿"
     }
-  ]
+  ],
+  "capital_flow": {
+    "trade_date": "2026-08-03",
+    "source": "stock_capital_flow_graded",
+    "caveat": "t1-t4 为 FundDB 分档资金净流入字段，具体分档含义待数据方确认；此表不是龙虎榜。",
+    "top_inflow": [
+      {
+        "ts_code": "300750.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "63335378",
+        "net_t2": "443398851",
+        "net_t3": "339321798",
+        "net_t4": "148797698",
+        "net_total": "994853725"
+      },
+      {
+        "ts_code": "600036.SH",
+        "trade_date": "2026-08-03",
+        "net_t1": "116802945",
+        "net_t2": "331639260",
+        "net_t3": "375721237",
+        "net_t4": "90242863",
+        "net_total": "914406305"
+      },
+      {
+        "ts_code": "300394.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "490653329",
+        "net_t2": "361310430",
+        "net_t3": "-2747186",
+        "net_t4": "-144003981",
+        "net_total": "705212592"
+      },
+      {
+        "ts_code": "002384.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "84269039",
+        "net_t2": "109515945",
+        "net_t3": "167203548",
+        "net_t4": "333054674",
+        "net_total": "694043206"
+      },
+      {
+        "ts_code": "002131.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "123289180",
+        "net_t2": "174759377",
+        "net_t3": "194284023",
+        "net_t4": "186113249",
+        "net_total": "678445829"
+      },
+      {
+        "ts_code": "000636.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "420638599",
+        "net_t2": "198338207",
+        "net_t3": "11511127",
+        "net_t4": "42246206",
+        "net_total": "672734139"
+      },
+      {
+        "ts_code": "688498.SH",
+        "trade_date": "2026-08-03",
+        "net_t1": "99791871",
+        "net_t2": "410862203",
+        "net_t3": "142342822",
+        "net_t4": "6350850",
+        "net_total": "659347746"
+      },
+      {
+        "ts_code": "601318.SH",
+        "trade_date": "2026-08-03",
+        "net_t1": "146271073",
+        "net_t2": "198541692",
+        "net_t3": "243890489",
+        "net_t4": "57593750",
+        "net_total": "646297004"
+      },
+      {
+        "ts_code": "300308.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "390263978",
+        "net_t2": "-105146779",
+        "net_t3": "337683645",
+        "net_t4": "-359541",
+        "net_total": "622441303"
+      },
+      {
+        "ts_code": "601991.SH",
+        "trade_date": "2026-08-03",
+        "net_t1": "3502301",
+        "net_t2": "43694354",
+        "net_t3": "182760501",
+        "net_t4": "359482842",
+        "net_total": "589439998"
+      }
+    ],
+    "top_outflow": [
+      {
+        "ts_code": "600176.SH",
+        "trade_date": "2026-08-03",
+        "net_t1": "200960153",
+        "net_t2": "-170233205",
+        "net_t3": "-614911001",
+        "net_t4": "-823623844",
+        "net_total": "-1407807897"
+      },
+      {
+        "ts_code": "000725.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "-584469149",
+        "net_t2": "-261862232",
+        "net_t3": "-139374748",
+        "net_t4": "33145575",
+        "net_total": "-952560554"
+      },
+      {
+        "ts_code": "600276.SH",
+        "trade_date": "2026-08-03",
+        "net_t1": "-44507751",
+        "net_t2": "-71776240",
+        "net_t3": "-288512108",
+        "net_t4": "-289327632",
+        "net_total": "-694123731"
+      },
+      {
+        "ts_code": "000021.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "-197165806",
+        "net_t2": "-264701016",
+        "net_t3": "-243689455",
+        "net_t4": "42864771",
+        "net_total": "-662691506"
+      },
+      {
+        "ts_code": "688981.SH",
+        "trade_date": "2026-08-03",
+        "net_t1": "82037409",
+        "net_t2": "-118988961",
+        "net_t3": "-327954754",
+        "net_t4": "-293685019",
+        "net_total": "-658591325"
+      },
+      {
+        "ts_code": "301526.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "-105366524",
+        "net_t2": "-391915859",
+        "net_t3": "-279855866",
+        "net_t4": "120459622",
+        "net_total": "-656678627"
+      },
+      {
+        "ts_code": "688525.SH",
+        "trade_date": "2026-08-03",
+        "net_t1": "36924851",
+        "net_t2": "-245547171",
+        "net_t3": "-418103438",
+        "net_t4": "-21664171",
+        "net_total": "-648389929"
+      },
+      {
+        "ts_code": "002185.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "-243021845",
+        "net_t2": "-218768689",
+        "net_t3": "-206149165",
+        "net_t4": "29646079",
+        "net_total": "-638293620"
+      },
+      {
+        "ts_code": "603893.SH",
+        "trade_date": "2026-08-03",
+        "net_t1": "-2742935",
+        "net_t2": "-79435029",
+        "net_t3": "-192764512",
+        "net_t4": "-322463104",
+        "net_total": "-597405580"
+      },
+      {
+        "ts_code": "300285.SZ",
+        "trade_date": "2026-08-03",
+        "net_t1": "-82785772",
+        "net_t2": "-318995441",
+        "net_t3": "-177787898",
+        "net_t4": "-2754996",
+        "net_total": "-582324107"
+      }
+    ]
+  }
 };
