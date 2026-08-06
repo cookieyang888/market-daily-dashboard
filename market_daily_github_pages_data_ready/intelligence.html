@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>资讯与观点源面板</title>
+  <style>
+    :root{--bg:#f4f6f3;--ink:#17211c;--muted:#63716a;--line:#d8dfd7;--panel:#fff;--green:#147463;--red:#b74438;--amber:#b57619;--blue:#285c7f;--soft:#eef3ef;--shadow:0 12px 28px rgba(23,33,28,.08)}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;letter-spacing:0}.page{max-width:1480px;margin:auto;padding:22px clamp(12px,2.5vw,34px) 36px}
+    h1,h2,h3,p{margin:0}.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:end;min-height:210px;padding:clamp(22px,4vw,42px);border-radius:8px;color:#fff;background:linear-gradient(135deg,rgba(20,116,99,.97),rgba(40,92,127,.94)),repeating-linear-gradient(90deg,rgba(255,255,255,.12) 0 1px,transparent 1px 54px)}.eyebrow,.label{display:block;color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase}.hero .eyebrow{color:rgba(255,255,255,.72)}h1{margin-top:8px;font-size:clamp(32px,5vw,56px);line-height:1.04}.hero-copy{max-width:900px;margin-top:14px;color:rgba(255,255,255,.84);font-size:16px;line-height:1.7}.hero-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.hero-link,.source{min-height:32px;display:inline-flex;align-items:center;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:800;text-decoration:none}.hero-link{color:#fff;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.12)}.source{color:#fff;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.14)}
+    .section-nav{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow:auto;padding:10px 0;margin:2px 0 12px;background:rgba(244,246,243,.94);backdrop-filter:blur(8px)}.section-nav a{white-space:nowrap;color:var(--blue);background:#e1edf4;border:1px solid #cbdde8;border-radius:999px;padding:8px 11px;text-decoration:none;font-size:12px;font-weight:800}
+    .panel{min-width:0;margin-bottom:12px;background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow)}.panel-head{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line)}.muted{color:var(--muted);font-size:13px}.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:16px 18px 18px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{min-height:154px;border:1px solid var(--line);border-radius:8px;background:#fbfcfa;padding:14px}.action-card{width:100%;font:inherit;color:inherit;text-align:left;appearance:none;cursor:pointer;transition:border-color .15s,box-shadow .15s,transform .15s}.action-card:hover{border-color:#b8c8bd;box-shadow:0 10px 24px rgba(23,33,28,.1);transform:translateY(-1px)}.card-head{display:flex;justify-content:space-between;gap:10px;align-items:flex-start}.card h3{margin:0 0 8px;font-size:16px}.card small{display:block;color:var(--muted);line-height:1.4}.card p{color:#3f4942;line-height:1.62;font-size:13px}.date{display:flex;align-items:center;gap:8px;margin-top:10px;color:var(--muted);font-size:12px;font-weight:800}.new-dot{display:inline-flex;align-items:center;min-height:22px;padding:2px 7px;border-radius:999px;background:#f7e4e1;color:var(--red);font-size:11px;font-weight:900}.pill{display:inline-flex;align-items:center;min-height:24px;margin-top:10px;border-radius:999px;padding:3px 8px;background:#eef2ed;color:var(--muted);font-size:12px;font-weight:800}
+    .brief{display:grid;gap:10px;padding:16px 18px 18px}.brief-row{display:grid;grid-template-columns:160px minmax(0,1fr);gap:14px;padding:14px;border:1px solid var(--line);border-radius:8px;background:#fbfcfa}.brief-row strong{font-size:16px}.brief-row p{color:#3f4942;line-height:1.7;font-size:14px}.module-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:16px 18px 18px}.module-card{padding:14px;border:1px solid var(--line);border-radius:8px;background:#fbfcfa}.module-card strong{display:block;margin-bottom:7px}.module-card p,.module-card li{color:#3f4942;line-height:1.62;font-size:13px}.module-card ul{margin:0;padding-left:18px}.footer{display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:12px;padding:4px 2px 0}
+    .detail-modal{position:fixed;inset:0;z-index:20;display:none;align-items:center;justify-content:center;padding:18px;background:rgba(23,33,28,.42)}.detail-modal.open{display:flex}.detail-dialog{width:min(820px,100%);max-height:min(84vh,780px);overflow:auto;border:1px solid var(--line);border-radius:8px;background:#fff;box-shadow:0 28px 80px rgba(0,0,0,.22)}.detail-head{display:flex;justify-content:space-between;gap:12px;align-items:flex-start;padding:18px;border-bottom:1px solid var(--line)}.detail-head h3{margin:5px 0 0;font-size:22px}.detail-close{width:34px;height:34px;border:1px solid var(--line);border-radius:999px;background:#f7faf8;cursor:pointer;font-size:20px;line-height:1}.detail-body{display:grid;gap:14px;padding:18px}.detail-section{padding:13px;border:1px solid var(--line);border-radius:8px;background:#fbfcfa}.detail-section strong{display:block;margin-bottom:7px}.detail-section p{white-space:pre-line;color:#334039;line-height:1.68;font-size:14px}.detail-link{display:inline-flex;color:var(--blue);font-weight:800;text-decoration:none}
+    @media(max-width:980px){.hero{grid-template-columns:1fr}.hero-actions{justify-content:flex-start}.grid,.grid.two,.module-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.brief-row{grid-template-columns:1fr}}@media(max-width:620px){.page{padding-inline:10px}.hero{padding:22px}.grid,.grid.two,.module-grid{grid-template-columns:1fr}.footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <main class="page" id="app"></main>
+  <script src="./data/ai_builders_digest.js?v=20260806-intelligence"></script>
+  <script>
+    const data=window.AI_BUILDERS_DIGEST||{};
+    const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+    const section=(title,body)=>body?`<div class="detail-section"><strong>${esc(title)}</strong><p>${esc(body)}</p></div>`:"";
+    const link=(url,label="打开原文")=>url?`<a class="detail-link" href="${esc(url)}" target="_blank" rel="noreferrer">${esc(label)}</a>`:"";
+    const clip=(text,n=110)=>{const s=String(text||"");return s.length>n?s.slice(0,n)+"...":s};
+    const listText=arr=>(arr||[]).join("、");
+    function itemFor(kind,index){
+      if(kind==="category")return (((data.intelligenceBrief||{}).categoryBriefs)||data.intelligenceCategories||[])[index];
+      if(kind==="wechat")return (data.wechatSources||[])[index];
+      if(kind==="podcast")return (data.podcastSources||[])[index];
+      if(kind==="dynamic")return (data.items||[])[index];
+      if(kind==="stockBucket")return ((data.stockResearch||{}).universe||[])[index];
+      return null;
+    }
+    function openDetail(kind,index){
+      const item=itemFor(kind,index);
+      if(!item)return;
+      let title="", subtitle="", date="", body="";
+      if(kind==="category"){
+        title=item.name;
+        subtitle=`${item.sources||item.summary||""} · 公众号 ${item.articleCount||0} / 播客 ${item.podcastCount||0}`;
+        body=(item.detailSections||[]).length
+          ? item.detailSections.map(x=>section(x.title,x.body)).join("")
+          : section("分类定位",item.summary)+section("股市使用方式",item.decisionUse)+section("今日看点",item.latest||item.focus);
+      }else if(kind==="wechat"){
+        title=item.name;
+        subtitle=item.latestTitle||item.focus||item.group;
+        date=item.latestDate||"";
+        body=section("来源定位",item.focus)+section("最新文章",item.latestTitle)+section("股市分析",item.stockUse)+section("正文摘要",item.latestFullText||"正文暂未缓存；如果原文开放，可以通过下方链接查看。若聚合页要求付费，面板不会绕过付费墙。")+link(item.latestOriginalUrl||item.latestArticleUrl||item.columnUrl,item.latestOriginalUrl?"打开微信原文":"打开可访问页");
+      }else if(kind==="podcast"){
+        title=item.name;
+        subtitle=item.latestTitle||item.role;
+        date=item.latestDate||"";
+        body=section("节目定位",item.reason||item.role)+section("最新一期",item.latestTitle)+section("总结",item.latestSummary)+section("股市分析",item.stockLens)+section("完整逻辑",item.fullText)+link(item.url,"打开播客页");
+      }else if(kind==="dynamic"){
+        title=item.builder;
+        subtitle=`${item.topic||""} · ${item.role||""}`;
+        date=item.publishedDate||"";
+        body=section("动态摘要",item.summary)+section("为什么重要",item.whyItMatters)+section("股市分析",item.stockLens)+section("原文摘要",item.fullText)+link(item.url,"打开动态原文");
+      }else if(kind==="stockBucket"){
+        title=item.bucket;
+        subtitle=listText(item.examples);
+        body=section("观察股票",listText(item.examples))+section("分析重点",item.focus);
+      }
+      const modal=document.getElementById("detail-modal");
+      modal.innerHTML=`<div class="detail-dialog" role="dialog" aria-modal="true"><div class="detail-head"><div><span class="label">${kind==="wechat"?"公众号/知识星球":kind==="podcast"?"播客输入":kind==="dynamic"?"动态":kind==="category"?"分类观点":"股票池"}</span><h3>${esc(title)}</h3><p class="date">${esc(date)}${item.isNew?'<span class="new-dot">NEW</span>':""}</p><p class="muted">${esc(subtitle)}</p></div><button class="detail-close" type="button" aria-label="关闭">×</button></div><div class="detail-body">${body}</div></div>`;
+      modal.classList.add("open");
+    }
+    function closeDetail(){document.getElementById("detail-modal")?.classList.remove("open")}
+    function renderCard(kind,item,index){
+      const title=kind==="wechat"?item.name:kind==="podcast"?item.name:kind==="dynamic"?item.builder:item.name;
+      if(kind==="category"){
+        return `<button class="card action-card" type="button" data-kind="category" data-index="${index}"><div class="card-head"><div><h3>${esc(item.name)}</h3><small>${esc(item.sources||item.summary||"")}${item.articleCount!=null?` · 公众号 ${esc(item.articleCount)} / 播客 ${esc(item.podcastCount||0)}`:""}</small></div><span class="pill">点开深读</span></div><p><strong>${esc(item.latest||"")}</strong></p><p style="margin-top:10px;border-top:1px solid var(--line);padding-top:10px"><strong>核心结论：</strong>${esc(item.view||item.decisionUse||"")}</p><p class="date">完整逻辑链&nbsp;&nbsp; 核心判断 / 证据 / 投资映射 / 风险 / 验证</p></button>`;
+      }
+      const small=kind==="wechat"?`${item.group||item.type||""} · ${item.status||""}`:kind==="podcast"?`${item.category||""} · ${item.role||""}`:kind==="dynamic"?`${item.topic||""} · ${item.role||""}`:item.summary;
+      const text=kind==="wechat"?(item.stockUse||item.focus):kind==="podcast"?(item.stockLens||item.latestSummary):kind==="dynamic"?(item.stockLens||item.summary):(item.decisionUse||item.summary);
+      const date=kind==="wechat"?item.latestDate:kind==="podcast"?item.latestDate:kind==="dynamic"?item.publishedDate:"";
+      const right=kind==="wechat"?(item.latestTitle||"点开看全文"):kind==="podcast"?(item.latestTitle||"点开看总结"):kind==="dynamic"?"点开看分析":"点开看完整逻辑";
+      return `<button class="card action-card" type="button" data-kind="${kind}" data-index="${index}"><div class="card-head"><div><h3>${esc(title)}</h3><small>${esc(small)}</small></div>${item.isNew?'<span class="new-dot">NEW</span>':""}</div><p>${esc(clip(text,150))}</p><div class="date"><span>${esc(date||"")}</span><span>${esc(clip(right,40))}</span></div></button>`;
+    }
+    function render(){
+      const cats=((data.intelligenceBrief||{}).categoryBriefs)||data.intelligenceCategories||[];
+      const wechat=data.wechatSources||[];
+      const podcasts=data.podcastSources||[];
+      const dynamics=data.items||[];
+      const stock=data.stockResearch||{};
+      const sensitivity=stock.valuationSensitivity||{};
+      const updated=data.meta?.updatedAt||stock.updatedAt||"";
+      const app=document.getElementById("app");
+      app.innerHTML=`<section class="hero"><div><span class="eyebrow">Information Console</span><h1>资讯与观点源面板</h1><p class="hero-copy">这里单独承接公众号/知识星球、播客和动态来源，把它们按观点类型整理，并映射到当日股市观察。主面板只保留市场数据、表格和交易系统。</p></div><div class="hero-actions"><a class="hero-link" href="./index.html">返回主面板</a><span class="source">${wechat.length} 个公众号/知识星球</span><span class="source">${podcasts.length} 个播客</span><span class="source">${dynamics.length} 条动态</span></div></section><nav class="section-nav"><a href="./index.html">主面板</a><a href="#categories">分类观点</a><a href="#wechat">公众号/知识星球</a><a href="#podcasts">播客输入</a><a href="#dynamics">动态</a><a href="#stock-research">AI应用股票</a><a href="#valuation">估值雷达</a><a href="#workflow">日更工作流</a></nav><section class="panel" id="categories"><div class="panel-head"><div><span class="label">Categorized Views</span><h2>${esc((data.intelligenceBrief||{}).title||"分类观点整合")}</h2></div><span class="muted">${esc((data.intelligenceBrief||{}).objective||"把分散来源整理成可跟踪的市场视角")}</span></div><div class="grid">${cats.map((x,i)=>renderCard("category",x,i)).join("")}</div></section><section class="panel" id="wechat"><div class="panel-head"><div><span class="label">Source Library</span><h2>观点源库 · 公众号/知识星球</h2></div><span class="muted">${wechat.length} 个源 · 点击查看最新文章和股市映射</span></div><div class="grid">${wechat.map((x,i)=>renderCard("wechat",x,i)).join("")}</div></section><section class="panel" id="podcasts"><div class="panel-head"><div><span class="label">Source Library</span><h2>观点源库 · 播客输入</h2></div><span class="muted">${podcasts.length} 个节目 · 去掉长期停更源后保留活跃输入</span></div><div class="grid">${podcasts.map((x,i)=>renderCard("podcast",x,i)).join("")}</div></section><section class="panel" id="dynamics"><div class="panel-head"><div><span class="label">Dynamics</span><h2>动态 · 股市分析</h2></div><span class="muted">${dynamics.length} 条 · 只保留和市场观察有关的观点</span></div><div class="grid">${dynamics.map((x,i)=>renderCard("dynamic",x,i)).join("")}</div></section><section class="panel" id="stock-research"><div class="panel-head"><div><span class="label">Stock Research</span><h2>${esc(stock.title||"AI应用股票研究")}</h2></div><span class="muted">${esc(stock.scope||"")}</span></div><div class="brief">${(stock.lenses||[]).map(x=>`<div class="brief-row"><strong>${esc(x.name)}</strong><p>${esc(x.rule)}</p></div>`).join("")}</div><div class="module-grid">${(stock.universe||[]).map((x,i)=>`<button class="module-card action-card" type="button" data-kind="stockBucket" data-index="${i}"><strong>${esc(x.bucket)}</strong><p>${esc(x.focus)}</p><span class="pill">${esc((x.examples||[]).length)} 只观察股</span></button>`).join("")}</div></section><section class="panel" id="valuation"><div class="panel-head"><div><span class="label">Valuation Radar</span><h2>${esc(sensitivity.title||"AI估值敏感性雷达")}</h2></div><span class="muted">${esc(sensitivity.updatedAt||"")}</span></div><div class="module-grid"><div class="module-card"><strong>今日判断</strong><p>${esc(sensitivity.dailyJudgement||"")}</p></div><div class="module-card"><strong>核心命题</strong><p>${esc(sensitivity.coreThesis||"")}</p></div><div class="module-card"><strong>面板用法</strong><p>把每日新闻、播客、公众号和财报线索归因到规模、资本效率、利润率、折旧率和兑现时间。</p></div></div><div class="grid two">${(sensitivity.variables||[]).map(x=>`<div class="card"><div class="card-head"><div><h3>${esc(x.symbol)} · ${esc(x.name)}</h3><small>${esc(x.direction||"watch")}</small></div></div><p>${esc(x.marketUse||x.signal)}</p></div>`).join("")}</div></section><section class="panel" id="workflow"><div class="panel-head"><div><span class="label">Daily System</span><h2>日更工作流</h2></div><span class="muted">数据更新后自动带动独立资讯页</span></div><div class="module-grid">${(data.playbook||[]).map((x,i)=>`<div class="module-card"><strong>${i+1}. 日更步骤</strong><p>${esc(x)}</p></div>`).join("")}</div></section><div class="detail-modal" id="detail-modal" aria-hidden="true"></div><footer class="footer"><span>更新日期：${esc(updated)}</span><span>资讯页与主面板共用同一份数据文件。</span></footer>`;
+      app.addEventListener("click",e=>{
+        const card=e.target.closest("[data-kind]");
+        if(card)openDetail(card.dataset.kind,Number(card.dataset.index));
+        if(e.target.closest(".detail-close")||e.target.id==="detail-modal")closeDetail();
+      });
+      document.addEventListener("keydown",e=>{if(e.key==="Escape")closeDetail()});
+    }
+    render();
+  </script>
+</body>
+</html>

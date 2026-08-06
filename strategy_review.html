@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>策略复盘独立页</title>
+  <style>
+    :root{--bg:#f4f6f3;--ink:#17211c;--muted:#63716a;--line:#d8dfd7;--panel:#fff;--green:#147463;--red:#b74438;--amber:#b57619;--blue:#285c7f;--soft:#eef3ef;--shadow:0 12px 28px rgba(23,33,28,.08)}
+    *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Microsoft YaHei",sans-serif;letter-spacing:0}.page{max-width:1480px;margin:auto;padding:22px clamp(12px,2.5vw,34px) 36px}
+    h1,h2,h3,p{margin:0}.hero{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:22px;align-items:end;min-height:220px;padding:clamp(22px,4vw,42px);border-radius:8px;color:white;background:linear-gradient(135deg,rgba(23,33,28,.96),rgba(40,92,127,.94)),repeating-linear-gradient(90deg,rgba(255,255,255,.12) 0 1px,transparent 1px 54px);box-shadow:var(--shadow)}.eyebrow,.label{display:block;color:var(--muted);font-size:12px;font-weight:800;text-transform:uppercase}.hero .eyebrow{color:rgba(255,255,255,.72)}h1{margin-top:8px;font-size:clamp(32px,5vw,58px);line-height:1.02}h2{font-size:20px}.hero-copy{max-width:880px;margin-top:14px;color:rgba(255,255,255,.84);font-size:16px;line-height:1.7}.hero-actions{display:flex;flex-wrap:wrap;justify-content:flex-end;gap:8px}.hero-link,.source,.pill,.badge{min-height:30px;display:inline-flex;align-items:center;border-radius:999px;padding:5px 11px;font-size:12px;font-weight:800;text-decoration:none}.hero-link{color:#fff;border:1px solid rgba(255,255,255,.32);background:rgba(255,255,255,.12)}.source{color:#fff;border:1px solid rgba(255,255,255,.2);background:rgba(255,255,255,.14)}
+    .section-nav{position:sticky;top:0;z-index:5;display:flex;gap:8px;overflow:auto;padding:10px 0;margin:2px 0 12px;background:rgba(244,246,243,.94);backdrop-filter:blur(8px)}.section-nav a{white-space:nowrap;color:var(--blue);background:#e1edf4;border:1px solid #cbdde8;border-radius:999px;padding:8px 11px;text-decoration:none;font-size:12px;font-weight:800}
+    .panel,.card{background:var(--panel);border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow)}.panel{margin-bottom:12px}.panel-head{min-height:64px;display:flex;align-items:center;justify-content:space-between;gap:12px;padding:16px 18px;border-bottom:1px solid var(--line)}.muted{color:var(--muted);font-size:13px}.badge{background:#fff1d6;color:var(--amber)}.badge.danger{background:#f7e4e1;color:var(--red)}.badge.ok{background:#e5f3ed;color:var(--green)}
+    .status-grid{display:grid;grid-template-columns:1.4fr repeat(3,minmax(0,1fr));gap:10px;margin:12px 0}.status{min-height:132px;padding:17px;background:#fff;border:1px solid var(--line);border-radius:8px;box-shadow:var(--shadow)}.status.primary{background:var(--ink);color:white}.status.primary .label,.status.primary p{color:rgba(255,255,255,.68)}.status strong{display:block;margin-top:10px;font-size:clamp(22px,2vw,30px);line-height:1.15}.status p{margin-top:8px;color:var(--muted);line-height:1.55;font-size:14px}
+    .grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px;padding:16px 18px 18px}.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}.card{min-height:150px;padding:15px;background:#fbfcfa}.card strong{display:block;margin-bottom:8px}.card p,.card li{color:#3f4942;line-height:1.68;font-size:14px}.card ul{margin:0;padding-left:18px}.metric{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding-top:10px;margin-top:10px;color:var(--muted);font-size:13px}.metric b{color:var(--ink)}.up{color:var(--green)}.down{color:var(--red)}.neutral{color:var(--muted)}
+    .table-wrap{overflow:auto;padding:16px 18px 18px}.review-table{width:100%;border-collapse:collapse;font-size:13px}.review-table th,.review-table td{min-width:120px;text-align:left;vertical-align:top;padding:10px;border-bottom:1px solid var(--line);line-height:1.55}.review-table th{position:sticky;top:0;background:#eef3ef;color:#435047;font-weight:900}.review-table td:first-child,.review-table th:first-child{min-width:150px;font-weight:800}.notes{display:grid;gap:8px;padding:0 18px 18px}.note{padding:12px;border:1px solid var(--line);border-radius:8px;background:#fbfcfa;color:#3f4942;line-height:1.65;font-size:14px}
+    .footer{display:flex;justify-content:space-between;gap:16px;color:var(--muted);font-size:12px;padding:4px 2px 0}@media(max-width:980px){.hero,.status-grid{grid-template-columns:1fr}.hero-actions{justify-content:flex-start}.grid,.grid.two{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:620px){.page{padding-inline:10px}.hero{padding:22px}.grid,.grid.two{grid-template-columns:1fr}.footer{flex-direction:column}}
+  </style>
+</head>
+<body>
+  <main class="page" id="app"></main>
+  <script src="./data/current.js?v=20260806-review"></script>
+  <script src="./data/daily_tables.js?v=20260806-review"></script>
+  <script>
+    const data=window.MARKET_DAILY_DATA||{};
+    const tables=window.DAILY_TABLES||[];
+    const esc=v=>String(v??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+    const f=(v,d=2)=>v==null||Number.isNaN(Number(v))?"—":Number(v).toLocaleString("zh-CN",{maximumFractionDigits:d,minimumFractionDigits:d});
+    const p=v=>v==null||Number.isNaN(Number(v))?"—":`${Number(v)>0?"+":""}${f(v)}%`;
+    const tone=v=>v==null?"neutral":Number(v)>0?"up":Number(v)<0?"down":"neutral";
+    const findTable=title=>tables.find(t=>t.title===title)||tables.find(t=>String(t.title||"").includes(title));
+    const up=data.market?.up_count||0, down=data.market?.down_count||0;
+    const breadth=(up+down)?up/(up+down)*100:null;
+    const turnover=data.market?.turnover_20d_avg_billion?data.market.total_turnover_billion/data.market.turnover_20d_avg_billion:null;
+    const tech=(data.indexes||[]).filter(x=>x.boll_mid!=null&&x.close!=null);
+    const below=tech.filter(x=>x.close<x.boll_mid).length;
+    const bear=tech.filter(x=>x.macd_bar<0).length;
+    const right=(data.market?.total_turnover_billion||0)>=24000&&turnover>=1.05&&below<=1&&breadth>=55;
+    const state=right?"右侧确认":below>=2&&bear>=2&&(breadth>=55)?"主跌通道 · 超跌反弹":"震荡观察";
+    const cap=right?"20%-30%":turnover>=.8?"15%-20%":"10%-15%";
+    const followerRisks=(data.watchlist||[]).filter(x=>x.role==="follower").map(x=>{
+      const day=x.pct_chg??0, d20=x.pct_20d??0, turn=x.turnover_rate??0;
+      const flags=[];
+      if(day<=-3)flags.push("单日负反馈");
+      if(day>=3&&d20<=-20)flags.push("深套反弹");
+      if(d20<=-25)flags.push("20日深套");
+      if(turn>=8)flags.push("高换手");
+      return {...x,flags,isAlert:flags.length>0};
+    }).filter(x=>x.isAlert);
+    const watchUp=(data.watchlist||[]).filter(x=>(x.pct_chg||0)>0).length;
+    const watchDown=(data.watchlist||[]).filter(x=>(x.pct_chg||0)<0).length;
+    function renderRows(t,limit=8){
+      if(!t||!t.rows?.length)return "";
+      const rows=t.rows.slice(0,limit+1);
+      const [head,...body]=rows;
+      return `<div class="table-wrap"><table class="review-table"><thead><tr>${head.map(x=>`<th>${esc(x)}</th>`).join("")}</tr></thead><tbody>${body.map(r=>`<tr>${r.map(c=>`<td>${esc(c)}</td>`).join("")}</tr>`).join("")}</tbody></table></div>${t.notes?.length?`<div class="notes">${t.notes.slice(0,2).map(n=>`<div class="note">${esc(n)}</div>`).join("")}</div>`:""}`;
+    }
+    function renderIndexCards(){
+      return (data.indexes||[]).slice(0,7).map(x=>`<div class="card"><strong>${esc(x.name)}</strong><p class="${tone(x.pct_chg)}">${p(x.pct_chg)} · 收盘 ${f(x.close)}</p><div class="metric"><span>20日</span><b class="${tone(x.pct_20d)}">${p(x.pct_20d)}</b></div><div class="metric"><span>BOLL中轨</span><b>${x.boll_mid?f(x.boll_mid):"—"}</b></div></div>`).join("");
+    }
+    function renderRiskCards(){
+      return followerRisks.length?followerRisks.map(x=>`<div class="card"><strong>${esc(x.symbol)}</strong><p>${esc(x.direction)} · ${esc(x.flags.join(" / "))}</p><div class="metric"><span>当日</span><b class="${tone(x.pct_chg)}">${p(x.pct_chg)}</b></div><div class="metric"><span>20日 / 换手</span><b>${p(x.pct_20d)} / ${p(x.turnover_rate)}</b></div></div>`).join(""):`<div class="card"><strong>从龙风险</strong><p>当前没有触发从龙负反馈阈值，继续观察单日跌幅、20日深套、深套反弹和高换手。</p></div>`;
+    }
+    function render(){
+      const hardRisk=findTable("硬风控阶梯监控表");
+      const marketScore=findTable("市场画像评分体系表");
+      const dragon=findTable("从龙负反馈七项监测日更表");
+      const preopen=findTable("盘前10点检查日更补充表");
+      const system=findTable("组合管理触发与风控表");
+      document.getElementById("app").innerHTML=`<section class="hero"><div><span class="eyebrow">Strategy Review</span><h1>策略复盘独立页</h1><p class="hero-copy">${esc(data.meta?.trade_date||"")} 收盘后的策略复盘。这个页面只保留可分享的市场状态、风控执行、从龙风险、核心观察和下一交易日检查，不展示完整原始大表。</p></div><div class="hero-actions"><a class="hero-link" href="./index.html">主面板</a><a class="hero-link" href="./intelligence.html">资讯页</a><span class="source">${tables.length} 张底层表</span><span class="source">FundDB日更</span></div></section><nav class="section-nav"><a href="#summary">复盘结论</a><a href="#risk">风控</a><a href="#market">市场画像</a><a href="#dragon">从龙风险</a><a href="#stocks">核心池</a><a href="#preopen">盘前检查</a><a href="#system">交易系统</a></nav><section class="status-grid" id="summary"><div class="status primary"><span class="label">策略状态</span><strong>${esc(state)}</strong><p>仓位上限 ${esc(cap)}。没有量能、广度和BOLL中轨共同确认前，仍按左侧修复而不是趋势反转处理。</p></div><div class="status"><span class="label">市场广度</span><strong>${p(breadth)}</strong><p>上涨 ${f(up,0)} 家，下跌 ${f(down,0)} 家。</p></div><div class="status"><span class="label">成交额</span><strong>${f(data.market?.total_turnover_billion,0)} 亿</strong><p>${turnover?f(turnover,2)+"x 20日均量":"量能口径待确认"}</p></div><div class="status"><span class="label">从龙警报</span><strong>${f(followerRisks.length,0)} 个</strong><p>用于判断主线是否缩圈或负反馈扩散。</p></div></section><section class="panel" id="risk"><div class="panel-head"><div><span class="label">Hard Risk</span><h2>硬风控与仓位复盘</h2></div><span class="badge danger">先控风险</span></div>${renderRows(hardRisk,5)}</section><section class="panel" id="market"><div class="panel-head"><div><span class="label">Market Portrait</span><h2>市场画像与指数状态</h2></div><span class="muted">${below}/${tech.length} 个核心指数低于BOLL中轨</span></div><div class="grid">${renderIndexCards()}</div>${renderRows(marketScore,8)}</section><section class="panel" id="dragon"><div class="panel-head"><div><span class="label">Follower Risk</span><h2>从龙负反馈复盘</h2></div><span class="badge danger">${f(followerRisks.length,0)} 个警报</span></div><div class="grid">${renderRiskCards()}</div>${renderRows(dragon,8)}</section><section class="panel" id="stocks"><div class="panel-head"><div><span class="label">Watchlist Review</span><h2>核心池分化</h2></div><span class="muted">${watchUp} 涨 / ${watchDown} 跌</span></div><div class="grid two"><div class="card"><strong>复盘重点</strong><p>核心池不是看单日涨跌，而是看核心、从龙、防御和港股长线仓是否各自完成自己的角色。从龙如果深套反弹或继续负反馈，不能当作主线企稳证据。</p></div><div class="card"><strong>下一步验证</strong><p>继续看成交额是否放大、核心指数是否站回中轨、AI核心是否停止补跌、资金流是否回到主线核心而不是只拉低位题材。</p></div></div>${renderRows(findTable("核心个股分组汇总日更表"),8)}</section><section class="panel" id="preopen"><div class="panel-head"><div><span class="label">Next Session</span><h2>下一交易日盘前检查</h2></div><span class="badge">10点前</span></div>${renderRows(preopen,10)}</section><section class="panel" id="system"><div class="panel-head"><div><span class="label">Trading System</span><h2>策略执行框架</h2></div><span class="muted">把复盘变成下一次动作纪律</span></div>${renderRows(system,8)}</section><footer class="footer"><span>${esc(data.meta?.data_notes||"")}</span><span>生成日期：${esc(data.meta?.report_date||data.meta?.trade_date||"")}</span></footer>`;
+    }
+    render();
+  </script>
+</body>
+</html>
