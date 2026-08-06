@@ -9,11 +9,11 @@
     "generatedBy": "Follow Builders skill",
     "generatedByUrl": "https://github.com/zarazhangrui/follow-builders",
     "thesis": "AI 产品化正在从模型能力展示进入可信执行系统阶段。",
-    "podcastSourceCount": 23,
+    "podcastSourceCount": 28,
     "stockResearchCount": 24,
     "wechatSourceCount": 22,
     "wechatArticleCount": 48,
-    "wechatLastSyncedAt": "2026-08-05T15:06:50",
+    "wechatLastSyncedAt": "2026-08-06T11:36:53",
     "intelligenceSourceCount": 17,
     "intelligenceLastDesignedAt": "2026-08-03",
     "intelligenceItemCount": 0,
@@ -24,9 +24,18 @@
     "wechatMissingSources": [
       "多空之间"
     ],
-    "podcastSyncedCount": 23,
-    "podcastWithStockLens": 23,
-    "podcastLastSyncedAt": "2026-08-05T15:06:50"
+    "podcastSyncedCount": 28,
+    "podcastWithStockLens": 28,
+    "podcastLastSyncedAt": "2026-08-06T11:36:53",
+    "wechatFullTextFetch": false,
+    "podcastCleanupRemoved": [
+      "Evolving for the Next Billion",
+      "Google 谷歌出海会客厅",
+      "江湖煮酒",
+      "红了再说"
+    ],
+    "podcastCleanupRule": "移除长期未更新或仅历史节目待同步的播客源。",
+    "podcastLatestEpisodeSyncedAt": "2026-08-06T18:20:00"
   },
   "themes": [
     {
@@ -336,7 +345,7 @@
     },
     {
       "name": "起朱楼宴宾客",
-      "category": "商业洞察",
+      "category": "商业 / 投资 / 人物观点",
       "priority": "A",
       "role": "关键商业洞察",
       "reason": "适合补充商业案例、人物和行业叙事，作为新闻之外的解释层。",
@@ -622,6 +631,91 @@
       "status": "已同步",
       "latestStatus": "已纳入观点源库",
       "syncNote": "用于分类观点整合，不直接作为交易信号。"
+    },
+    {
+      "name": "泰度 Voice",
+      "category": "AI / 科技产业 / 证券研究",
+      "priority": "A",
+      "role": "券商科技产业访谈",
+      "reason": "华泰相关科技访谈源，适合补充AI Agent、具身智能、机器人和产业落地的研究视角。",
+      "stockLens": "从股市角度，泰度 Voice 更适合用来跟踪AI从模型能力走向执行系统的阶段变化。若节目讨论Agent、机器人、世界模型或企业工作流，映射到A股应先看机器人链、AI应用软件、工业自动化、服务器/边缘算力和券商研究覆盖的产业链，但必须用订单、量产节奏和财报验证。",
+      "latestDate": "2026-07-28",
+      "latestTitle": "S4E2｜机器人上岗、Agent接班，当AI开始「做事」，人类的出路在哪？",
+      "latestSummary": "围绕具身智能、Agent、多Agent协作和AI进入真实工作流展开，适合作为AI应用链和机器人链的观点输入。",
+      "fullText": "这类节目不是短线交易信号，而是用来判断AI产业从“回答问题”向“完成任务”迁移。日更时应把观点拆到机器人、Agent、企业软件、算力边缘化和自动化设备几个股票池，再用成交、资金流和业绩兑现确认。",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/62b3227a053b85adc57a728a",
+      "isNew": true,
+      "status": "已同步",
+      "latestStatus": "已纳入观点源库",
+      "syncNote": "用于分类观点整合，不直接作为交易信号。"
+    },
+    {
+      "name": "中金研究院",
+      "category": "宏观 / 政策 / 资本市场",
+      "priority": "A",
+      "role": "机构研究与政策讨论",
+      "reason": "中金研究院覆盖宏观、政策、资本市场和行业前沿，适合做机构共识与政策变量输入。",
+      "stockLens": "中金研究院最新可确认一期偏机器人产业研究。对股市的使用方式是把人形机器人从概念拆成数据、空间视觉、硬件本体和商业化场景，再用订单、量产节奏、客户验证和资金流判断机器人链是否真正进入业绩兑现。",
+      "latestDate": "2026-05-14",
+      "latestTitle": "episode 52｜中金机器人播客 Aibee林元庆：人形机器人需要第一视角，还是更聪明的世界",
+      "latestSummary": "最新可确认一期聚焦人形机器人、第一视角数据、空间视觉、环境视角和商业化路径。",
+      "fullText": "这一期把机器人商业化拆成感知、数据、本体和场景几个环节。面板里应把它映射到机器人链、机器视觉、传感器、工业自动化、端侧算力和AI应用，但由于发布时间距离现在较久，只作为中期产业框架，不作为最新交易信号。",
+      "url": "https://podcasts.apple.com/ao/podcast/%E4%B8%AD%E9%87%91%E7%A0%94%E7%A9%B6%E9%99%A2/id1637417857",
+      "isNew": false,
+      "status": "已同步",
+      "latestStatus": "已纳入观点源库",
+      "syncNote": "用于分类观点整合，不直接作为交易信号。"
+    },
+    {
+      "name": "知行小酒馆",
+      "category": "投资 / 行为金融 / 个人资产配置",
+      "priority": "B",
+      "role": "长期投资与行为认知",
+      "reason": "有知有行出品，适合补充投资者行为、长期配置、AI对个人生产力和生活方式影响等软变量。",
+      "stockLens": "从股市角度，知行小酒馆这一期适合做风险偏好和泡沫识别框架：当AI、机器人或成长股被快速重估时，要同时检查流动性、杠杆、ETF资金、估值分位和业绩兑现，避免把技术革命自动等同于股票长期上涨。",
+      "latestDate": "2026-07-31",
+      "latestTitle": "E245 对话经济学家朱宁：1929之后，我们学会避免下一场经济危机了吗？",
+      "latestSummary": "最新一期以1929金融危机为起点，讨论泡沫形成、流动性与信心、金融创新、技术变革与危机传导。",
+      "fullText": "这一期对股市的价值不在于预测危机，而是提供泡沫识别框架：技术叙事、杠杆、金融创新、流动性和投资者心理会互相强化。面板里应把它放进宏观/流动性与交易情绪分类，用来检查AI链和成长股是否进入“叙事强、兑现弱、交易拥挤”的阶段。",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/6013f9f58e2f7ee375cf4216",
+      "isNew": true,
+      "status": "已同步",
+      "latestStatus": "已纳入观点源库",
+      "syncNote": "用于分类观点整合，不直接作为交易信号。"
+    },
+    {
+      "name": "来都来了！听了再走",
+      "category": "消费 / 城市生活 / 情绪观察",
+      "priority": "C",
+      "role": "都市消费与生活方式观察",
+      "reason": "偏生活方式和城市情绪，适合观察消费、职场、女性用户和内容社区趋势。",
+      "stockLens": "来都来了更适合做消费情绪和年轻用户生活方式观察。股市映射应很克制：只有当内容与平台热度、广告投放、消费服务、心理健康或线下体验数据共振时，才作为消费板块辅助信号。",
+      "latestDate": "2026-07-04",
+      "latestTitle": "No. 291 - 划定边界的底气，源于你的价值观排序",
+      "latestSummary": "最新可确认一期讨论边界感、价值观排序、职场与关系中的自我保护。",
+      "fullText": "这类生活方式播客不应直接进入交易信号。它对面板的价值是观察年轻用户情绪、职场压力、消费心理和内容平台话题。如果主题与消费品牌、心理健康、社区内容或小红书生态形成交叉，才进入消费/情绪观察。",
+      "url": "https://podcasts.apple.com/us/podcast/%E6%9D%A5%E9%83%BD%E6%9D%A5%E4%BA%86-%E5%90%AC%E4%BA%86%E5%86%8D%E8%B5%B0/id1512932915?l=es-MX",
+      "isNew": false,
+      "status": "已同步",
+      "latestStatus": "已纳入观点源库",
+      "syncNote": "用于分类观点整合，不直接作为交易信号。"
+    },
+    {
+      "name": "the prompt",
+      "category": "AI / VC / 技术范式",
+      "priority": "A",
+      "role": "红杉中国AI与技术范式访谈",
+      "reason": "红杉中国出品，围绕AI、技术周期、一级市场和创业范式，适合补充AI应用和VC视角。",
+      "stockLens": "the prompt 对股市的价值在于判断AI技术范式和一级市场共识如何外溢到二级市场。若节目讨论模型、硬件、AI应用、HongShan X 或科技投资，应映射到AI应用软件、硬件供应链、港股科技和一级市场估值向二级市场的传导。",
+      "latestDate": "2026-07-01",
+      "latestTitle": "从科技投资到 HongShan X：为什么她总在另开一桌",
+      "latestSummary": "围绕科技投资、科学家创业、HongShan X、VC conviction 和AI技术范式展开。",
+      "fullText": "这类源适合和张小珺、晚点聊、42章经合并看：它给出一级市场和投资人视角，面板需要再用二级市场估值、成交和财报验证。",
+      "url": "https://www.xiaoyuzhoufm.com/podcast/6101a3936c68b8a230638ad8",
+      "isNew": false,
+      "status": "已同步",
+      "latestStatus": "已纳入观点源库",
+      "syncNote": "用于分类观点整合，不直接作为交易信号。"
     }
   ],
   "playbook": [
@@ -820,6 +914,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/z8cm36lhG3",
       "latestTitle": "美联储加息是“伪命题”？",
       "latestDate": "4 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/2LLyV5IFQz",
+      "latestOriginalUrl": "",
+      "latestFullText": "美联储加息是“伪命题”？",
       "articleCount": 3
     },
     {
@@ -835,6 +932,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/KOgbbb48wV",
       "latestTitle": "绿皮红心",
       "latestDate": "2 天前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/eWcDK0iYrH",
+      "latestOriginalUrl": "",
+      "latestFullText": "绿皮红心",
       "articleCount": 3
     },
     {
@@ -850,51 +950,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/hPbW4ozvWc",
       "latestTitle": "利空小作文",
       "latestDate": "14 小时前",
-      "articleCount": 3
-    },
-    {
-      "name": "调研纪要",
-      "group": "研究类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "上市公司调研、机构问答和产业链纪要。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "验证订单、价格、产能、收入和利润预期。",
-      "status": "已同步",
-      "columnId": "pqlX7tELZo",
-      "columnUrl": "http://www.jintiankansha.com/column/pqlX7tELZo",
-      "latestTitle": "高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿",
-      "latestDate": "16 小时前",
-      "articleCount": 3
-    },
-    {
-      "name": "水木纪要",
-      "group": "研究类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "公司调研、业绩说明、产业纪要。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "直接验证订单、价格、客户和利润率。",
-      "status": "已同步",
-      "columnId": "owkx7OaOUU",
-      "columnUrl": "http://www.jintiankansha.com/column/owkx7OaOUU",
-      "latestTitle": "大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！",
-      "latestDate": "昨天",
-      "articleCount": 3
-    },
-    {
-      "name": "中金点睛",
-      "group": "研究类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "宏观策略、行业观点、资产配置和卖方研究。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "作为机构共识和风险提示源，避免单一自媒体偏差。",
-      "status": "已同步",
-      "columnId": "h39JnM2SV6",
-      "columnUrl": "http://www.jintiankansha.com/column/h39JnM2SV6",
-      "latestTitle": "中金：从明斯基视角看AI债务风险",
-      "latestDate": "4 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/3HoT9qtlOI",
+      "latestOriginalUrl": "",
+      "latestFullText": "利空小作文",
       "articleCount": 3
     },
     {
@@ -910,6 +968,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/Fj9DVZlo9X",
       "latestTitle": "天人合一追求下的改革",
       "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/kT6Qt92XFj",
+      "latestOriginalUrl": "",
+      "latestFullText": "天人合一追求下的改革",
       "articleCount": 3
     },
     {
@@ -925,21 +986,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/dcA3ZMkbjn",
       "latestTitle": "当一名保安从股市赚到1亿美元之后",
       "latestDate": "4 小时前",
-      "articleCount": 3
-    },
-    {
-      "name": "梓豪谈芯",
-      "group": "科技类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "芯片、半导体、产业链和供应链。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "验证 AI 芯片、存储、PCB、设备材料链的景气变化。",
-      "status": "已同步",
-      "columnId": "qD9XSiTOLR",
-      "columnUrl": "http://www.jintiankansha.com/column/qD9XSiTOLR",
-      "latestTitle": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
-      "latestDate": "2 周前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/0AJ6BvEU9q",
+      "latestOriginalUrl": "",
+      "latestFullText": "当一名保安从股市赚到1亿美元之后",
       "articleCount": 3
     },
     {
@@ -955,6 +1004,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/LpJaykZz73",
       "latestTitle": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
       "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/RdJzPdFeGh",
+      "latestOriginalUrl": "",
+      "latestFullText": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
       "articleCount": 3
     },
     {
@@ -970,6 +1022,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/TMPWMTO3j3",
       "latestTitle": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
       "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/AMtmkhTmSi",
+      "latestOriginalUrl": "",
+      "latestFullText": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
       "articleCount": 3
     },
     {
@@ -985,22 +1040,10 @@
       "columnUrl": "http://www.jintiankansha.com/column/8dYyLDeinP",
       "latestTitle": "我回来了，Can you hear me?",
       "latestDate": "",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/mufQKSv5xQ",
+      "latestOriginalUrl": "",
+      "latestFullText": "我回来了，Can you hear me?",
       "articleCount": 1
-    },
-    {
-      "name": "数字生命卡兹克",
-      "group": "科技类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "AI 应用、科技产品、数字生命与前沿叙事。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "捕捉新应用场景和早期主题，后续用商业化与收入验证。",
-      "status": "已同步",
-      "columnId": "euZCfLlKpL",
-      "columnUrl": "http://www.jintiankansha.com/column/euZCfLlKpL",
-      "latestTitle": "聊聊Qwen3.8-Max，我心中的千问又回来了。",
-      "latestDate": "昨天",
-      "articleCount": 3
     },
     {
       "name": "卓哥投研笔记",
@@ -1015,36 +1058,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/JSzKdLWQBg",
       "latestTitle": "阿里并不适用海外CSP的逻辑",
       "latestDate": "昨天",
-      "articleCount": 3
-    },
-    {
-      "name": "海豚研究",
-      "group": "研究类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "互联网、消费、海外/港股公司深度。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "适合港股平台和 AI 应用公司的基本面验证。",
-      "status": "已同步",
-      "columnId": "yNjpL7ncbp",
-      "columnUrl": "http://www.jintiankansha.com/column/yNjpL7ncbp",
-      "latestTitle": "Palantir：瑕疵修复，信仰股满血复活？",
-      "latestDate": "",
-      "articleCount": 3
-    },
-    {
-      "name": "东不压桥研究院",
-      "group": "科技类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "公司、科技产业和行业深度研究。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "作为深度研究输入，拆成估值、业绩、风险三张卡。",
-      "status": "已同步",
-      "columnId": "FExaYYMg65",
-      "columnUrl": "http://www.jintiankansha.com/column/FExaYYMg65",
-      "latestTitle": "Kimi K3在美国激起的开源模型大争论",
-      "latestDate": "1 周前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/owCMjD4kWC",
+      "latestOriginalUrl": "",
+      "latestFullText": "阿里并不适用海外CSP的逻辑",
       "articleCount": 3
     },
     {
@@ -1060,36 +1076,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/Kg6Ybo5wSC",
       "latestTitle": "一些信息 0803",
       "latestDate": "",
-      "articleCount": 3
-    },
-    {
-      "name": "刘小排",
-      "group": "科技类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "AI 产品、独立开发、软件工具和应用落地。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "观察 AI 应用从产品热度到付费转化的路径。",
-      "status": "已同步",
-      "columnId": "RmRoJm0hCt",
-      "columnUrl": "http://www.jintiankansha.com/column/RmRoJm0hCt",
-      "latestTitle": "没人说？那我来说， Opus 5 就是个刷榜怪！",
-      "latestDate": "12 小时前",
-      "articleCount": 3
-    },
-    {
-      "name": "海外独角兽",
-      "group": "科技类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "海外科技公司、一级市场、成长股。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "映射港股/美股/中概及 A 股映射链条。",
-      "status": "已同步",
-      "columnId": "f4hF3D8497",
-      "columnUrl": "http://www.jintiankansha.com/column/f4hF3D8497",
-      "latestTitle": "无法蒸馏的美国市场，谁在分食 Frontier Labs 百亿美金预算？",
-      "latestDate": "23 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/rqo9sds5xn",
+      "latestOriginalUrl": "",
+      "latestFullText": "一些信息 0803",
       "articleCount": 3
     },
     {
@@ -1105,21 +1094,9 @@
       "columnUrl": "http://www.jintiankansha.com/column/vm6wl3VsZu",
       "latestTitle": "外资行解读FCC传闻",
       "latestDate": "5 小时前",
-      "articleCount": 3
-    },
-    {
-      "name": "404K",
-      "group": "科技类",
-      "type": "公众号/聚合源",
-      "sourceType": "jintiankansha column",
-      "focus": "科技成长、AI、航天和海外公司研究。",
-      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
-      "stockUse": "补充成长股风险偏好和主题扩散判断。",
-      "status": "已同步",
-      "columnId": "j6G918ZvXl",
-      "columnUrl": "http://www.jintiankansha.com/column/j6G918ZvXl",
-      "latestTitle": "SpaceX二季度深度：星链贡献26亿美元调整后EBITDA，AI用158亿美元资本开支换来转正",
-      "latestDate": "6 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/FR69e6blku",
+      "latestOriginalUrl": "",
+      "latestFullText": "外资行解读FCC传闻",
       "articleCount": 3
     },
     {
@@ -1135,6 +1112,189 @@
       "columnUrl": "http://www.jintiankansha.com/column/3tQpYv0AuX",
       "latestTitle": "泡沫有一个巨大的正面意义，就是为上一轮泡沫里中毒的人解毒\n\n泡沫是一种毒，会腐蚀人的心灵，让一个正常...",
       "latestDate": "1 月前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/Pahbp4XL6Q",
+      "latestOriginalUrl": "",
+      "latestFullText": "泡沫有一个巨大的正面意义，就是为上一轮泡沫里中毒的人解毒\n\n泡沫是一种毒，会腐蚀人的心灵，让一个正常...",
+      "articleCount": 3
+    },
+    {
+      "name": "调研纪要",
+      "group": "研究类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "上市公司调研、机构问答和产业链纪要。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "验证订单、价格、产能、收入和利润预期。",
+      "status": "已同步",
+      "columnId": "pqlX7tELZo",
+      "columnUrl": "http://www.jintiankansha.com/column/pqlX7tELZo",
+      "latestTitle": "高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿",
+      "latestDate": "16 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/zMjCfCPhrn",
+      "latestOriginalUrl": "",
+      "latestFullText": "高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿",
+      "articleCount": 3
+    },
+    {
+      "name": "水木纪要",
+      "group": "研究类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "公司调研、业绩说明、产业纪要。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "直接验证订单、价格、客户和利润率。",
+      "status": "已同步",
+      "columnId": "owkx7OaOUU",
+      "columnUrl": "http://www.jintiankansha.com/column/owkx7OaOUU",
+      "latestTitle": "大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！",
+      "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/HpaSLhTuHN",
+      "latestOriginalUrl": "",
+      "latestFullText": "大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！",
+      "articleCount": 3
+    },
+    {
+      "name": "中金点睛",
+      "group": "研究类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "宏观策略、行业观点、资产配置和卖方研究。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "作为机构共识和风险提示源，避免单一自媒体偏差。",
+      "status": "已同步",
+      "columnId": "h39JnM2SV6",
+      "columnUrl": "http://www.jintiankansha.com/column/h39JnM2SV6",
+      "latestTitle": "中金：从明斯基视角看AI债务风险",
+      "latestDate": "4 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/eOGAV6QABO",
+      "latestOriginalUrl": "",
+      "latestFullText": "中金：从明斯基视角看AI债务风险",
+      "articleCount": 3
+    },
+    {
+      "name": "海豚研究",
+      "group": "研究类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "互联网、消费、海外/港股公司深度。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "适合港股平台和 AI 应用公司的基本面验证。",
+      "status": "已同步",
+      "columnId": "yNjpL7ncbp",
+      "columnUrl": "http://www.jintiankansha.com/column/yNjpL7ncbp",
+      "latestTitle": "Palantir：瑕疵修复，信仰股满血复活？",
+      "latestDate": "",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/Dhnn5IZtVl",
+      "latestOriginalUrl": "",
+      "latestFullText": "Palantir：瑕疵修复，信仰股满血复活？",
+      "articleCount": 3
+    },
+    {
+      "name": "梓豪谈芯",
+      "group": "科技类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "芯片、半导体、产业链和供应链。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "验证 AI 芯片、存储、PCB、设备材料链的景气变化。",
+      "status": "已同步",
+      "columnId": "qD9XSiTOLR",
+      "columnUrl": "http://www.jintiankansha.com/column/qD9XSiTOLR",
+      "latestTitle": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
+      "latestDate": "2 周前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/hI2WxieBUS",
+      "latestOriginalUrl": "",
+      "latestFullText": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
+      "articleCount": 3
+    },
+    {
+      "name": "数字生命卡兹克",
+      "group": "科技类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "AI 应用、科技产品、数字生命与前沿叙事。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "捕捉新应用场景和早期主题，后续用商业化与收入验证。",
+      "status": "已同步",
+      "columnId": "euZCfLlKpL",
+      "columnUrl": "http://www.jintiankansha.com/column/euZCfLlKpL",
+      "latestTitle": "聊聊Qwen3.8-Max，我心中的千问又回来了。",
+      "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/4wlKm0cAVx",
+      "latestOriginalUrl": "",
+      "latestFullText": "聊聊Qwen3.8-Max，我心中的千问又回来了。",
+      "articleCount": 3
+    },
+    {
+      "name": "东不压桥研究院",
+      "group": "科技类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "公司、科技产业和行业深度研究。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "作为深度研究输入，拆成估值、业绩、风险三张卡。",
+      "status": "已同步",
+      "columnId": "FExaYYMg65",
+      "columnUrl": "http://www.jintiankansha.com/column/FExaYYMg65",
+      "latestTitle": "Kimi K3在美国激起的开源模型大争论",
+      "latestDate": "1 周前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/5P5OwB3ReM",
+      "latestOriginalUrl": "",
+      "latestFullText": "Kimi K3在美国激起的开源模型大争论",
+      "articleCount": 3
+    },
+    {
+      "name": "刘小排",
+      "group": "科技类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "AI 产品、独立开发、软件工具和应用落地。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "观察 AI 应用从产品热度到付费转化的路径。",
+      "status": "已同步",
+      "columnId": "RmRoJm0hCt",
+      "columnUrl": "http://www.jintiankansha.com/column/RmRoJm0hCt",
+      "latestTitle": "没人说？那我来说， Opus 5 就是个刷榜怪！",
+      "latestDate": "12 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/QLY16govLi",
+      "latestOriginalUrl": "",
+      "latestFullText": "没人说？那我来说， Opus 5 就是个刷榜怪！",
+      "articleCount": 3
+    },
+    {
+      "name": "海外独角兽",
+      "group": "科技类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "海外科技公司、一级市场、成长股。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "映射港股/美股/中概及 A 股映射链条。",
+      "status": "已同步",
+      "columnId": "f4hF3D8497",
+      "columnUrl": "http://www.jintiankansha.com/column/f4hF3D8497",
+      "latestTitle": "无法蒸馏的美国市场，谁在分食 Frontier Labs 百亿美金预算？",
+      "latestDate": "23 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/ruzp3uDBdS",
+      "latestOriginalUrl": "",
+      "latestFullText": "无法蒸馏的美国市场，谁在分食 Frontier Labs 百亿美金预算？",
+      "articleCount": 3
+    },
+    {
+      "name": "404K",
+      "group": "科技类",
+      "type": "公众号/聚合源",
+      "sourceType": "jintiankansha column",
+      "focus": "科技成长、AI、航天和海外公司研究。",
+      "updateRule": "通过 wechat-monitor 从 jintiankansha column 日更抓取；timeout 建议 60-90s，NO_PROXY 绕过代理。",
+      "stockUse": "补充成长股风险偏好和主题扩散判断。",
+      "status": "已同步",
+      "columnId": "j6G918ZvXl",
+      "columnUrl": "http://www.jintiankansha.com/column/j6G918ZvXl",
+      "latestTitle": "SpaceX二季度深度：星链贡献26亿美元调整后EBITDA，AI用158亿美元资本开支换来转正",
+      "latestDate": "6 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/1MKwMy48Rf",
+      "latestOriginalUrl": "",
+      "latestFullText": "SpaceX二季度深度：星链贡献26亿美元调整后EBITDA，AI用158亿美元资本开支换来转正",
       "articleCount": 3
     }
   ],
@@ -1248,6 +1408,306 @@
       "isNew": true
     },
     {
+      "source": "培风客",
+      "title": "天人合一追求下的改革",
+      "publishedDate": "",
+      "relativeTime": "昨天",
+      "summary": "天人合一追求下的改革",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/kT6Qt92XFj",
+      "mpUrl": "",
+      "fullText": "天人合一追求下的改革",
+      "isNew": true
+    },
+    {
+      "source": "培风客",
+      "title": "走势不同，但中美各自都有利率的问题要解决",
+      "publishedDate": "",
+      "relativeTime": "2 天前",
+      "summary": "走势不同，但中美各自都有利率的问题要解决",
+      "stockLens": "作为宏观/策略线索：先影响仓位上限、风险偏好和风格选择，再决定股票表达。",
+      "url": "http://www.jintiankansha.com/t/SmVjTswyQ1",
+      "mpUrl": "",
+      "fullText": "走势不同，但中美各自都有利率的问题要解决",
+      "isNew": true
+    },
+    {
+      "source": "培风客",
+      "title": "中国经济：周期性讨论，结构性讨论 - 202607",
+      "publishedDate": "",
+      "relativeTime": "4 天前",
+      "summary": "中国经济：周期性讨论，结构性讨论 - 202607",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/SlZaNNrcOk",
+      "mpUrl": "",
+      "fullText": "中国经济：周期性讨论，结构性讨论 - 202607",
+      "isNew": true
+    },
+    {
+      "source": "EarlETF",
+      "title": "当一名保安从股市赚到1亿美元之后",
+      "publishedDate": "",
+      "relativeTime": "4 小时前",
+      "summary": "当一名保安从股市赚到1亿美元之后",
+      "stockLens": "作为宏观/策略线索：先影响仓位上限、风险偏好和风格选择，再决定股票表达。",
+      "url": "http://www.jintiankansha.com/t/0AJ6BvEU9q",
+      "mpUrl": "",
+      "fullText": "当一名保安从股市赚到1亿美元之后",
+      "isNew": true
+    },
+    {
+      "source": "EarlETF",
+      "title": "解析投资新工具主动ETF：能看基金经理每天持仓，意味着什么？",
+      "publishedDate": "",
+      "relativeTime": "昨天",
+      "summary": "解析投资新工具主动ETF：能看基金经理每天持仓，意味着什么？",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/hrE75QbVKS",
+      "mpUrl": "",
+      "fullText": "解析投资新工具主动ETF：能看基金经理每天持仓，意味着什么？",
+      "isNew": true
+    },
+    {
+      "source": "EarlETF",
+      "title": "BIAS让我七月逃顶，但代价是什么",
+      "publishedDate": "",
+      "relativeTime": "2 天前",
+      "summary": "BIAS让我七月逃顶，但代价是什么",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/pvz7ViNH2m",
+      "mpUrl": "",
+      "fullText": "BIAS让我七月逃顶，但代价是什么",
+      "isNew": true
+    },
+    {
+      "source": "星辰大海的边界",
+      "title": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
+      "publishedDate": "",
+      "relativeTime": "昨天",
+      "summary": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
+      "stockLens": "作为交易结构线索：交叉验证涨跌家数、成交额、分档资金流和板块轮动。",
+      "url": "http://www.jintiankansha.com/t/RdJzPdFeGh",
+      "mpUrl": "",
+      "fullText": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
+      "isNew": true
+    },
+    {
+      "source": "星辰大海的边界",
+      "title": "昨天在扬州喝酒没更新，今儿补一下。华尔街内部自救，惊天大反弹来了-20260731214435",
+      "publishedDate": "",
+      "relativeTime": "昨天",
+      "summary": "昨天在扬州喝酒没更新，今儿补一下。华尔街内部自救，惊天大反弹来了-20260731214435",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/b4dvFurxYW",
+      "mpUrl": "",
+      "fullText": "昨天在扬州喝酒没更新，今儿补一下。华尔街内部自救，惊天大反弹来了-20260731214435",
+      "isNew": true
+    },
+    {
+      "source": "星辰大海的边界",
+      "title": "牛市不卖，与你何干。今天见了位25岁管理1w人的创业者哥哥，他听-20260730001026",
+      "publishedDate": "",
+      "relativeTime": "6 天前",
+      "summary": "牛市不卖，与你何干。今天见了位25岁管理1w人的创业者哥哥，他听-20260730001026",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/9vOb3Jd92n",
+      "mpUrl": "",
+      "fullText": "牛市不卖，与你何干。今天见了位25岁管理1w人的创业者哥哥，他听-20260730001026",
+      "isNew": true
+    },
+    {
+      "source": "地平线全球策略",
+      "title": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
+      "publishedDate": "",
+      "relativeTime": "昨天",
+      "summary": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
+      "stockLens": "作为宏观/策略线索：先影响仓位上限、风险偏好和风格选择，再决定股票表达。",
+      "url": "http://www.jintiankansha.com/t/AMtmkhTmSi",
+      "mpUrl": "",
+      "fullText": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
+      "isNew": true
+    },
+    {
+      "source": "地平线全球策略",
+      "title": "何时重新买回科技股.. 260803",
+      "publishedDate": "",
+      "relativeTime": "2 天前",
+      "summary": "何时重新买回科技股.. 260803",
+      "stockLens": "作为宏观/策略线索：先影响仓位上限、风险偏好和风格选择，再决定股票表达。",
+      "url": "http://www.jintiankansha.com/t/TErz9PXs88",
+      "mpUrl": "",
+      "fullText": "何时重新买回科技股.. 260803",
+      "isNew": true
+    },
+    {
+      "source": "地平线全球策略",
+      "title": "为什么要加空半导体.. 260730",
+      "publishedDate": "",
+      "relativeTime": "6 天前",
+      "summary": "为什么要加空半导体.. 260730",
+      "stockLens": "作为科技/AI线索：映射到算力、半导体、云厂商、软件应用和港股科技，再用估值与业绩兑现验证。",
+      "url": "http://www.jintiankansha.com/t/7xYO20WUZ0",
+      "mpUrl": "",
+      "fullText": "为什么要加空半导体.. 260730",
+      "isNew": true
+    },
+    {
+      "source": "冷眼局中人",
+      "title": "我回来了，Can you hear me?",
+      "publishedDate": "",
+      "relativeTime": "",
+      "summary": "我回来了，Can you hear me?",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/mufQKSv5xQ",
+      "mpUrl": "",
+      "fullText": "我回来了，Can you hear me?",
+      "isNew": true
+    },
+    {
+      "source": "卓哥投研笔记",
+      "title": "阿里并不适用海外CSP的逻辑",
+      "publishedDate": "",
+      "relativeTime": "昨天",
+      "summary": "阿里并不适用海外CSP的逻辑",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/owCMjD4kWC",
+      "mpUrl": "",
+      "fullText": "阿里并不适用海外CSP的逻辑",
+      "isNew": true
+    },
+    {
+      "source": "卓哥投研笔记",
+      "title": "危：DeepSeek Flash以1/10的价格横扫香港庄王的旗舰产品",
+      "publishedDate": "",
+      "relativeTime": "4 天前",
+      "summary": "危：DeepSeek Flash以1/10的价格横扫香港庄王的旗舰产品",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/U3NSy9hP7n",
+      "mpUrl": "",
+      "fullText": "危：DeepSeek Flash以1/10的价格横扫香港庄王的旗舰产品",
+      "isNew": true
+    },
+    {
+      "source": "卓哥投研笔记",
+      "title": "如果没有新场景，算力过剩只是时间问题",
+      "publishedDate": "",
+      "relativeTime": "6 天前",
+      "summary": "如果没有新场景，算力过剩只是时间问题",
+      "stockLens": "作为科技/AI线索：映射到算力、半导体、云厂商、软件应用和港股科技，再用估值与业绩兑现验证。",
+      "url": "http://www.jintiankansha.com/t/4UHM8y8guC",
+      "mpUrl": "",
+      "fullText": "如果没有新场景，算力过剩只是时间问题",
+      "isNew": true
+    },
+    {
+      "source": "浑水调研",
+      "title": "一些信息 0803",
+      "publishedDate": "",
+      "relativeTime": "",
+      "summary": "一些信息 0803",
+      "stockLens": "作为基本面验证线索：提取订单、价格、产能和利润率，用财报和资金流交叉验证。",
+      "url": "http://www.jintiankansha.com/t/rqo9sds5xn",
+      "mpUrl": "",
+      "fullText": "一些信息 0803",
+      "isNew": true
+    },
+    {
+      "source": "浑水调研",
+      "title": "为什么这波下跌，让我封神了",
+      "publishedDate": "",
+      "relativeTime": "4 天前",
+      "summary": "为什么这波下跌，让我封神了",
+      "stockLens": "作为基本面验证线索：提取订单、价格、产能和利润率，用财报和资金流交叉验证。",
+      "url": "http://www.jintiankansha.com/t/FhmoRMjjer",
+      "mpUrl": "",
+      "fullText": "为什么这波下跌，让我封神了",
+      "isNew": true
+    },
+    {
+      "source": "浑水调研",
+      "title": "量化基金 何罪之有？",
+      "publishedDate": "",
+      "relativeTime": "1 周前",
+      "summary": "量化基金 何罪之有？",
+      "stockLens": "作为基本面验证线索：提取订单、价格、产能和利润率，用财报和资金流交叉验证。",
+      "url": "http://www.jintiankansha.com/t/rQzmqFMVO6",
+      "mpUrl": "",
+      "fullText": "量化基金 何罪之有？",
+      "isNew": true
+    },
+    {
+      "source": "2030FY",
+      "title": "外资行解读FCC传闻",
+      "publishedDate": "",
+      "relativeTime": "5 小时前",
+      "summary": "外资行解读FCC传闻",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/FR69e6blku",
+      "mpUrl": "",
+      "fullText": "外资行解读FCC传闻",
+      "isNew": true
+    },
+    {
+      "source": "2030FY",
+      "title": "卖方老师说的到位",
+      "publishedDate": "",
+      "relativeTime": "17 小时前",
+      "summary": "卖方老师说的到位",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/ct6fNgNULA",
+      "mpUrl": "",
+      "fullText": "卖方老师说的到位",
+      "isNew": true
+    },
+    {
+      "source": "2030FY",
+      "title": "逻辑闭环了",
+      "publishedDate": "",
+      "relativeTime": "",
+      "summary": "逻辑闭环了",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/BjLIkj1XTQ",
+      "mpUrl": "",
+      "fullText": "逻辑闭环了",
+      "isNew": true
+    },
+    {
+      "source": "奔波儿霸研究室",
+      "title": "泡沫有一个巨大的正面意义，就是为上一轮泡沫里中毒的人解毒\n\n泡沫是一种毒，会腐蚀人的心灵，让一个正常...",
+      "publishedDate": "",
+      "relativeTime": "1 月前",
+      "summary": "泡沫有一个巨大的正面意义，就是为上一轮泡沫里中毒的人解毒\n\n泡沫是一种毒，会腐蚀人的心灵，让一个正常...",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/Pahbp4XL6Q",
+      "mpUrl": "",
+      "fullText": "泡沫有一个巨大的正面意义，就是为上一轮泡沫里中毒的人解毒\n\n泡沫是一种毒，会腐蚀人的心灵，让一个正常...",
+      "isNew": true
+    },
+    {
+      "source": "奔波儿霸研究室",
+      "title": "崖山、红头船与走向共和：从《跟阿嬷的情书》看华夏文脉的转向与抉择",
+      "publishedDate": "",
+      "relativeTime": "2 月前",
+      "summary": "崖山、红头船与走向共和：从《跟阿嬷的情书》看华夏文脉的转向与抉择",
+      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
+      "url": "http://www.jintiankansha.com/t/GiucIeyfAx",
+      "mpUrl": "",
+      "fullText": "崖山、红头船与走向共和：从《跟阿嬷的情书》看华夏文脉的转向与抉择",
+      "isNew": true
+    },
+    {
+      "source": "奔波儿霸研究室",
+      "title": "人民币正在替代日元的全球融资地位\n\n点心债，指香港发行的离岸人民币债券。最开始规模很小 利率较高，像...",
+      "publishedDate": "",
+      "relativeTime": "3 月前",
+      "summary": "人民币正在替代日元的全球融资地位\n\n点心债，指香港发行的离岸人民币债券。最开始规模很小 利率较高，像...",
+      "stockLens": "作为宏观/策略线索：先影响仓位上限、风险偏好和风格选择，再决定股票表达。",
+      "url": "http://www.jintiankansha.com/t/7AgYQMwawf",
+      "mpUrl": "",
+      "fullText": "人民币正在替代日元的全球融资地位\n\n点心债，指香港发行的离岸人民币债券。最开始规模很小 利率较高，像...",
+      "isNew": true
+    },
+    {
       "source": "调研纪要",
       "title": "高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿",
       "publishedDate": "",
@@ -1356,270 +1816,6 @@
       "isNew": true
     },
     {
-      "source": "培风客",
-      "title": "天人合一追求下的改革",
-      "publishedDate": "",
-      "relativeTime": "昨天",
-      "summary": "天人合一追求下的改革",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/kT6Qt92XFj",
-      "mpUrl": "",
-      "fullText": "天人合一追求下的改革",
-      "isNew": true
-    },
-    {
-      "source": "培风客",
-      "title": "走势不同，但中美各自都有利率的问题要解决",
-      "publishedDate": "",
-      "relativeTime": "2 天前",
-      "summary": "走势不同，但中美各自都有利率的问题要解决",
-      "stockLens": "作为宏观/策略线索：先影响仓位上限、风险偏好和风格选择，再决定股票表达。",
-      "url": "http://www.jintiankansha.com/t/SmVjTswyQ1",
-      "mpUrl": "",
-      "fullText": "走势不同，但中美各自都有利率的问题要解决",
-      "isNew": true
-    },
-    {
-      "source": "培风客",
-      "title": "中国经济：周期性讨论，结构性讨论 - 202607",
-      "publishedDate": "",
-      "relativeTime": "4 天前",
-      "summary": "中国经济：周期性讨论，结构性讨论 - 202607",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/SlZaNNrcOk",
-      "mpUrl": "",
-      "fullText": "中国经济：周期性讨论，结构性讨论 - 202607",
-      "isNew": true
-    },
-    {
-      "source": "EarlETF",
-      "title": "当一名保安从股市赚到1亿美元之后",
-      "publishedDate": "",
-      "relativeTime": "4 小时前",
-      "summary": "当一名保安从股市赚到1亿美元之后",
-      "stockLens": "作为宏观/策略线索：先影响仓位上限、风险偏好和风格选择，再决定股票表达。",
-      "url": "http://www.jintiankansha.com/t/0AJ6BvEU9q",
-      "mpUrl": "",
-      "fullText": "当一名保安从股市赚到1亿美元之后",
-      "isNew": true
-    },
-    {
-      "source": "EarlETF",
-      "title": "解析投资新工具主动ETF：能看基金经理每天持仓，意味着什么？",
-      "publishedDate": "",
-      "relativeTime": "昨天",
-      "summary": "解析投资新工具主动ETF：能看基金经理每天持仓，意味着什么？",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/hrE75QbVKS",
-      "mpUrl": "",
-      "fullText": "解析投资新工具主动ETF：能看基金经理每天持仓，意味着什么？",
-      "isNew": true
-    },
-    {
-      "source": "EarlETF",
-      "title": "BIAS让我七月逃顶，但代价是什么",
-      "publishedDate": "",
-      "relativeTime": "2 天前",
-      "summary": "BIAS让我七月逃顶，但代价是什么",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/pvz7ViNH2m",
-      "mpUrl": "",
-      "fullText": "BIAS让我七月逃顶，但代价是什么",
-      "isNew": true
-    },
-    {
-      "source": "梓豪谈芯",
-      "title": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
-      "publishedDate": "",
-      "relativeTime": "2 周前",
-      "summary": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
-      "stockLens": "作为科技/AI线索：映射到算力、半导体、云厂商、软件应用和港股科技，再用估值与业绩兑现验证。",
-      "url": "http://www.jintiankansha.com/t/hI2WxieBUS",
-      "mpUrl": "",
-      "fullText": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
-      "isNew": true
-    },
-    {
-      "source": "梓豪谈芯",
-      "title": "黑色星期五大跌 A股下半年投资建议",
-      "publishedDate": "",
-      "relativeTime": "2 周前",
-      "summary": "黑色星期五大跌 A股下半年投资建议",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/srR1zDc1gU",
-      "mpUrl": "",
-      "fullText": "黑色星期五大跌 A股下半年投资建议",
-      "isNew": true
-    },
-    {
-      "source": "梓豪谈芯",
-      "title": "英伟达联合Lumentum针对DWDM CW-DFB-SOA激光器阵列设计与封装",
-      "publishedDate": "",
-      "relativeTime": "2 周前",
-      "summary": "英伟达联合Lumentum针对DWDM CW-DFB-SOA激光器阵列设计与封装",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/GossUsH92R",
-      "mpUrl": "",
-      "fullText": "英伟达联合Lumentum针对DWDM CW-DFB-SOA激光器阵列设计与封装",
-      "isNew": true
-    },
-    {
-      "source": "星辰大海的边界",
-      "title": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
-      "publishedDate": "",
-      "relativeTime": "昨天",
-      "summary": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
-      "stockLens": "作为交易结构线索：交叉验证涨跌家数、成交额、分档资金流和板块轮动。",
-      "url": "http://www.jintiankansha.com/t/RdJzPdFeGh",
-      "mpUrl": "",
-      "fullText": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
-      "isNew": true
-    },
-    {
-      "source": "星辰大海的边界",
-      "title": "昨天在扬州喝酒没更新，今儿补一下。华尔街内部自救，惊天大反弹来了-20260731214435",
-      "publishedDate": "",
-      "relativeTime": "昨天",
-      "summary": "昨天在扬州喝酒没更新，今儿补一下。华尔街内部自救，惊天大反弹来了-20260731214435",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/b4dvFurxYW",
-      "mpUrl": "",
-      "fullText": "昨天在扬州喝酒没更新，今儿补一下。华尔街内部自救，惊天大反弹来了-20260731214435",
-      "isNew": true
-    },
-    {
-      "source": "星辰大海的边界",
-      "title": "牛市不卖，与你何干。今天见了位25岁管理1w人的创业者哥哥，他听-20260730001026",
-      "publishedDate": "",
-      "relativeTime": "6 天前",
-      "summary": "牛市不卖，与你何干。今天见了位25岁管理1w人的创业者哥哥，他听-20260730001026",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/9vOb3Jd92n",
-      "mpUrl": "",
-      "fullText": "牛市不卖，与你何干。今天见了位25岁管理1w人的创业者哥哥，他听-20260730001026",
-      "isNew": true
-    },
-    {
-      "source": "地平线全球策略",
-      "title": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
-      "publishedDate": "",
-      "relativeTime": "昨天",
-      "summary": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
-      "stockLens": "作为宏观/策略线索：先影响仓位上限、风险偏好和风格选择，再决定股票表达。",
-      "url": "http://www.jintiankansha.com/t/AMtmkhTmSi",
-      "mpUrl": "",
-      "fullText": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
-      "isNew": true
-    },
-    {
-      "source": "地平线全球策略",
-      "title": "何时重新买回科技股.. 260803",
-      "publishedDate": "",
-      "relativeTime": "2 天前",
-      "summary": "何时重新买回科技股.. 260803",
-      "stockLens": "作为宏观/策略线索：先影响仓位上限、风险偏好和风格选择，再决定股票表达。",
-      "url": "http://www.jintiankansha.com/t/TErz9PXs88",
-      "mpUrl": "",
-      "fullText": "何时重新买回科技股.. 260803",
-      "isNew": true
-    },
-    {
-      "source": "地平线全球策略",
-      "title": "为什么要加空半导体.. 260730",
-      "publishedDate": "",
-      "relativeTime": "6 天前",
-      "summary": "为什么要加空半导体.. 260730",
-      "stockLens": "作为科技/AI线索：映射到算力、半导体、云厂商、软件应用和港股科技，再用估值与业绩兑现验证。",
-      "url": "http://www.jintiankansha.com/t/7xYO20WUZ0",
-      "mpUrl": "",
-      "fullText": "为什么要加空半导体.. 260730",
-      "isNew": true
-    },
-    {
-      "source": "冷眼局中人",
-      "title": "我回来了，Can you hear me?",
-      "publishedDate": "",
-      "relativeTime": "",
-      "summary": "我回来了，Can you hear me?",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/mufQKSv5xQ",
-      "mpUrl": "",
-      "fullText": "我回来了，Can you hear me?",
-      "isNew": true
-    },
-    {
-      "source": "数字生命卡兹克",
-      "title": "聊聊Qwen3.8-Max，我心中的千问又回来了。",
-      "publishedDate": "",
-      "relativeTime": "昨天",
-      "summary": "聊聊Qwen3.8-Max，我心中的千问又回来了。",
-      "stockLens": "作为科技/AI线索：映射到算力、半导体、云厂商、软件应用和港股科技，再用估值与业绩兑现验证。",
-      "url": "http://www.jintiankansha.com/t/4wlKm0cAVx",
-      "mpUrl": "",
-      "fullText": "聊聊Qwen3.8-Max，我心中的千问又回来了。",
-      "isNew": true
-    },
-    {
-      "source": "数字生命卡兹克",
-      "title": "今天，我的Claude也被封号了。",
-      "publishedDate": "",
-      "relativeTime": "1 周前",
-      "summary": "今天，我的Claude也被封号了。",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/Xm99yf1PHV",
-      "mpUrl": "",
-      "fullText": "今天，我的Claude也被封号了。",
-      "isNew": true
-    },
-    {
-      "source": "数字生命卡兹克",
-      "title": "黄仁勋、Kimi K3，与一场即将到来的开源战争。",
-      "publishedDate": "",
-      "relativeTime": "1 周前",
-      "summary": "黄仁勋、Kimi K3，与一场即将到来的开源战争。",
-      "stockLens": "作为科技/AI线索：映射到算力、半导体、云厂商、软件应用和港股科技，再用估值与业绩兑现验证。",
-      "url": "http://www.jintiankansha.com/t/qTLACt11eu",
-      "mpUrl": "",
-      "fullText": "黄仁勋、Kimi K3，与一场即将到来的开源战争。",
-      "isNew": true
-    },
-    {
-      "source": "卓哥投研笔记",
-      "title": "阿里并不适用海外CSP的逻辑",
-      "publishedDate": "",
-      "relativeTime": "昨天",
-      "summary": "阿里并不适用海外CSP的逻辑",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/owCMjD4kWC",
-      "mpUrl": "",
-      "fullText": "阿里并不适用海外CSP的逻辑",
-      "isNew": true
-    },
-    {
-      "source": "卓哥投研笔记",
-      "title": "危：DeepSeek Flash以1/10的价格横扫香港庄王的旗舰产品",
-      "publishedDate": "",
-      "relativeTime": "4 天前",
-      "summary": "危：DeepSeek Flash以1/10的价格横扫香港庄王的旗舰产品",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/U3NSy9hP7n",
-      "mpUrl": "",
-      "fullText": "危：DeepSeek Flash以1/10的价格横扫香港庄王的旗舰产品",
-      "isNew": true
-    },
-    {
-      "source": "卓哥投研笔记",
-      "title": "如果没有新场景，算力过剩只是时间问题",
-      "publishedDate": "",
-      "relativeTime": "6 天前",
-      "summary": "如果没有新场景，算力过剩只是时间问题",
-      "stockLens": "作为科技/AI线索：映射到算力、半导体、云厂商、软件应用和港股科技，再用估值与业绩兑现验证。",
-      "url": "http://www.jintiankansha.com/t/4UHM8y8guC",
-      "mpUrl": "",
-      "fullText": "如果没有新场景，算力过剩只是时间问题",
-      "isNew": true
-    },
-    {
       "source": "海豚研究",
       "title": "Palantir：瑕疵修复，信仰股满血复活？",
       "publishedDate": "",
@@ -1656,86 +1852,50 @@
       "isNew": true
     },
     {
-      "source": "东不压桥研究院",
-      "title": "Kimi K3在美国激起的开源模型大争论",
-      "publishedDate": "",
-      "relativeTime": "1 周前",
-      "summary": "Kimi K3在美国激起的开源模型大争论",
-      "stockLens": "作为科技/AI线索：映射到算力、半导体、云厂商、软件应用和港股科技，再用估值与业绩兑现验证。",
-      "url": "http://www.jintiankansha.com/t/5P5OwB3ReM",
-      "mpUrl": "",
-      "fullText": "Kimi K3在美国激起的开源模型大争论",
-      "isNew": true
-    },
-    {
-      "source": "东不压桥研究院",
-      "title": "“模型蒸馏”的地缘政治继续升温",
+      "source": "梓豪谈芯",
+      "title": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
       "publishedDate": "",
       "relativeTime": "2 周前",
-      "summary": "“模型蒸馏”的地缘政治继续升温",
+      "summary": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
+      "stockLens": "作为科技/AI线索：映射到算力、半导体、云厂商、软件应用和港股科技，再用估值与业绩兑现验证。",
+      "url": "http://www.jintiankansha.com/t/hI2WxieBUS",
+      "mpUrl": "",
+      "fullText": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
+      "isNew": true
+    },
+    {
+      "source": "梓豪谈芯",
+      "title": "黑色星期五大跌 A股下半年投资建议",
+      "publishedDate": "",
+      "relativeTime": "2 周前",
+      "summary": "黑色星期五大跌 A股下半年投资建议",
       "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/4r2C17zXUf",
+      "url": "http://www.jintiankansha.com/t/srR1zDc1gU",
       "mpUrl": "",
-      "fullText": "“模型蒸馏”的地缘政治继续升温",
-      "isNew": true
-    },
-    {
-      "source": "东不压桥研究院",
-      "title": "禾赛CEO的这场外媒专访，值得中企学习",
-      "publishedDate": "",
-      "relativeTime": "3 周前",
-      "summary": "禾赛CEO的这场外媒专访，值得中企学习",
-      "stockLens": "作为观点源输入：先归类为行业/公司/策略，再用行情、估值、业绩和资金流确认。",
-      "url": "http://www.jintiankansha.com/t/r63UN0fFnk",
-      "mpUrl": "",
-      "fullText": "禾赛CEO的这场外媒专访，值得中企学习",
-      "isNew": true
-    },
-    {
-      "source": "浑水调研",
-      "title": "一些信息 0803",
-      "publishedDate": "",
-      "relativeTime": "",
-      "summary": "一些信息 0803",
-      "stockLens": "作为基本面验证线索：提取订单、价格、产能和利润率，用财报和资金流交叉验证。",
-      "url": "http://www.jintiankansha.com/t/rqo9sds5xn",
-      "mpUrl": "",
-      "fullText": "一些信息 0803",
-      "isNew": true
-    },
-    {
-      "source": "浑水调研",
-      "title": "为什么这波下跌，让我封神了",
-      "publishedDate": "",
-      "relativeTime": "4 天前",
-      "summary": "为什么这波下跌，让我封神了",
-      "stockLens": "作为基本面验证线索：提取订单、价格、产能和利润率，用财报和资金流交叉验证。",
-      "url": "http://www.jintiankansha.com/t/FhmoRMjjer",
-      "mpUrl": "",
-      "fullText": "为什么这波下跌，让我封神了",
+      "fullText": "黑色星期五大跌 A股下半年投资建议",
       "isNew": true
     }
   ],
   "intelligenceBrief": {
     "title": "分类观点整合",
-    "updatedAt": "2026-08-05",
+    "updatedAt": "2026-08-06",
     "objective": "把公众号/知识星球、播客、产业动态和研报线索压缩成每日可验证的投资信号，并对准行情、估值、资金流和业绩数据。",
     "dailyOutput": [
       {
         "name": "一句话总览",
-        "rule": "公众号最新 48 篇、播客 23 个节目已同步，并整理成 8 个投资类别；今日先看 AI链、宏观仓位、交易结构和基本面验证。"
+        "rule": "公众号最新 48 篇、播客 28 个节目已同步，并整理成 8 个投资类别；今日先看 AI链、宏观仓位、交易结构和基本面验证。"
       },
       {
         "name": "科技/AI 共识",
-        "rule": "AI/科技类文章 14 条，播客新增/高优先级输入 13 个；共同指向算力链仍热，但必须从订单、毛利率、capex 回报和 26Q1/Q2 业绩兑现验证。"
+        "rule": "AI/科技类文章 10 条，播客新增/高优先级输入 15 个；共同指向算力链仍热，但必须从订单、毛利率、capex 回报和 26Q1/Q2 业绩兑现验证。"
       },
       {
         "name": "宏观与仓位",
-        "rule": "宏观/策略文章 7 条；BFC、地平线、Odd Lots、Money Talks 等源先影响仓位上限和风险偏好，再决定科技成长能否继续扩估值。"
+        "rule": "宏观/策略文章 8 条；BFC、地平线、Odd Lots、Money Talks 等源先影响仓位上限和风险偏好，再决定科技成长能否继续扩估值。"
       },
       {
         "name": "交易与验证",
-        "rule": "交易结构文章 7 条、基本面/调研文章 3 条；短线观点必须交叉 FundDB 涨跌家数、成交额、分档资金流、指数估值和财报。"
+        "rule": "交易结构文章 7 条、基本面/调研文章 4 条；短线观点必须交叉 FundDB 涨跌家数、成交额、分档资金流、指数估值和财报。"
       }
     ],
     "presentation": [
@@ -1760,21 +1920,21 @@
       {
         "id": "ai_chain",
         "name": "AI链 / 算力 / 半导体",
-        "articleCount": 17,
-        "podcastCount": 18,
-        "sources": "调研纪要 / 水木纪要 / 中金点睛 / 梓豪谈芯 / 地平线全球策略",
-        "latest": "高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿 / 交流：算力约束下，AI 中下游哪些赛道先跑通营收 / 大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！",
+        "articleCount": 11,
+        "podcastCount": 22,
+        "sources": "地平线全球策略 / 卓哥投研笔记 / 调研纪要 / 水木纪要 / 中金点睛",
+        "latest": "为什么要加空半导体.. 260730 / 如果没有新场景，算力过剩只是时间问题 / 高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿",
         "view": "AI链仍是信息密度最高、资金最容易形成共识的方向，但它已经不能再被粗暴地理解成‘AI涨就买硬件’。公众号端的高盛、大摩、调研纪要不断指向云厂商 capex 上修、WFE 扩容、存储和服务器链条继续紧，播客端则从 Cerebras、Lenovo、Latent Space、20VC 等角度补充了推理速度、模型价格战和开源竞争。合在一起看，主线不是单纯模型发布，而是算力资本开支能否转化成真实应用收入。",
         "investment": "这一类可以拆成四层：第一层是硬件确定性，包括 PCB、光模块、服务器、液冷、电力和半导体设备材料；第二层是模型与云，关注国产模型、云厂商 capex、推理成本下降；第三层是应用，只有有分发、账户、数据和付费场景的公司才值得估值上修；第四层是港股/美股映射，包括阿里、腾讯、Palantir、谷歌、SpaceX 供应链等。操作上，硬件链看订单和价格，应用链看收入兑现，不能把两者混在一个估值逻辑里。",
         "verify": "每天验证五件事：相关行业是否跑赢大盘；核心股票是否有分档资金流净流入；半导体、PCB、光模块和服务器是否共振；云 capex、WFE、存储价格是否继续上修；AI 应用股票池是否出现收入、毛利率或现金流改善。若只有标题热度而没有资金流和订单，信号降级为主题噪音。",
         "detailSections": [
           {
             "title": "核心判断",
-            "body": "AI链 / 算力 / 半导体 这一组的结论不是来自单条新闻，而是由 17 篇公众号/知识星球文章、18 个播客输入共同指向。我的合成判断是：AI链仍是信息密度最高、资金最容易形成共识的方向，但它已经不能再被粗暴地理解成‘AI涨就买硬件’。公众号端的高盛、大摩、调研纪要不断指向云厂商 capex 上修、WFE 扩容、存储和服务器链条继续紧，播客端则从 Cerebras、Lenovo、Latent Space、20VC 等角度补充了推理速度、模型价格战和开源竞争。合在一起看，主线不是单纯模型发布，而是算力资本开支能否转化成真实应用收入。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
+            "body": "AI链 / 算力 / 半导体 这一组的结论不是来自单条新闻，而是由 11 篇公众号/知识星球文章、22 个播客输入共同指向。我的合成判断是：AI链仍是信息密度最高、资金最容易形成共识的方向，但它已经不能再被粗暴地理解成‘AI涨就买硬件’。公众号端的高盛、大摩、调研纪要不断指向云厂商 capex 上修、WFE 扩容、存储和服务器链条继续紧，播客端则从 Cerebras、Lenovo、Latent Space、20VC 等角度补充了推理速度、模型价格战和开源竞争。合在一起看，主线不是单纯模型发布，而是算力资本开支能否转化成真实应用收入。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
           },
           {
             "title": "来源证据",
-            "body": "关键来源压缩为：调研纪要 / 水木纪要 / 中金点睛 / 梓豪谈芯。代表性线索：高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿 / 交流：算力约束下，AI 中下游哪些赛道先跑通营收 / 大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！；播客线索：The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman / 172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
+            "body": "关键来源压缩为：地平线全球策略 / 卓哥投研笔记 / 调研纪要 / 水木纪要。代表性线索：为什么要加空半导体.. 260730 / 如果没有新场景，算力过剩只是时间问题 / 高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿；播客线索：The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman / 172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
           },
           {
             "title": "逻辑链条",
@@ -1797,9 +1957,9 @@
       {
         "id": "macro_liquidity",
         "name": "宏观 / 流动性 / 仓位",
-        "articleCount": 10,
-        "podcastCount": 13,
-        "sources": "BFC汇谈 / 调研纪要 / 水木纪要 / 培风客 / EarlETF",
+        "articleCount": 11,
+        "podcastCount": 15,
+        "sources": "BFC汇谈 / 培风客 / EarlETF / 地平线全球策略 / 奔波儿霸研究室",
         "latest": "美联储加息是“伪命题”？ / Long USDHKD：收益风险比在下降 / 日元：货币政策与干预节奏",
         "view": "宏观这一组不是用来选股，而是用来决定能不能把仓位打满。BFC、地平线和 Money Talks 这一类源关注美元、日元、利率、财政和全球资本市场，它们决定风险资产是否有估值扩张空间。当前要警惕的是：科技线可以靠产业叙事上涨一天，但如果美元重新走强、利率抬头或港股风险偏好回落，AI 反弹很容易从趋势行情退化成局部修复。",
         "investment": "宏观结论应该先落到仓位，而不是落到个股。流动性友好时，可以提高成长和科技的仓位上限；流动性摇摆时，保留有业绩兑现的核心资产，减少题材弹性股；如果美元、日元、利率同时给出压力，则优先降低估值依赖型板块。宏观线也可以解释风格轮动：当成长估值受压，资源、防御、红利和现金流资产会相对占优。",
@@ -1807,11 +1967,11 @@
         "detailSections": [
           {
             "title": "核心判断",
-            "body": "宏观 / 流动性 / 仓位 这一组的结论不是来自单条新闻，而是由 10 篇公众号/知识星球文章、13 个播客输入共同指向。我的合成判断是：宏观这一组不是用来选股，而是用来决定能不能把仓位打满。BFC、地平线和 Money Talks 这一类源关注美元、日元、利率、财政和全球资本市场，它们决定风险资产是否有估值扩张空间。当前要警惕的是：科技线可以靠产业叙事上涨一天，但如果美元重新走强、利率抬头或港股风险偏好回落，AI 反弹很容易从趋势行情退化成局部修复。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
+            "body": "宏观 / 流动性 / 仓位 这一组的结论不是来自单条新闻，而是由 11 篇公众号/知识星球文章、15 个播客输入共同指向。我的合成判断是：宏观这一组不是用来选股，而是用来决定能不能把仓位打满。BFC、地平线和 Money Talks 这一类源关注美元、日元、利率、财政和全球资本市场，它们决定风险资产是否有估值扩张空间。当前要警惕的是：科技线可以靠产业叙事上涨一天，但如果美元重新走强、利率抬头或港股风险偏好回落，AI 反弹很容易从趋势行情退化成局部修复。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
           },
           {
             "title": "来源证据",
-            "body": "关键来源压缩为：BFC汇谈 / 调研纪要 / 水木纪要 / 培风客。代表性线索：美联储加息是“伪命题”？ / Long USDHKD：收益风险比在下降 / 日元：货币政策与干预节奏；播客线索：172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI / AI 发展了 4 年，把应用发展没了？｜AI 年中复盘。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
+            "body": "关键来源压缩为：BFC汇谈 / 培风客 / EarlETF / 地平线全球策略。代表性线索：美联储加息是“伪命题”？ / Long USDHKD：收益风险比在下降 / 日元：货币政策与干预节奏；播客线索：172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI / AI 发展了 4 年，把应用发展没了？｜AI 年中复盘。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
           },
           {
             "title": "逻辑链条",
@@ -1834,9 +1994,9 @@
       {
         "id": "metals_commodities",
         "name": "有色 / 商品 / 资源",
-        "articleCount": 30,
-        "podcastCount": 12,
-        "sources": "BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 调研纪要 / 中金点睛",
+        "articleCount": 32,
+        "podcastCount": 15,
+        "sources": "BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 培风客 / EarlETF",
         "latest": "Long USDHKD：收益风险比在下降 / 绿皮红心 / 月评与周评（08/01）",
         "view": "有色和商品不只是周期股，它们现在还和 AI 基础设施绑定在一起。天然气、电力、铜、银、黄金的变化，一方面反映通胀和避险，另一方面也反映数据中心、电网和算力建设的真实约束。若商品上涨来自 AI capex 对电力和金属的需求，那么它会强化算力链；若商品上涨来自避险或通胀压力，则可能压制成长估值。",
         "investment": "这类观点要分清‘需求拉动’和‘避险拉动’。需求拉动时，电力设备、铜、液冷、数据中心、资源品会和 AI 链形成正反馈；避险拉动时，黄金、有色可能强，但科技成长未必受益。操作上不要看到商品涨就直接买周期，要判断它是 AI 基建逻辑、宏观避险逻辑，还是单纯价格波动。",
@@ -1844,11 +2004,11 @@
         "detailSections": [
           {
             "title": "核心判断",
-            "body": "有色 / 商品 / 资源 这一组的结论不是来自单条新闻，而是由 30 篇公众号/知识星球文章、12 个播客输入共同指向。我的合成判断是：有色和商品不只是周期股，它们现在还和 AI 基础设施绑定在一起。天然气、电力、铜、银、黄金的变化，一方面反映通胀和避险，另一方面也反映数据中心、电网和算力建设的真实约束。若商品上涨来自 AI capex 对电力和金属的需求，那么它会强化算力链；若商品上涨来自避险或通胀压力，则可能压制成长估值。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
+            "body": "有色 / 商品 / 资源 这一组的结论不是来自单条新闻，而是由 32 篇公众号/知识星球文章、15 个播客输入共同指向。我的合成判断是：有色和商品不只是周期股，它们现在还和 AI 基础设施绑定在一起。天然气、电力、铜、银、黄金的变化，一方面反映通胀和避险，另一方面也反映数据中心、电网和算力建设的真实约束。若商品上涨来自 AI capex 对电力和金属的需求，那么它会强化算力链；若商品上涨来自避险或通胀压力，则可能压制成长估值。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
           },
           {
             "title": "来源证据",
-            "body": "关键来源压缩为：BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 调研纪要。代表性线索：Long USDHKD：收益风险比在下降 / 绿皮红心 / 月评与周评（08/01）；播客线索：The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman / 172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
+            "body": "关键来源压缩为：BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 培风客。代表性线索：Long USDHKD：收益风险比在下降 / 绿皮红心 / 月评与周评（08/01）；播客线索：The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman / 172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
           },
           {
             "title": "逻辑链条",
@@ -1871,9 +2031,9 @@
       {
         "id": "market_structure",
         "name": "交易结构 / 情绪 / 盘口",
-        "articleCount": 30,
-        "podcastCount": 5,
-        "sources": "BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 调研纪要 / 水木纪要",
+        "articleCount": 32,
+        "podcastCount": 9,
+        "sources": "BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 培风客 / EarlETF",
         "latest": "Long USDHKD：收益风险比在下降 / 绿皮红心 / 月评与周评（08/01）",
         "view": "交易结构类来源提供的是盘面温度计，不是投资结论。波段之门、盘口逻辑拆解这类源能更快感知市场在做什么：是主线延续、情绪修复、利空消化，还是资金只在做局部套利。它们的价值在于捕捉‘价格行为是否支持基本面叙事’，尤其在成交不足、风格切换和消息扰动时非常有用。",
         "investment": "这类信号只能决定节奏，不能决定方向。若 AI/科技基本面有线索，同时交易结构也显示放量、扩散、龙头带队，可以提高参与度；若只有盘口热、没有基本面和资金确认，就只能视为短线情绪。对于拥挤方向，交易类观点可以帮助判断减仓和不加仓，而不是盲目追涨。",
@@ -1881,11 +2041,11 @@
         "detailSections": [
           {
             "title": "核心判断",
-            "body": "交易结构 / 情绪 / 盘口 这一组的结论不是来自单条新闻，而是由 30 篇公众号/知识星球文章、5 个播客输入共同指向。我的合成判断是：交易结构类来源提供的是盘面温度计，不是投资结论。波段之门、盘口逻辑拆解这类源能更快感知市场在做什么：是主线延续、情绪修复、利空消化，还是资金只在做局部套利。它们的价值在于捕捉‘价格行为是否支持基本面叙事’，尤其在成交不足、风格切换和消息扰动时非常有用。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
+            "body": "交易结构 / 情绪 / 盘口 这一组的结论不是来自单条新闻，而是由 32 篇公众号/知识星球文章、9 个播客输入共同指向。我的合成判断是：交易结构类来源提供的是盘面温度计，不是投资结论。波段之门、盘口逻辑拆解这类源能更快感知市场在做什么：是主线延续、情绪修复、利空消化，还是资金只在做局部套利。它们的价值在于捕捉‘价格行为是否支持基本面叙事’，尤其在成交不足、风格切换和消息扰动时非常有用。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
           },
           {
             "title": "来源证据",
-            "body": "关键来源压缩为：BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 调研纪要。代表性线索：Long USDHKD：收益风险比在下降 / 绿皮红心 / 月评与周评（08/01）；播客线索：172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI / 估值or叙事，谁是魔鬼，谁是天使？。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
+            "body": "关键来源压缩为：BFC汇谈 / 波段之门 / 盘口逻辑拆解 / 培风客。代表性线索：Long USDHKD：收益风险比在下降 / 绿皮红心 / 月评与周评（08/01）；播客线索：172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI / 估值or叙事，谁是魔鬼，谁是天使？。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
           },
           {
             "title": "逻辑链条",
@@ -1908,21 +2068,21 @@
       {
         "id": "fundamental_research",
         "name": "基本面 / 调研 / 财报验证",
-        "articleCount": 35,
-        "podcastCount": 9,
-        "sources": "BFC汇谈 / 调研纪要 / 水木纪要 / 中金点睛 / 培风客",
-        "latest": "Long USDHKD：收益风险比在下降 / 高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿 / 交流：算力约束下，AI 中下游哪些赛道先跑通营收",
+        "articleCount": 34,
+        "podcastCount": 13,
+        "sources": "BFC汇谈 / 培风客 / EarlETF / 星辰大海的边界 / 地平线全球策略",
+        "latest": "Long USDHKD：收益风险比在下降 / 天人合一追求下的改革 / 中国经济：周期性讨论，结构性讨论 - 202607",
         "view": "基本面和调研类是整个系统里最关键的过滤器。AI、机器人、半导体、港股科技的叙事都可以很动人，但最终必须落到订单、价格、产能、收入、利润率和现金流。调研纪要、水木纪要、中金点睛、海豚研究等源的作用，是把‘故事’拆成可以核验的经营变量。",
         "investment": "这一组直接决定股票能不能从观察池进入核心池。能看到订单上修、价格改善、毛利率稳定、客户扩张和财报兑现的公司，可以承接更高估值；只有主题热度但没有经营证据的公司，只能做短线弹性。对 26Q1/Q2 业绩验证尤其重要，因为市场现在已经开始提前给 AI 应用和算力链定价。",
         "verify": "检查财报增速、毛利率、订单指引、存货/应收、机构一致预期变化、估值分位、公司公告和调研纪要是否相互印证。若调研说景气但股价和资金流不确认，要等；若资金先行但调研和财报跟不上，要警惕兑现风险。",
         "detailSections": [
           {
             "title": "核心判断",
-            "body": "基本面 / 调研 / 财报验证 这一组的结论不是来自单条新闻，而是由 35 篇公众号/知识星球文章、9 个播客输入共同指向。我的合成判断是：基本面和调研类是整个系统里最关键的过滤器。AI、机器人、半导体、港股科技的叙事都可以很动人，但最终必须落到订单、价格、产能、收入、利润率和现金流。调研纪要、水木纪要、中金点睛、海豚研究等源的作用，是把‘故事’拆成可以核验的经营变量。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
+            "body": "基本面 / 调研 / 财报验证 这一组的结论不是来自单条新闻，而是由 34 篇公众号/知识星球文章、13 个播客输入共同指向。我的合成判断是：基本面和调研类是整个系统里最关键的过滤器。AI、机器人、半导体、港股科技的叙事都可以很动人，但最终必须落到订单、价格、产能、收入、利润率和现金流。调研纪要、水木纪要、中金点睛、海豚研究等源的作用，是把‘故事’拆成可以核验的经营变量。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
           },
           {
             "title": "来源证据",
-            "body": "关键来源压缩为：BFC汇谈 / 调研纪要 / 水木纪要 / 中金点睛。代表性线索：Long USDHKD：收益风险比在下降 / 高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿 / 交流：算力约束下，AI 中下游哪些赛道先跑通营收；播客线索：172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI / AI 发展了 4 年，把应用发展没了？｜AI 年中复盘。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
+            "body": "关键来源压缩为：BFC汇谈 / 培风客 / EarlETF / 星辰大海的边界。代表性线索：Long USDHKD：收益风险比在下降 / 天人合一追求下的改革 / 中国经济：周期性讨论，结构性讨论 - 202607；播客线索：172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI / AI 发展了 4 年，把应用发展没了？｜AI 年中复盘。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
           },
           {
             "title": "逻辑链条",
@@ -1945,21 +2105,21 @@
       {
         "id": "overseas_hk",
         "name": "海外科技 / 港股映射",
-        "articleCount": 13,
-        "podcastCount": 1,
-        "sources": "调研纪要 / 水木纪要 / 中金点睛 / 梓豪谈芯 / 地平线全球策略",
-        "latest": "交流：算力约束下，AI 中下游哪些赛道先跑通营收 / 大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！ / SA 存储小作文：英伟达 Rubin Ultra 大幅减配HBM！",
+        "articleCount": 10,
+        "podcastCount": 2,
+        "sources": "地平线全球策略 / 卓哥投研笔记 / 调研纪要 / 水木纪要 / 中金点睛",
+        "latest": "为什么要加空半导体.. 260730 / 阿里并不适用海外CSP的逻辑 / 如果没有新场景，算力过剩只是时间问题",
         "view": "海外科技和港股映射解决的是‘全球 AI 叙事如何传导到可交易资产’。海外独角兽、海豚研究、404K、20VC、Odd Lots 等源提供了美股和海外一级市场视角；港股和 A股则分别承接平台估值修复、供应链订单和主题扩散。关键是不要把美股模型公司、港股平台公司和 A股硬件链混成同一套逻辑。",
         "investment": "港股平台更看广告、云、游戏、利润率和股东回报；美股 AI 应用更看收入增速和估值容忍度；A股映射链更看供应链订单和国产替代。若海外 AI 财报强、港股科技放量、A股硬件链同步，说明全球叙事正在扩散；若只有海外涨而 A股不跟，说明本地资金不认可映射。",
         "verify": "验证 hk_stock_daily、恒生科技、港股科技成交、A/H 映射股票表现、美股 AI 龙头财报、云 capex 和中概估值。需要特别区分‘海外业务真实受益’和‘名字沾 AI’的题材映射。",
         "detailSections": [
           {
             "title": "核心判断",
-            "body": "海外科技 / 港股映射 这一组的结论不是来自单条新闻，而是由 13 篇公众号/知识星球文章、1 个播客输入共同指向。我的合成判断是：海外科技和港股映射解决的是‘全球 AI 叙事如何传导到可交易资产’。海外独角兽、海豚研究、404K、20VC、Odd Lots 等源提供了美股和海外一级市场视角；港股和 A股则分别承接平台估值修复、供应链订单和主题扩散。关键是不要把美股模型公司、港股平台公司和 A股硬件链混成同一套逻辑。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
+            "body": "海外科技 / 港股映射 这一组的结论不是来自单条新闻，而是由 10 篇公众号/知识星球文章、2 个播客输入共同指向。我的合成判断是：海外科技和港股映射解决的是‘全球 AI 叙事如何传导到可交易资产’。海外独角兽、海豚研究、404K、20VC、Odd Lots 等源提供了美股和海外一级市场视角；港股和 A股则分别承接平台估值修复、供应链订单和主题扩散。关键是不要把美股模型公司、港股平台公司和 A股硬件链混成同一套逻辑。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
           },
           {
             "title": "来源证据",
-            "body": "关键来源压缩为：调研纪要 / 水木纪要 / 中金点睛 / 梓豪谈芯。代表性线索：交流：算力约束下，AI 中下游哪些赛道先跑通营收 / 大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！ / SA 存储小作文：英伟达 Rubin Ultra 大幅减配HBM！；播客线索：E245｜藏在大模型背后的新闻人：GPT们的回复是这样写出来的。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
+            "body": "关键来源压缩为：地平线全球策略 / 卓哥投研笔记 / 调研纪要 / 水木纪要。代表性线索：为什么要加空半导体.. 260730 / 阿里并不适用海外CSP的逻辑 / 如果没有新场景，算力过剩只是时间问题；播客线索：E245｜藏在大模型背后的新闻人：GPT们的回复是这样写出来的 / 从科技投资到 HongShan X：为什么她总在另开一桌。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
           },
           {
             "title": "逻辑链条",
@@ -1982,21 +2142,21 @@
       {
         "id": "allocation_etf",
         "name": "ETF / 配置 / 风格表达",
-        "articleCount": 10,
-        "podcastCount": 7,
-        "sources": "BFC汇谈 / 调研纪要 / 培风客 / EarlETF / 星辰大海的边界",
-        "latest": "美联储加息是“伪命题”？ / 日元：货币政策与干预节奏 / 花旗：药明康德二季度毛利率 56.6%，业绩大幅跑赢预期背后是什么逻辑",
+        "articleCount": 11,
+        "podcastCount": 8,
+        "sources": "BFC汇谈 / 培风客 / EarlETF / 星辰大海的边界 / 地平线全球策略",
+        "latest": "美联储加息是“伪命题”？ / 日元：货币政策与干预节奏 / 走势不同，但中美各自都有利率的问题要解决",
         "view": "配置和 ETF 类观点适合处理一个常见问题：方向可能对，但个股很难选。EarlETF、Capital Allocators、星辰大海等源更关注指数、风格、组合和风险预算。它们能帮助把‘看好 AI/科技/资源/红利’转成更稳的组合表达，而不是非要押单一个股。",
         "investment": "当行业逻辑明确但公司分歧大，用 ETF 或指数表达；当风格拥挤明显，降低单一主题暴露；当宏观不确定但行业长期趋势还在，用核心资产加 ETF 替代高弹性题材。配置类观点也能帮助复盘：如果看对了方向却亏钱，问题往往出在载体选择和仓位结构。",
         "verify": "看宽基/行业 ETF 成交、指数估值分位、风格强弱、微盘/大盘相对收益、ETF 资金流和主题拥挤度。若个股波动太大但 ETF 趋势稳定，优先用 ETF；若 ETF 已拥挤且估值高，避免追高。",
         "detailSections": [
           {
             "title": "核心判断",
-            "body": "ETF / 配置 / 风格表达 这一组的结论不是来自单条新闻，而是由 10 篇公众号/知识星球文章、7 个播客输入共同指向。我的合成判断是：配置和 ETF 类观点适合处理一个常见问题：方向可能对，但个股很难选。EarlETF、Capital Allocators、星辰大海等源更关注指数、风格、组合和风险预算。它们能帮助把‘看好 AI/科技/资源/红利’转成更稳的组合表达，而不是非要押单一个股。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
+            "body": "ETF / 配置 / 风格表达 这一组的结论不是来自单条新闻，而是由 11 篇公众号/知识星球文章、8 个播客输入共同指向。我的合成判断是：配置和 ETF 类观点适合处理一个常见问题：方向可能对，但个股很难选。EarlETF、Capital Allocators、星辰大海等源更关注指数、风格、组合和风险预算。它们能帮助把‘看好 AI/科技/资源/红利’转成更稳的组合表达，而不是非要押单一个股。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
           },
           {
             "title": "来源证据",
-            "body": "关键来源压缩为：BFC汇谈 / 调研纪要 / 培风客 / EarlETF。代表性线索：美联储加息是“伪命题”？ / 日元：货币政策与干预节奏 / 花旗：药明康德二季度毛利率 56.6%，业绩大幅跑赢预期背后是什么逻辑；播客线索：AI 发展了 4 年，把应用发展没了？｜AI 年中复盘 / 172. 全球宏观和资本市场2026半年度复盘与展望：AI叙事的下一步。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
+            "body": "关键来源压缩为：BFC汇谈 / 培风客 / EarlETF / 星辰大海的边界。代表性线索：美联储加息是“伪命题”？ / 日元：货币政策与干预节奏 / 走势不同，但中美各自都有利率的问题要解决；播客线索：AI 发展了 4 年，把应用发展没了？｜AI 年中复盘 / 172. 全球宏观和资本市场2026半年度复盘与展望：AI叙事的下一步。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
           },
           {
             "title": "逻辑链条",
@@ -2019,21 +2179,21 @@
       {
         "id": "people_business",
         "name": "人物观点 / 商业质量",
-        "articleCount": 31,
-        "podcastCount": 19,
-        "sources": "BFC汇谈 / 调研纪要 / 水木纪要 / 中金点睛 / 培风客",
-        "latest": "Long USDHKD：收益风险比在下降 / 交流：算力约束下，AI 中下游哪些赛道先跑通营收 / 大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！",
+        "articleCount": 29,
+        "podcastCount": 23,
+        "sources": "BFC汇谈 / 培风客 / EarlETF / 星辰大海的边界 / 地平线全球策略",
+        "latest": "Long USDHKD：收益风险比在下降 / 天人合一追求下的改革 / 中国经济：周期性讨论，结构性讨论 - 202607",
         "view": "人物访谈和商业播客不是短线信号，而是用来判断公司质量。晚点聊、卫诗婕、张小珺、Acquired、HBR 等源能展示创始人、组织、商业模式和长期战略。它们帮助区分两类公司：一种是只会讲 AI 故事，另一种是真能把技术变成产品、收入、组织效率和客户留存。",
         "investment": "这类观点应放在中长期股票池建设里。优秀人物和组织可以提高公司穿越周期的概率，但不能自动证明估值便宜。真正可投的公司，需要同时具备强产品、强组织、清晰商业模式、客户付费和现金流路径。对机器人、自动驾驶、企业软件等方向，人物访谈能帮助判断量产节奏和战略定力。",
         "verify": "验证管理层承诺兑现、收入质量、客户留存、现金流、资本开支纪律、组织变化和估值叙事偏离度。若访谈很强但财报和订单没有跟上，只能提升关注度；若访谈、财报、资金流和行业趋势同时确认，才提高仓位。",
         "detailSections": [
           {
             "title": "核心判断",
-            "body": "人物观点 / 商业质量 这一组的结论不是来自单条新闻，而是由 31 篇公众号/知识星球文章、19 个播客输入共同指向。我的合成判断是：人物访谈和商业播客不是短线信号，而是用来判断公司质量。晚点聊、卫诗婕、张小珺、Acquired、HBR 等源能展示创始人、组织、商业模式和长期战略。它们帮助区分两类公司：一种是只会讲 AI 故事，另一种是真能把技术变成产品、收入、组织效率和客户留存。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
+            "body": "人物观点 / 商业质量 这一组的结论不是来自单条新闻，而是由 29 篇公众号/知识星球文章、23 个播客输入共同指向。我的合成判断是：人物访谈和商业播客不是短线信号，而是用来判断公司质量。晚点聊、卫诗婕、张小珺、Acquired、HBR 等源能展示创始人、组织、商业模式和长期战略。它们帮助区分两类公司：一种是只会讲 AI 故事，另一种是真能把技术变成产品、收入、组织效率和客户留存。 这类信息最有用的地方不是告诉我们今天买什么，而是提示市场正在给哪些变量重新定价。如果这个变量能继续被行情、资金流和财报验证，它就可能从‘观点’升级为‘投资线索’；如果只能停留在标题和情绪层面，就只能放在观察区。"
           },
           {
             "title": "来源证据",
-            "body": "关键来源压缩为：BFC汇谈 / 调研纪要 / 水木纪要 / 中金点睛。代表性线索：Long USDHKD：收益风险比在下降 / 交流：算力约束下，AI 中下游哪些赛道先跑通营收 / 大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！；播客线索：The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman / 172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
+            "body": "关键来源压缩为：BFC汇谈 / 培风客 / EarlETF / 星辰大海的边界。代表性线索：Long USDHKD：收益风险比在下降 / 天人合一追求下的改革 / 中国经济：周期性讨论，结构性讨论 - 202607；播客线索：The Biggest Chip Ever Built — Why OpenAI Runs On It | Cerebras CEO Andrew Feldman / 172: Momenta IPO后再访曹旭东：就是想做没有尽头的AI。这里不展开罗列全部来源，来源只负责证明这个类别确实有信息增量；真正重要的是下面的推理、映射和验证。"
           },
           {
             "title": "逻辑链条",
@@ -2057,94 +2217,6 @@
   },
   "intelligenceSources": [
     {
-      "group": "科技类",
-      "name": "数字生命卡兹克",
-      "sourceType": "jintiankansha column",
-      "focus": "AI 应用、科技产品、数字生命与前沿叙事。",
-      "investmentUse": "捕捉新应用场景和早期主题，后续用商业化与收入验证。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/euZCfLlKpL",
-      "latestTitle": "聊聊Qwen3.8-Max，我心中的千问又回来了。",
-      "latestDate": "昨天"
-    },
-    {
-      "group": "科技类",
-      "name": "刘小排",
-      "sourceType": "jintiankansha column",
-      "focus": "AI 产品、独立开发、软件工具和应用落地。",
-      "investmentUse": "观察 AI 应用从产品热度到付费转化的路径。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/RmRoJm0hCt",
-      "latestTitle": "没人说？那我来说， Opus 5 就是个刷榜怪！",
-      "latestDate": "12 小时前"
-    },
-    {
-      "group": "投资类",
-      "name": "培风客",
-      "sourceType": "jintiankansha column",
-      "focus": "投资框架、公司研究、组合思考。",
-      "investmentUse": "作为中长期研究线索，重点提炼公司和估值假设。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/Fj9DVZlo9X",
-      "latestTitle": "天人合一追求下的改革",
-      "latestDate": "昨天"
-    },
-    {
-      "group": "科技类",
-      "name": "海外独角兽",
-      "sourceType": "jintiankansha column",
-      "focus": "海外科技公司、一级市场、成长股。",
-      "investmentUse": "映射港股/美股/中概及 A 股映射链条。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/f4hF3D8497",
-      "latestTitle": "无法蒸馏的美国市场，谁在分食 Frontier Labs 百亿美金预算？",
-      "latestDate": "23 小时前"
-    },
-    {
-      "group": "投资类",
-      "name": "2030FY",
-      "sourceType": "jintiankansha column",
-      "focus": "长期成长、产业趋势和未来收入曲线。",
-      "investmentUse": "用于中长期主题跟踪，但要用财报兑现过滤远期叙事。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/vm6wl3VsZu",
-      "latestTitle": "外资行解读FCC传闻",
-      "latestDate": "5 小时前"
-    },
-    {
-      "group": "科技类",
-      "name": "404K",
-      "sourceType": "jintiankansha column",
-      "focus": "科技成长、AI、航天和海外公司研究。",
-      "investmentUse": "补充成长股风险偏好和主题扩散判断。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/j6G918ZvXl",
-      "latestTitle": "SpaceX二季度深度：星链贡献26亿美元调整后EBITDA，AI用158亿美元资本开支换来转正",
-      "latestDate": "6 小时前"
-    },
-    {
-      "group": "投资类",
-      "name": "地平线全球策略",
-      "sourceType": "jintiankansha column",
-      "focus": "全球宏观、汇率、利率和跨市场策略。",
-      "investmentUse": "决定仓位上限和风险预算，不直接选股。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/TMPWMTO3j3",
-      "latestTitle": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
-      "latestDate": "昨天"
-    },
-    {
-      "group": "投资类",
-      "name": "卓哥投研笔记",
-      "sourceType": "jintiankansha column",
-      "focus": "公司研究、行业比较和投资笔记。",
-      "investmentUse": "提取公司逻辑和估值锚，进入候选池。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/JSzKdLWQBg",
-      "latestTitle": "阿里并不适用海外CSP的逻辑",
-      "latestDate": "昨天"
-    },
-    {
       "group": "研究类",
       "name": "海豚研究",
       "sourceType": "jintiankansha column",
@@ -2153,62 +2225,10 @@
       "status": "已同步",
       "columnUrl": "http://www.jintiankansha.com/column/yNjpL7ncbp",
       "latestTitle": "Palantir：瑕疵修复，信仰股满血复活？",
-      "latestDate": ""
-    },
-    {
-      "group": "科技类",
-      "name": "梓豪谈芯",
-      "sourceType": "jintiankansha column",
-      "focus": "芯片、半导体、产业链和供应链。",
-      "investmentUse": "验证 AI 芯片、存储、PCB、设备材料链的景气变化。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/qD9XSiTOLR",
-      "latestTitle": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
-      "latestDate": "2 周前"
-    },
-    {
-      "group": "科技类",
-      "name": "东不压桥研究院",
-      "sourceType": "jintiankansha column",
-      "focus": "公司、科技产业和行业深度研究。",
-      "investmentUse": "作为深度研究输入，拆成估值、业绩、风险三张卡。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/FExaYYMg65",
-      "latestTitle": "Kimi K3在美国激起的开源模型大争论",
-      "latestDate": "1 周前"
-    },
-    {
-      "group": "投资类",
-      "name": "星辰大海的边界",
-      "sourceType": "jintiankansha column",
-      "focus": "宏观、全球资产、产业边界和风格拥挤度。",
-      "investmentUse": "辅助判断风险偏好、风格轮动和主题边界。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/LpJaykZz73",
-      "latestTitle": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
-      "latestDate": "昨天"
-    },
-    {
-      "group": "投资类",
-      "name": "奔波儿霸研究室",
-      "sourceType": "jintiankansha column",
-      "focus": "市场观察、个股和交易思考。",
-      "investmentUse": "作为情绪与交易线索，必须交叉资金流。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/3tQpYv0AuX",
-      "latestTitle": "泡沫有一个巨大的正面意义，就是为上一轮泡沫里中毒的人解毒\n\n泡沫是一种毒，会腐蚀人的心灵，让一个正常...",
-      "latestDate": "1 月前"
-    },
-    {
-      "group": "研究类",
-      "name": "水木纪要",
-      "sourceType": "jintiankansha column",
-      "focus": "公司调研、业绩说明、产业纪要。",
-      "investmentUse": "直接验证订单、价格、客户和利润率。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/owkx7OaOUU",
-      "latestTitle": "大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！",
-      "latestDate": "昨天"
+      "latestDate": "",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/Dhnn5IZtVl",
+      "latestFullText": "Palantir：瑕疵修复，信仰股满血复活？",
+      "latestOriginalUrl": ""
     },
     {
       "group": "研究类",
@@ -2219,18 +2239,10 @@
       "status": "已同步",
       "columnUrl": "http://www.jintiankansha.com/column/h39JnM2SV6",
       "latestTitle": "中金：从明斯基视角看AI债务风险",
-      "latestDate": "4 小时前"
-    },
-    {
-      "group": "投资类",
-      "name": "EarlETF",
-      "sourceType": "jintiankansha column",
-      "focus": "ETF、指数、资产配置和工具化投资。",
-      "investmentUse": "把观点落到可交易 ETF、指数暴露和仓位管理。",
-      "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/dcA3ZMkbjn",
-      "latestTitle": "当一名保安从股市赚到1亿美元之后",
-      "latestDate": "4 小时前"
+      "latestDate": "4 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/eOGAV6QABO",
+      "latestFullText": "中金：从明斯基视角看AI债务风险",
+      "latestOriginalUrl": ""
     },
     {
       "group": "投资类",
@@ -2241,7 +2253,10 @@
       "status": "已同步",
       "columnUrl": "http://www.jintiankansha.com/column/z8cm36lhG3",
       "latestTitle": "美联储加息是“伪命题”？",
-      "latestDate": "4 小时前"
+      "latestDate": "4 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/2LLyV5IFQz",
+      "latestFullText": "美联储加息是“伪命题”？",
+      "latestOriginalUrl": ""
     },
     {
       "group": "投资类",
@@ -2252,7 +2267,10 @@
       "status": "已同步",
       "columnUrl": "http://www.jintiankansha.com/column/KOgbbb48wV",
       "latestTitle": "绿皮红心",
-      "latestDate": "2 天前"
+      "latestDate": "2 天前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/eWcDK0iYrH",
+      "latestOriginalUrl": "",
+      "latestFullText": "绿皮红心"
     },
     {
       "group": "投资类",
@@ -2263,18 +2281,66 @@
       "status": "已同步",
       "columnUrl": "http://www.jintiankansha.com/column/hPbW4ozvWc",
       "latestTitle": "利空小作文",
-      "latestDate": "14 小时前"
+      "latestDate": "14 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/3HoT9qtlOI",
+      "latestOriginalUrl": "",
+      "latestFullText": "利空小作文"
     },
     {
-      "group": "研究类",
-      "name": "调研纪要",
+      "group": "投资类",
+      "name": "培风客",
       "sourceType": "jintiankansha column",
-      "focus": "上市公司调研、机构问答和产业链纪要。",
-      "investmentUse": "验证订单、价格、产能、收入和利润预期。",
+      "focus": "投资框架、公司研究、组合思考。",
+      "investmentUse": "作为中长期研究线索，重点提炼公司和估值假设。",
       "status": "已同步",
-      "columnUrl": "http://www.jintiankansha.com/column/pqlX7tELZo",
-      "latestTitle": "高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿",
-      "latestDate": "16 小时前"
+      "columnUrl": "http://www.jintiankansha.com/column/Fj9DVZlo9X",
+      "latestTitle": "天人合一追求下的改革",
+      "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/kT6Qt92XFj",
+      "latestOriginalUrl": "",
+      "latestFullText": "天人合一追求下的改革"
+    },
+    {
+      "group": "投资类",
+      "name": "EarlETF",
+      "sourceType": "jintiankansha column",
+      "focus": "ETF、指数、资产配置和工具化投资。",
+      "investmentUse": "把观点落到可交易 ETF、指数暴露和仓位管理。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/dcA3ZMkbjn",
+      "latestTitle": "当一名保安从股市赚到1亿美元之后",
+      "latestDate": "4 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/0AJ6BvEU9q",
+      "latestOriginalUrl": "",
+      "latestFullText": "当一名保安从股市赚到1亿美元之后"
+    },
+    {
+      "group": "投资类",
+      "name": "星辰大海的边界",
+      "sourceType": "jintiankansha column",
+      "focus": "宏观、全球资产、产业边界和风格拥挤度。",
+      "investmentUse": "辅助判断风险偏好、风格轮动和主题边界。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/LpJaykZz73",
+      "latestTitle": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753",
+      "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/RdJzPdFeGh",
+      "latestOriginalUrl": "",
+      "latestFullText": "别再猜行业了，直接买微盘【KY策略】行业风格打得头破血流，拥挤度-20260803173753"
+    },
+    {
+      "group": "投资类",
+      "name": "地平线全球策略",
+      "sourceType": "jintiankansha column",
+      "focus": "全球宏观、汇率、利率和跨市场策略。",
+      "investmentUse": "决定仓位上限和风险预算，不直接选股。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/TMPWMTO3j3",
+      "latestTitle": "美元为什么会下跌..？我们如何预判日元干预交易 260804",
+      "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/AMtmkhTmSi",
+      "latestOriginalUrl": "",
+      "latestFullText": "美元为什么会下跌..？我们如何预判日元干预交易 260804"
     },
     {
       "group": "投资类",
@@ -2285,7 +2351,24 @@
       "status": "已同步",
       "columnUrl": "http://www.jintiankansha.com/column/8dYyLDeinP",
       "latestTitle": "我回来了，Can you hear me?",
-      "latestDate": ""
+      "latestDate": "",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/mufQKSv5xQ",
+      "latestOriginalUrl": "",
+      "latestFullText": "我回来了，Can you hear me?"
+    },
+    {
+      "group": "投资类",
+      "name": "卓哥投研笔记",
+      "sourceType": "jintiankansha column",
+      "focus": "公司研究、行业比较和投资笔记。",
+      "investmentUse": "提取公司逻辑和估值锚，进入候选池。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/JSzKdLWQBg",
+      "latestTitle": "阿里并不适用海外CSP的逻辑",
+      "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/owCMjD4kWC",
+      "latestOriginalUrl": "",
+      "latestFullText": "阿里并不适用海外CSP的逻辑"
     },
     {
       "group": "投资类",
@@ -2296,7 +2379,150 @@
       "status": "已同步",
       "columnUrl": "http://www.jintiankansha.com/column/Kg6Ybo5wSC",
       "latestTitle": "一些信息 0803",
-      "latestDate": ""
+      "latestDate": "",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/rqo9sds5xn",
+      "latestOriginalUrl": "",
+      "latestFullText": "一些信息 0803"
+    },
+    {
+      "group": "投资类",
+      "name": "2030FY",
+      "sourceType": "jintiankansha column",
+      "focus": "长期成长、产业趋势和未来收入曲线。",
+      "investmentUse": "用于中长期主题跟踪，但要用财报兑现过滤远期叙事。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/vm6wl3VsZu",
+      "latestTitle": "外资行解读FCC传闻",
+      "latestDate": "5 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/FR69e6blku",
+      "latestOriginalUrl": "",
+      "latestFullText": "外资行解读FCC传闻"
+    },
+    {
+      "group": "投资类",
+      "name": "奔波儿霸研究室",
+      "sourceType": "jintiankansha column",
+      "focus": "市场观察、个股和交易思考。",
+      "investmentUse": "作为情绪与交易线索，必须交叉资金流。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/3tQpYv0AuX",
+      "latestTitle": "泡沫有一个巨大的正面意义，就是为上一轮泡沫里中毒的人解毒\n\n泡沫是一种毒，会腐蚀人的心灵，让一个正常...",
+      "latestDate": "1 月前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/Pahbp4XL6Q",
+      "latestOriginalUrl": "",
+      "latestFullText": "泡沫有一个巨大的正面意义，就是为上一轮泡沫里中毒的人解毒\n\n泡沫是一种毒，会腐蚀人的心灵，让一个正常..."
+    },
+    {
+      "group": "研究类",
+      "name": "调研纪要",
+      "sourceType": "jintiankansha column",
+      "focus": "上市公司调研、机构问答和产业链纪要。",
+      "investmentUse": "验证订单、价格、产能、收入和利润预期。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/pqlX7tELZo",
+      "latestTitle": "高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿",
+      "latestDate": "16 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/zMjCfCPhrn",
+      "latestOriginalUrl": "",
+      "latestFullText": "高盛：云厂商集体上调 2026 capex，WFE 市场三年持续扩容至 2080 亿"
+    },
+    {
+      "group": "研究类",
+      "name": "水木纪要",
+      "sourceType": "jintiankansha column",
+      "focus": "公司调研、业绩说明、产业纪要。",
+      "investmentUse": "直接验证订单、价格、客户和利润率。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/owkx7OaOUU",
+      "latestTitle": "大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！",
+      "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/HpaSLhTuHN",
+      "latestOriginalUrl": "",
+      "latestFullText": "大摩：全球云 Capex 升至 1.2 万亿美元，支出加速仍未见顶，谁最直接受益？！"
+    },
+    {
+      "group": "科技类",
+      "name": "梓豪谈芯",
+      "sourceType": "jintiankansha column",
+      "focus": "芯片、半导体、产业链和供应链。",
+      "investmentUse": "验证 AI 芯片、存储、PCB、设备材料链的景气变化。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/qD9XSiTOLR",
+      "latestTitle": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？",
+      "latestDate": "2 周前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/hI2WxieBUS",
+      "latestOriginalUrl": "",
+      "latestFullText": "谷歌财报倒计时 ：疯狂砸万亿算力，AI军备竞赛何时休？"
+    },
+    {
+      "group": "科技类",
+      "name": "数字生命卡兹克",
+      "sourceType": "jintiankansha column",
+      "focus": "AI 应用、科技产品、数字生命与前沿叙事。",
+      "investmentUse": "捕捉新应用场景和早期主题，后续用商业化与收入验证。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/euZCfLlKpL",
+      "latestTitle": "聊聊Qwen3.8-Max，我心中的千问又回来了。",
+      "latestDate": "昨天",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/4wlKm0cAVx",
+      "latestOriginalUrl": "",
+      "latestFullText": "聊聊Qwen3.8-Max，我心中的千问又回来了。"
+    },
+    {
+      "group": "科技类",
+      "name": "东不压桥研究院",
+      "sourceType": "jintiankansha column",
+      "focus": "公司、科技产业和行业深度研究。",
+      "investmentUse": "作为深度研究输入，拆成估值、业绩、风险三张卡。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/FExaYYMg65",
+      "latestTitle": "Kimi K3在美国激起的开源模型大争论",
+      "latestDate": "1 周前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/5P5OwB3ReM",
+      "latestOriginalUrl": "",
+      "latestFullText": "Kimi K3在美国激起的开源模型大争论"
+    },
+    {
+      "group": "科技类",
+      "name": "刘小排",
+      "sourceType": "jintiankansha column",
+      "focus": "AI 产品、独立开发、软件工具和应用落地。",
+      "investmentUse": "观察 AI 应用从产品热度到付费转化的路径。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/RmRoJm0hCt",
+      "latestTitle": "没人说？那我来说， Opus 5 就是个刷榜怪！",
+      "latestDate": "12 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/QLY16govLi",
+      "latestOriginalUrl": "",
+      "latestFullText": "没人说？那我来说， Opus 5 就是个刷榜怪！"
+    },
+    {
+      "group": "科技类",
+      "name": "海外独角兽",
+      "sourceType": "jintiankansha column",
+      "focus": "海外科技公司、一级市场、成长股。",
+      "investmentUse": "映射港股/美股/中概及 A 股映射链条。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/f4hF3D8497",
+      "latestTitle": "无法蒸馏的美国市场，谁在分食 Frontier Labs 百亿美金预算？",
+      "latestDate": "23 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/ruzp3uDBdS",
+      "latestOriginalUrl": "",
+      "latestFullText": "无法蒸馏的美国市场，谁在分食 Frontier Labs 百亿美金预算？"
+    },
+    {
+      "group": "科技类",
+      "name": "404K",
+      "sourceType": "jintiankansha column",
+      "focus": "科技成长、AI、航天和海外公司研究。",
+      "investmentUse": "补充成长股风险偏好和主题扩散判断。",
+      "status": "已同步",
+      "columnUrl": "http://www.jintiankansha.com/column/j6G918ZvXl",
+      "latestTitle": "SpaceX二季度深度：星链贡献26亿美元调整后EBITDA，AI用158亿美元资本开支换来转正",
+      "latestDate": "6 小时前",
+      "latestArticleUrl": "http://www.jintiankansha.com/t/1MKwMy48Rf",
+      "latestOriginalUrl": "",
+      "latestFullText": "SpaceX二季度深度：星链贡献26亿美元调整后EBITDA，AI用158亿美元资本开支换来转正"
     }
   ],
   "intelligenceCategories": [
